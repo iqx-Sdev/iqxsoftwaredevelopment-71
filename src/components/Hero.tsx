@@ -34,8 +34,8 @@ const Hero = () => {
               </div>
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64">
                 <img
-                  src="/placeholder.svg"
-                  alt="AI Technology Visualization"
+                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+                  alt="AI Robot Action Figure"
                   className="w-full h-full object-contain"
                 />
               </div>
