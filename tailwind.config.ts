@@ -69,6 +69,14 @@ export default {
 					cream: '#F7ECD9',
 					navy: '#323752',
 					rose: '#F2A6A6',
+				},
+				iqbusiness: {
+					blue: '#003B7A',
+					darkblue: '#00305F',
+					teal: '#00C2CB',
+					lightteal: '#3ED6DE',
+					gray: '#F0F2F5',
+					darkgray: '#333333',
 				}
 			},
 			borderRadius: {
@@ -117,6 +125,7 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'peach-teal-gradient': 'linear-gradient(135deg, #FEC6A1 0%, #6BBFAE 100%)',
+				'blue-teal-gradient': 'linear-gradient(135deg, #003B7A 0%, #00C2CB 100%)',
 			},
 		}
 	},
