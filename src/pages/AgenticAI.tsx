@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, ArrowRight, Code, Workflow, Bot, Settings, Book, Blocks, Brain, Shield, BarChart } from "lucide-react";
+import LeadForm from "@/components/LeadForm";
 
 const AgenticAI = () => {
   return (
@@ -12,21 +13,57 @@ const AgenticAI = () => {
       <Navbar />
       <div className="flex-grow">
         {/* Hero Section */}
-        <div className="py-20 bg-gradient-to-r from-purple-500/10 to-blue-500/10">
+        <div className="py-20 bg-gradient-to-br from-newtheme-purple to-newtheme-darkgray">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">
-              Agentic AI Development
-            </h1>
-            <p className="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-6">
-              Intelligent agents. Real business outcomes.
-            </p>
-            <p className="text-md text-center text-gray-600 max-w-3xl mx-auto mb-8">
-              Unlock next-generation automation and operational intelligence with Agentic AI. IQX builds intelligent, autonomous systems that think, plan, and act — transforming your business processes with speed, precision, and impact.
-            </p>
-            <div className="flex justify-center">
-              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
-                Book a Discovery Session <ArrowRight className="ml-2 h-4 w-4" />
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Agentic AI Development
+              </h1>
+              <p className="text-xl text-gray-100 mb-6">
+                Intelligent agents. Real business outcomes.
+              </p>
+              <p className="text-lg text-gray-200 mb-8">
+                Unlock next-generation automation and operational intelligence with Agentic AI. IQX builds intelligent, autonomous systems that think, plan, and act — transforming your business processes with speed, precision, and impact.
+              </p>
+              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-6 py-3 rounded-lg text-lg">
+                Book a Discovery Session <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Lead Form Section */}
+        <div className="py-16 bg-gradient-to-b from-white to-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+              <div className="lg:col-span-2 flex flex-col justify-center">
+                <div className="mb-8">
+                  <span className="inline-block px-3 py-1 rounded-full bg-pink-100 text-pink-800 font-semibold text-sm mb-4">Ready to Start?</span>
+                  <h2 className="text-3xl font-bold text-newtheme-purple mb-6">Transform Your Business with AI Today</h2>
+                  <p className="text-lg text-gray-600 mb-6">
+                    Fill out our consultation form and get personalized AI recommendations for your business from our expert team.
+                  </p>
+                  
+                  <div className="space-y-4">
+                    {leadFormBenefits.map((benefit, index) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <div className="bg-green-100 rounded-full p-1">
+                          <Check className="h-5 w-5 text-green-600" />
+                        </div>
+                        <p className="text-gray-700">{benefit}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              
+              <div className="lg:col-span-3">
+                <LeadForm 
+                  title="Get Your Free AI Consultation"
+                  subtitle="Fill out the form below and one of our AI experts will get back to you within 24 hours."
+                  serviceName="Agentic AI services"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -34,9 +71,9 @@ const AgenticAI = () => {
         {/* Why Choose Section */}
         <div className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Agentic AI?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card>
+            <h2 className="text-3xl font-bold text-center text-newtheme-purple mb-12">Why Choose Agentic AI?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <Card className="shadow-lg border border-gray-100">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <BarChart className="mr-2 h-5 w-5 text-purple-600" />
@@ -49,7 +86,7 @@ const AgenticAI = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="shadow-lg border border-gray-100">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Settings className="mr-2 h-5 w-5 text-purple-600" />
@@ -62,7 +99,7 @@ const AgenticAI = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="shadow-lg border border-gray-100">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Brain className="mr-2 h-5 w-5 text-purple-600" />
@@ -82,9 +119,9 @@ const AgenticAI = () => {
         {/* Our Services */}
         <div className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card>
+            <h2 className="text-3xl font-bold text-center text-newtheme-purple mb-12">Our Services</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <Card className="shadow-lg border border-gray-100">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Bot className="mr-2 h-5 w-5 text-purple-600" />
@@ -97,7 +134,7 @@ const AgenticAI = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="shadow-lg border border-gray-100">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Workflow className="mr-2 h-5 w-5 text-purple-600" />
@@ -110,7 +147,7 @@ const AgenticAI = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="shadow-lg border border-gray-100">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Code className="mr-2 h-5 w-5 text-purple-600" />
@@ -130,9 +167,9 @@ const AgenticAI = () => {
         {/* From Idea to Impact */}
         <div className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">From Idea to Impact</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card>
+            <h2 className="text-3xl font-bold text-center text-newtheme-purple mb-12">From Idea to Impact</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <Card className="shadow-lg border border-gray-100">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Blocks className="mr-2 h-5 w-5 text-purple-600" />
@@ -145,7 +182,7 @@ const AgenticAI = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="shadow-lg border border-gray-100">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <BarChart className="mr-2 h-5 w-5 text-purple-600" />
@@ -158,7 +195,7 @@ const AgenticAI = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="shadow-lg border border-gray-100">
                 <CardHeader>
                   <CardTitle className="flex items-center">
                     <Book className="mr-2 h-5 w-5 text-purple-600" />
@@ -178,44 +215,18 @@ const AgenticAI = () => {
         {/* Our Approach */}
         <div className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Approach</h2>
+            <h2 className="text-3xl font-bold text-center text-newtheme-purple mb-12">Our Approach</h2>
             <div className="max-w-3xl mx-auto">
               <ul className="space-y-4">
-                <li className="flex items-start">
-                  <Check className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-semibold text-lg">Define Clear AI Objectives</h3>
-                    <p className="text-gray-600">Align every use case with measurable business outcomes.</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-semibold text-lg">Assess Readiness</h3>
-                    <p className="text-gray-600">We evaluate your data, technology, and team capabilities to ensure a solid foundation.</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-semibold text-lg">Start with High-Impact Use Cases</h3>
-                    <p className="text-gray-600">Target projects that deliver quick wins and showcase immediate value.</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-semibold text-lg">Ensure Ethical AI</h3>
-                    <p className="text-gray-600">Build systems that are transparent, compliant, and human-centric.</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-semibold text-lg">Scale & Optimise</h3>
-                    <p className="text-gray-600">Continuously refine and expand AI initiatives for sustained performance and growth.</p>
-                  </div>
-                </li>
+                {approach.map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <Check className="h-6 w-6 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold text-lg">{item.title}</h3>
+                      <p className="text-gray-600">{item.description}</p>
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -224,86 +235,30 @@ const AgenticAI = () => {
         {/* Workflow & Integrations */}
         <div className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-6">Workflow & Integrations</h2>
+            <h2 className="text-3xl font-bold text-center text-newtheme-purple mb-6">Workflow & Integrations</h2>
             <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
               Transform the way you work with intelligent automation, AI workflows, and autonomous agents. At IQX, we specialise in delivering tailored systems across three levels of operational intelligence:
             </p>
             
             <div className="space-y-12 max-w-4xl mx-auto">
-              <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <span className="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
-                  Simple Automations
-                </h3>
-                <p className="mb-4 text-gray-600">
-                  For fast wins, we develop lightweight solutions that streamline high-frequency, low-value tasks:
-                </p>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Quick Implementation: Cost-effective and fast to deploy</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Scalable: Adaptable across teams and departments</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Error Reduction: Minimises manual input and improves operational efficiency</p>
-                  </li>
-                </ul>
-                <p className="text-gray-600">
-                  From scheduling and notifications to data transfers and form processing, simple automations set the stage for operational hygiene without the need for a complex rollout.
-                </p>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <span className="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
-                  AI-Powered Workflows
-                </h3>
-                <p className="mb-4 text-gray-600">
-                  For organisations ready to harness the full potential of AI:
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Data-Driven Decisions: Integrate structured logic with real-time machine learning</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Enhanced Efficiency: Improve compliance and operational visibility</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Versatile Applications: Suitable for customer onboarding, supply chain coordination, sales enablement, and more</p>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <span className="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
-                  Autonomous AI Agents
-                </h3>
-                <p className="mb-4 text-gray-600">
-                  Our advanced agentic AI systems operate on your behalf:
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Self-Optimising: Goal-driven systems that plan, reason, and adapt in real time</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Multimodal Capabilities: Process text, audio, images, and more</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Tailored Use Cases: Ideal for support bots, procurement agents, virtual assistants, operational planners, and beyond</p>
-                  </li>
-                </ul>
-              </div>
+              {workflowSteps.map((step, index) => (
+                <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-sm">
+                  <h3 className="text-xl font-bold mb-4 flex items-center">
+                    <span className="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">{index + 1}</span>
+                    {step.title}
+                  </h3>
+                  <p className="mb-4 text-gray-600">{step.description}</p>
+                  <ul className="space-y-2 mb-4">
+                    {step.benefits.map((benefit, i) => (
+                      <li key={i} className="flex items-start">
+                        <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                        <p className="text-gray-600">{benefit}</p>
+                      </li>
+                    ))}
+                  </ul>
+                  {step.conclusion && <p className="text-gray-600">{step.conclusion}</p>}
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -311,87 +266,29 @@ const AgenticAI = () => {
         {/* Bespoke AI Services */}
         <div className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-6">Bespoke AI Services</h2>
+            <h2 className="text-3xl font-bold text-center text-newtheme-purple mb-6">Bespoke AI Services</h2>
             <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
               End-to-end support for developing intelligent, enterprise-grade systems. We go beyond out-of-the-box solutions with comprehensive, lifecycle support across custom AI and ML initiatives:
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Shield className="mr-2 h-5 w-5 text-purple-600" />
-                  AI/ML Solution Architecture
-                </h3>
-                <p className="mb-4 text-gray-600">
-                  Lay the foundation for robust, scalable AI with:
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Technical solution design and architecture</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Advisory on tools, frameworks, and platforms</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Team design and leadership support</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Oversight from discovery to go-live</p>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Brain className="mr-2 h-5 w-5 text-purple-600" />
-                  Data/ML Engineering
-                </h3>
-                <p className="mb-4 text-gray-600">
-                  Empower your AI with efficient, clean data pipelines:
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Design and development of ML applications and workflows</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Model training, tuning, and performance enhancements</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Continuous testing and evaluation for robust systems</p>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Settings className="mr-2 h-5 w-5 text-purple-600" />
-                  MLOps & DevOps for AI
-                </h3>
-                <p className="mb-4 text-gray-600">
-                  Optimise delivery throughout the AI/ML lifecycle:
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Accelerated development and deployment cycles</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Automation across engineering and operational processes</p>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-600">Continuous monitoring, CI/CD, and rapid issue resolution</p>
-                  </li>
-                </ul>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {bespokeServices.map((service, index) => (
+                <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="text-xl font-bold mb-4 flex items-center">
+                    {service.icon}
+                    {service.title}
+                  </h3>
+                  <p className="mb-4 text-gray-600">{service.description}</p>
+                  <ul className="space-y-2">
+                    {service.features.map((feature, i) => (
+                      <li key={i} className="flex items-start">
+                        <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                        <p className="text-gray-600">{feature}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
             
             <p className="text-center text-gray-600 max-w-3xl mx-auto mt-8">
@@ -403,44 +300,17 @@ const AgenticAI = () => {
         {/* Real-World Use Cases */}
         <div className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Real-World Use Cases</h2>
+            <h2 className="text-3xl font-bold text-center text-newtheme-purple mb-12">Real-World Use Cases</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-lg mb-2 flex items-center">
-                  <Bot className="mr-2 h-5 w-5 text-purple-600" />
-                  Customer Support Agents
-                </h3>
-                <p className="text-gray-600">
-                  AI agents that solve issues, escalate when needed, and continuously learn.
-                </p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-lg mb-2 flex items-center">
-                  <BarChart className="mr-2 h-5 w-5 text-purple-600" />
-                  Automated Procurement
-                </h3>
-                <p className="text-gray-600">
-                  Agents that identify the right suppliers, compare pricing, and place orders seamlessly.
-                </p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-lg mb-2 flex items-center">
-                  <Settings className="mr-2 h-5 w-5 text-purple-600" />
-                  Operational Planning
-                </h3>
-                <p className="text-gray-600">
-                  Systems that forecast demand, adjust plans, and optimize resource allocation in real time.
-                </p>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-semibold text-lg mb-2 flex items-center">
-                  <Book className="mr-2 h-5 w-5 text-purple-600" />
-                  Knowledge Management
-                </h3>
-                <p className="text-gray-600">
-                  Intelligent agents that search, summarize, and deliver insights from large data stores.
-                </p>
-              </div>
+              {useCases.map((useCase, index) => (
+                <div key={index} className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="font-semibold text-lg mb-2 flex items-center">
+                    {useCase.icon}
+                    {useCase.title}
+                  </h3>
+                  <p className="text-gray-600">{useCase.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -448,36 +318,18 @@ const AgenticAI = () => {
         {/* Tools & Technologies */}
         <div className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-6">Tools & Technologies</h2>
+            <h2 className="text-3xl font-bold text-center text-newtheme-purple mb-6">Tools & Technologies</h2>
             <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
               At IQX, we leverage a comprehensive ecosystem of industry-leading platforms and innovative tools to build robust Agentic AI solutions. Our technology partners span the entire AI stack, ensuring that every solution we develop is seamlessly integrated, highly scalable, secure, and compliant.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="font-semibold text-lg mb-4">Enterprise Platforms</h3>
-                <p className="text-gray-600">
-                  We utilize platforms such as LangGraph, CrewAI, llamaindex, and MCP Servers to deliver robust, enterprise-grade solutions that integrate effortlessly into your existing infrastructure.
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="font-semibold text-lg mb-4">Open Source Tools</h3>
-                <p className="text-gray-600">
-                  Harness the power of community-driven innovation with AutoGen and AutoGPT, accelerating development while continuously improving your AI systems.
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="font-semibold text-lg mb-4">No Code / Low Code Solutions</h3>
-                <p className="text-gray-600">
-                  Empower rapid prototyping and agile development using Stubber, Make.com, and Power Automate. These tools enable you to deploy intelligent solutions quickly and efficiently, without extensive coding.
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="font-semibold text-lg mb-4">Large Language Models & AI Frameworks</h3>
-                <p className="text-gray-600">
-                  Drive nuanced and context-aware interactions with advanced models like Claude, OpenAI, and Deepseek, ensuring your AI initiatives remain at the cutting edge.
-                </p>
-              </div>
+              {technologies.map((tech, index) => (
+                <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
+                  <h3 className="font-semibold text-lg mb-4">{tech.title}</h3>
+                  <p className="text-gray-600">{tech.description}</p>
+                </div>
+              ))}
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm max-w-4xl mx-auto mt-8">
@@ -506,5 +358,148 @@ const AgenticAI = () => {
     </div>
   );
 };
+
+// Lead form benefits list
+const leadFormBenefits = [
+  "Free no-obligation consultation",
+  "Expert AI strategy and implementation advice",
+  "Custom solution for your business challenges",
+  "Response within 24 hours",
+];
+
+// Our approach items
+const approach = [
+  {
+    title: "Define Clear AI Objectives",
+    description: "Align every use case with measurable business outcomes."
+  },
+  {
+    title: "Assess Readiness",
+    description: "We evaluate your data, technology, and team capabilities to ensure a solid foundation."
+  },
+  {
+    title: "Start with High-Impact Use Cases",
+    description: "Target projects that deliver quick wins and showcase immediate value."
+  },
+  {
+    title: "Ensure Ethical AI",
+    description: "Build systems that are transparent, compliant, and human-centric."
+  },
+  {
+    title: "Scale & Optimise",
+    description: "Continuously refine and expand AI initiatives for sustained performance and growth."
+  }
+];
+
+// Workflow steps
+const workflowSteps = [
+  {
+    title: "Simple Automations",
+    description: "For fast wins, we develop lightweight solutions that streamline high-frequency, low-value tasks:",
+    benefits: [
+      "Quick Implementation: Cost-effective and fast to deploy",
+      "Scalable: Adaptable across teams and departments",
+      "Error Reduction: Minimises manual input and improves operational efficiency"
+    ],
+    conclusion: "From scheduling and notifications to data transfers and form processing, simple automations set the stage for operational hygiene without the need for a complex rollout."
+  },
+  {
+    title: "AI-Powered Workflows",
+    description: "For organisations ready to harness the full potential of AI:",
+    benefits: [
+      "Data-Driven Decisions: Integrate structured logic with real-time machine learning",
+      "Enhanced Efficiency: Improve compliance and operational visibility",
+      "Versatile Applications: Suitable for customer onboarding, supply chain coordination, sales enablement, and more"
+    ]
+  },
+  {
+    title: "Autonomous AI Agents",
+    description: "Our advanced agentic AI systems operate on your behalf:",
+    benefits: [
+      "Self-Optimising: Goal-driven systems that plan, reason, and adapt in real time",
+      "Multimodal Capabilities: Process text, audio, images, and more",
+      "Tailored Use Cases: Ideal for support bots, procurement agents, virtual assistants, operational planners, and beyond"
+    ]
+  }
+];
+
+// Bespoke AI services
+const bespokeServices = [
+  {
+    icon: <Shield className="mr-2 h-5 w-5 text-purple-600" />,
+    title: "AI/ML Solution Architecture",
+    description: "Lay the foundation for robust, scalable AI with:",
+    features: [
+      "Technical solution design and architecture",
+      "Advisory on tools, frameworks, and platforms",
+      "Team design and leadership support",
+      "Oversight from discovery to go-live"
+    ]
+  },
+  {
+    icon: <Brain className="mr-2 h-5 w-5 text-purple-600" />,
+    title: "Data/ML Engineering",
+    description: "Empower your AI with efficient, clean data pipelines:",
+    features: [
+      "Design and development of ML applications and workflows",
+      "Model training, tuning, and performance enhancements",
+      "Continuous testing and evaluation for robust systems"
+    ]
+  },
+  {
+    icon: <Settings className="mr-2 h-5 w-5 text-purple-600" />,
+    title: "MLOps & DevOps for AI",
+    description: "Optimise delivery throughout the AI/ML lifecycle:",
+    features: [
+      "Accelerated development and deployment cycles",
+      "Automation across engineering and operational processes",
+      "Continuous monitoring, CI/CD, and rapid issue resolution"
+    ]
+  }
+];
+
+// Real-world use cases
+const useCases = [
+  {
+    icon: <Bot className="mr-2 h-5 w-5 text-purple-600" />,
+    title: "Customer Support Agents",
+    description: "AI agents that solve issues, escalate when needed, and continuously learn."
+  },
+  {
+    icon: <BarChart className="mr-2 h-5 w-5 text-purple-600" />,
+    title: "Automated Procurement",
+    description: "Agents that identify the right suppliers, compare pricing, and place orders seamlessly."
+  },
+  {
+    icon: <Settings className="mr-2 h-5 w-5 text-purple-600" />,
+    title: "Operational Planning",
+    description: "Systems that forecast demand, adjust plans, and optimize resource allocation in real time."
+  },
+  {
+    icon: <Book className="mr-2 h-5 w-5 text-purple-600" />,
+    title: "Knowledge Management",
+    description: "Intelligent agents that search, summarize, and deliver insights from large data stores."
+  }
+];
+
+// Tools & technologies
+const technologies = [
+  {
+    title: "Enterprise Platforms",
+    description: "We utilize platforms such as LangGraph, CrewAI, llamaindex, and MCP Servers to deliver robust, enterprise-grade solutions that integrate effortlessly into your existing infrastructure."
+  },
+  {
+    title: "Open Source Tools",
+    description: "Harness the power of community-driven innovation with AutoGen and AutoGPT, accelerating development while continuously improving your AI systems."
+  },
+  {
+    title: "No Code / Low Code Solutions",
+    description: "Empower rapid prototyping and agile development using Stubber, Make.com, and Power Automate. These tools enable you to deploy intelligent solutions quickly and efficiently, without extensive coding."
+  },
+  {
+    title: "Large Language Models & AI Frameworks",
+    description: "Drive nuanced and context-aware interactions with advanced models like Claude, OpenAI, and Deepseek, ensuring your AI initiatives remain at the cutting edge."
+  }
+];
 
 export default AgenticAI;
