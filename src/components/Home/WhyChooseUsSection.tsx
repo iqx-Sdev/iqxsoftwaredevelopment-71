@@ -7,15 +7,16 @@ type FeatureCardProps = {
   title: string;
   description: string;
   bgColor: string;
-  iconColor: string;
 };
 
-const FeatureCard = ({ icon, title, description, bgColor, iconColor }: FeatureCardProps) => (
-  <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
-    <div className={`h-12 w-12 rounded-full ${bgColor} flex items-center justify-center mb-4`}>
-      {icon}
+const FeatureCard = ({ icon, title, description, bgColor }: FeatureCardProps) => (
+  <div className="bg-white p-8 rounded-xl shadow-md">
+    <div className={`flex items-center gap-4 mb-4`}>
+      <div className={`h-12 w-12 rounded-full ${bgColor} flex items-center justify-center`}>
+        {icon}
+      </div>
+      <h3 className="font-bold text-xl text-newtheme-purple">{title}</h3>
     </div>
-    <h3 className="font-bold text-xl mb-2">{title}</h3>
     <p className="text-gray-600">{description}</p>
   </div>
 );
@@ -23,32 +24,28 @@ const FeatureCard = ({ icon, title, description, bgColor, iconColor }: FeatureCa
 const WhyChooseUsSection = () => {
   const features = [
     {
-      icon: <Award className="h-6 w-6 text-newtheme-purple" />,
+      icon: <Award className="h-6 w-6 text-white" />,
       title: "Expertise",
       description: "Industry leaders with deep knowledge across key business domains",
-      bgColor: "bg-purple-100",
-      iconColor: "text-newtheme-purple"
+      bgColor: "bg-purple-500"
     },
     {
-      icon: <Laptop className="h-6 w-6 text-blue-600" />,
+      icon: <Laptop className="h-6 w-6 text-white" />,
       title: "Innovation",
       description: "Cutting-edge solutions leveraging the latest technological advancements",
-      bgColor: "bg-blue-100",
-      iconColor: "text-blue-600"
+      bgColor: "bg-blue-500"
     },
     {
-      icon: <CheckCircle className="h-6 w-6 text-green-600" />,
+      icon: <CheckCircle className="h-6 w-6 text-white" />,
       title: "Results-Driven",
       description: "Focused on delivering measurable outcomes and ROI for your business",
-      bgColor: "bg-green-100",
-      iconColor: "text-green-600"
+      bgColor: "bg-green-500"
     },
     {
-      icon: <Users className="h-6 w-6 text-pink-600" />,
+      icon: <Users className="h-6 w-6 text-white" />,
       title: "Partnership",
       description: "We work alongside you as a collaborative partner, not just a service provider",
-      bgColor: "bg-pink-100",
-      iconColor: "text-pink-600"
+      bgColor: "bg-pink-500"
     }
   ];
 
@@ -68,7 +65,7 @@ const WhyChooseUsSection = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {features.map((feature) => (
               <FeatureCard
                 key={feature.title}
@@ -76,7 +73,6 @@ const WhyChooseUsSection = () => {
                 title={feature.title}
                 description={feature.description}
                 bgColor={feature.bgColor}
-                iconColor={feature.iconColor}
               />
             ))}
           </div>
