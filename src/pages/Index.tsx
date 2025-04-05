@@ -6,6 +6,12 @@ import Benefits from "@/components/Benefits";
 import Team from "@/components/Team";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import ProcessSection from "@/components/WebApps/ProcessSection";
+import WhyChooseSection from "@/components/WebApps/WhyChooseSection";
+import TechStackSection from "@/components/WebApps/TechStackSection";
+import StatsSection from "@/components/WebApps/StatsSection";
+import LeadFormSection from "@/components/WebApps/LeadFormSection";
+import MoreFromSection from "@/components/WebApps/MoreFromSection";
 
 const Index = () => {
   return (
@@ -14,6 +20,12 @@ const Index = () => {
       <Hero />
       <Services />
       <Benefits />
+      <ProcessSection />
+      <WhyChooseSection />
+      <TechStackSection />
+      <StatsSection />
+      <MoreFromSection />
+      <LeadFormSection />
       <Team />
       <CTA />
       <Footer />
