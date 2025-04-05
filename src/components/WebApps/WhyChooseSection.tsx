@@ -13,7 +13,8 @@ const whatWeOffer = [
   {
     title: "Flutter & React Native Development",
     description: "Cross-platform apps with native performance and future-ready architecture. Easily connected to CMSs like Strapi and Umbraco via REST or GraphQL APIs.",
-    buttonText: "Discover How"
+    buttonText: "Discover How",
+    featured: true
   },
   {
     title: "UX + UI That Converts",
@@ -49,12 +50,22 @@ const WhyChooseSection = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whatWeOffer.slice(0, 6).map((item, index) => (
-              <Card key={index} className="shadow-lg border border-gray-100 hover:shadow-xl transition-all">
+              <Card 
+                key={index} 
+                className={`shadow-lg border ${item.featured ? 'border-pink-300 bg-gradient-to-br from-white to-pink-50' : 'border-gray-100'} hover:shadow-xl transition-all`}
+              >
                 <CardHeader>
-                  <CardTitle>{item.title}</CardTitle>
+                  <CardTitle>
+                    {item.title}
+                    {item.featured && (
+                      <span className="ml-2 inline-block bg-pink-100 text-xs text-pink-700 px-2 py-1 rounded-full">
+                        Featured
+                      </span>
+                    )}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-6">{item.description}</p>
+                  <p className={`${item.featured ? 'text-gray-700' : 'text-gray-600'} mb-6`}>{item.description}</p>
                   <Button variant="link" className="text-pink-500 hover:text-pink-600 p-0">
                     {item.buttonText}
                     <ArrowRight className="ml-2 h-4 w-4" />
