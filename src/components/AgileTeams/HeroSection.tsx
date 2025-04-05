@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <div className="relative py-20 overflow-hidden bg-gradient-to-br from-newtheme-purple to-newtheme-darkgray text-white">
+    <div className="relative py-20 overflow-hidden bg-gradient-to-br from-newtheme-purple to-newtheme-darkgray text-white font-aptos">
       {/* Wave pattern background */}
       <div className="absolute inset-0 opacity-20">
         <img 
