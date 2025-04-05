@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -134,12 +135,12 @@ const WebApps = () => {
                   </Button>
                 </div>
                 <div className="relative h-80 md:h-96 w-full rounded-2xl overflow-hidden shadow-xl">
-                  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-blue-500/20"></div>
                   <img 
-                    src="/lovable-uploads/37f1ae05-8efa-47f2-a0c2-822a886c3534.png" 
-                    alt="Web app design showcase" 
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&h=800&q=80" 
+                    alt="Modern web app development" 
                     className="w-full h-full object-cover"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-500/30 mix-blend-overlay"></div>
                 </div>
               </div>
             </div>
