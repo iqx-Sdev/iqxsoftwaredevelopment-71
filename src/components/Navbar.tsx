@@ -22,15 +22,15 @@ const Navbar = () => {
           </div>
           
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Link to="/power-apps" className="nav-link text-white hover:text-pink-400">Power Apps</Link>
-            <Link to="/agentic-ai" className="nav-link text-white hover:text-pink-400">Agentic AI</Link>
-            <Link to="/agile-teams" className="nav-link text-white hover:text-pink-400">Agile Teams</Link>
-            <Link to="/web-apps" className="nav-link text-white hover:text-pink-400">Web Apps</Link>
-            <Link to="/shopify" className="nav-link text-white hover:text-pink-400">Shopify</Link>
-            <Link to="/ai-chat" className="nav-link text-white hover:text-pink-400">AI Chat</Link>
+          <div className="hidden md:flex items-center space-x-6">
+            <Link to="/power-apps" className="nav-link text-white hover:text-pink-400 px-1">Power Apps</Link>
+            <Link to="/agentic-ai" className="nav-link text-white hover:text-pink-400 px-1">Agentic AI</Link>
+            <Link to="/agile-teams" className="nav-link text-white hover:text-pink-400 px-1">Agile Teams</Link>
+            <Link to="/web-apps" className="nav-link text-white hover:text-pink-400 px-1">Web Apps</Link>
+            <Link to="/shopify" className="nav-link text-white hover:text-pink-400 px-1">Shopify</Link>
+            <Link to="/ai-chat" className="nav-link text-white hover:text-pink-400 px-1">AI Chat</Link>
             <Link to="/contact">
-              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white">
+              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white ml-2">
                 Contact Us
               </Button>
             </Link>
