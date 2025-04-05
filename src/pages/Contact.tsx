@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Navbar } from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LeadForm from "@/components/LeadForm";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
