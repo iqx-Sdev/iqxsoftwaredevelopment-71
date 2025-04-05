@@ -39,14 +39,14 @@ const DesignShowcaseSection = () => {
                   <CardContent className="p-0">
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img 
-                        src="/lovable-uploads/914737f9-1a98-46d7-bb9c-332d9cc6b211.png" 
-                        alt="E-commerce web app interface" 
+                        src="/lovable-uploads/f528492b-642c-4e73-b833-5531a3deef0e.png" 
+                        alt="WhatsApp e-commerce chatbot interface" 
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                       />
                     </div>
                     <div className="p-6">
-                      <h3 className="font-bold text-lg text-newtheme-purple mb-2">E-commerce Platform</h3>
-                      <p className="text-gray-600 text-sm">Modern shopping experience with user-centric design</p>
+                      <h3 className="font-bold text-lg text-newtheme-purple mb-2">E-commerce WhatsApp Bot</h3>
+                      <p className="text-gray-600 text-sm">Intelligent product catalog and order tracking via chat</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -57,14 +57,14 @@ const DesignShowcaseSection = () => {
                   <CardContent className="p-0">
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img 
-                        src="/lovable-uploads/e8098bea-0128-43dc-9d97-49d4cb60de99.png" 
-                        alt="Product showcase interface" 
+                        src="/lovable-uploads/ef90d4b1-5352-4840-ace8-7457f753cce2.png" 
+                        alt="Medical lab WhatsApp chatbot" 
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                       />
                     </div>
                     <div className="p-6">
-                      <h3 className="font-bold text-lg text-newtheme-purple mb-2">Product Catalog</h3>
-                      <p className="text-gray-600 text-sm">Interactive product showcase with detailed information</p>
+                      <h3 className="font-bold text-lg text-newtheme-purple mb-2">Healthcare Chat Assistant</h3>
+                      <p className="text-gray-600 text-sm">Streamlined medical test booking and results inquiry</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -75,14 +75,14 @@ const DesignShowcaseSection = () => {
                   <CardContent className="p-0">
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img 
-                        src="/lovable-uploads/d91346d2-b226-407b-b32f-754cd37a32a0.png" 
-                        alt="Healthcare app interface" 
+                        src="/lovable-uploads/62c56411-5939-4e6a-ac50-4ae9d904d852.png" 
+                        alt="Chatbot flow builder interface" 
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                       />
                     </div>
                     <div className="p-6">
-                      <h3 className="font-bold text-lg text-newtheme-purple mb-2">Healthcare Portal</h3>
-                      <p className="text-gray-600 text-sm">Patient-focused healthcare management system</p>
+                      <h3 className="font-bold text-lg text-newtheme-purple mb-2">AI Conversation Designer</h3>
+                      <p className="text-gray-600 text-sm">Visual flow builder for creating intelligent chat experiences</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -118,4 +118,3 @@ const DesignShowcaseSection = () => {
 };
 
 export default DesignShowcaseSection;
-
