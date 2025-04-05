@@ -1,9 +1,16 @@
 
 import { MessageCircle, DollarSign, Link, Bot, Database, MessagesSquare, Clock } from "lucide-react";
+import { OptimizedImage } from "@/components/ui/optimized-image";
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 
 const ProductSuiteSection = () => {
+  const [isVisible, ref] = useIntersectionObserver({
+    threshold: 0.1,
+    freezeOnceVisible: true
+  });
+
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -25,11 +32,14 @@ const ProductSuiteSection = () => {
                 <p className="text-gray-600 mb-6">Create complex, multi-path conversation flows with our visual designer. Enable your chatbots to handle various user intents and provide personalized responses.</p>
                 
                 <div className="rounded-lg overflow-hidden shadow-md">
-                  <img 
-                    src="/lovable-uploads/eed4baee-2fb7-456d-932f-c9c9e93e8174.png" 
-                    alt="AI Conversation Flow Designer Interface" 
-                    className="w-full h-auto"
-                  />
+                  {isVisible && (
+                    <OptimizedImage
+                      src="/lovable-uploads/eed4baee-2fb7-456d-932f-c9c9e93e8174.png" 
+                      alt="AI Conversation Flow Designer Interface" 
+                      className="w-full h-auto"
+                      placeholderClassName="aspect-[16/9]"
+                    />
+                  )}
                 </div>
               </div>
             </div>

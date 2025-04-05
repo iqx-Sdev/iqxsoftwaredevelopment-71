@@ -1,17 +1,28 @@
 
+import { OptimizedImage } from "@/components/ui/optimized-image";
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+
 const SolutionSection = () => {
+  const [isVisible, ref] = useIntersectionObserver({
+    threshold: 0.1,
+    freezeOnceVisible: true
+  });
+
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2 order-2 md:order-1">
               <div className="rounded-xl shadow-lg overflow-hidden">
-                <img 
-                  src="/lovable-uploads/6b99bd87-02b1-4279-9ad8-46ed20ba8d86.png"
-                  alt="Healthcare WhatsApp Chatbot Interface" 
-                  className="w-full h-auto"
-                />
+                {isVisible && (
+                  <OptimizedImage
+                    src="/lovable-uploads/6b99bd87-02b1-4279-9ad8-46ed20ba8d86.png"
+                    alt="Healthcare WhatsApp Chatbot Interface" 
+                    className="w-full h-auto"
+                    placeholderClassName="aspect-[4/3]"
+                  />
+                )}
               </div>
             </div>
             <div className="md:w-1/2 order-1 md:order-2">
