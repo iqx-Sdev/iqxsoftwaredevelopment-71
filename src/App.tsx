@@ -11,6 +11,7 @@ import AgenticAI from "./pages/AgenticAI";
 import AgileTeams from "./pages/AgileTeams";
 import WebApps from "./pages/WebApps";
 import AIChat from "./pages/AIChat";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/agile-teams" element={<AgileTeams />} />
           <Route path="/web-apps" element={<WebApps />} />
           <Route path="/ai-chat" element={<AIChat />} />
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

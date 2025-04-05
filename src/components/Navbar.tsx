@@ -29,9 +29,11 @@ const Navbar = () => {
             <Link to="/web-apps" className="nav-link text-white hover:text-pink-400">Web Apps</Link>
             <Link to="/shopify" className="nav-link text-white hover:text-pink-400">Shopify</Link>
             <Link to="/ai-chat" className="nav-link text-white hover:text-pink-400">AI Chat</Link>
-            <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white">
-              Contact Us
-            </Button>
+            <Link to="/contact">
+              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white">
+                Contact Us
+              </Button>
+            </Link>
           </div>
           
           {/* Mobile menu button */}
@@ -93,9 +95,11 @@ const Navbar = () => {
               AI Chat
             </Link>
             <div className="px-3 py-2">
-              <Button className="w-full bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600">
-                Contact Us
-              </Button>
+              <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+                <Button className="w-full bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600">
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
