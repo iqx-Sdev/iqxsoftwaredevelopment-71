@@ -34,6 +34,32 @@ const whatWeOffer = [
 ];
 
 const WhyChooseSection = () => {
+  // Memoize the cards to prevent unnecessary re-renders
+  const offerCards = React.useMemo(() => whatWeOffer.slice(0, 6).map((item, index) => (
+    <Card 
+      key={index} 
+      className={`shadow-lg border ${item.featured ? 'border-pink-300 bg-gradient-to-br from-white to-pink-50' : 'border-gray-100'} hover:shadow-xl transition-all`}
+    >
+      <CardHeader>
+        <CardTitle>
+          {item.title}
+          {item.featured && (
+            <span className="ml-2 inline-block bg-pink-100 text-xs text-pink-700 px-2 py-1 rounded-full">
+              Featured
+            </span>
+          )}
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p className={`${item.featured ? 'text-gray-700' : 'text-gray-600'} mb-6`}>{item.description}</p>
+        <Button variant="link" className="text-pink-500 hover:text-pink-600 p-0">
+          {item.buttonText}
+          <ArrowRight className="ml-2 h-4 w-4" />
+        </Button>
+      </CardContent>
+    </Card>
+  )), []);
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -49,30 +75,7 @@ const WhyChooseSection = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {whatWeOffer.slice(0, 6).map((item, index) => (
-              <Card 
-                key={index} 
-                className={`shadow-lg border ${item.featured ? 'border-pink-300 bg-gradient-to-br from-white to-pink-50' : 'border-gray-100'} hover:shadow-xl transition-all`}
-              >
-                <CardHeader>
-                  <CardTitle>
-                    {item.title}
-                    {item.featured && (
-                      <span className="ml-2 inline-block bg-pink-100 text-xs text-pink-700 px-2 py-1 rounded-full">
-                        Featured
-                      </span>
-                    )}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className={`${item.featured ? 'text-gray-700' : 'text-gray-600'} mb-6`}>{item.description}</p>
-                  <Button variant="link" className="text-pink-500 hover:text-pink-600 p-0">
-                    {item.buttonText}
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+            {offerCards}
           </div>
         </div>
       </div>
