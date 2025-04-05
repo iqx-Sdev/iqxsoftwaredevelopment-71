@@ -1,22 +1,29 @@
 
-import { useEffect } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import CTA from "../components/CTA";
 import HeroSection from "../components/AgileTeams/HeroSection";
-import FinalCTASection from "../components/AgileTeams/FinalCTASection";
-import ProductSection from "../components/AgileTeams/ProductSection";
-import LeadFormSection from "../components/AgileTeams/LeadFormSection";
-import MoreFromSection from "../components/AgileTeams/MoreFromSection";
 
-// Import the components from the read-only files
-import VisualSection from "../components/AgileTeams/VisualSection";
-import WhyChooseSection from "../components/AgileTeams/WhyChooseSection";
-import SkillsTechSection from "../components/AgileTeams/SkillsTechSection";
-import WhyLeasingSection from "../components/AgileTeams/WhyLeasingSection";
-import DeliveryProcessSection from "../components/AgileTeams/DeliveryProcessSection";
+// Add fallback component for loading state
+const SectionLoader = () => (
+  <div className="flex items-center justify-center py-16">
+    <div className="w-12 h-12 border-4 border-newtheme-purple rounded-full border-t-transparent animate-spin"></div>
+  </div>
+);
+
+// Lazy load the components
+const CTA = lazy(() => import("../components/CTA"));
+const FinalCTASection = lazy(() => import("../components/AgileTeams/FinalCTASection"));
+const ProductSection = lazy(() => import("../components/AgileTeams/ProductSection"));
+const LeadFormSection = lazy(() => import("../components/AgileTeams/LeadFormSection"));
+const MoreFromSection = lazy(() => import("../components/AgileTeams/MoreFromSection"));
+const VisualSection = lazy(() => import("../components/AgileTeams/VisualSection"));
+const WhyChooseSection = lazy(() => import("../components/AgileTeams/WhyChooseSection"));
+const SkillsTechSection = lazy(() => import("../components/AgileTeams/SkillsTechSection"));
+const WhyLeasingSection = lazy(() => import("../components/AgileTeams/WhyLeasingSection"));
+const DeliveryProcessSection = lazy(() => import("../components/AgileTeams/DeliveryProcessSection"));
 
 const AgileTeams = () => {
   useEffect(() => {
@@ -30,35 +37,37 @@ const AgileTeams = () => {
         {/* Hero Section */}
         <HeroSection />
 
-        {/* Visual Section */}
-        <VisualSection />
+        <Suspense fallback={<SectionLoader />}>
+          {/* Visual Section */}
+          <VisualSection />
 
-        {/* Lead Form Section */}
-        <LeadFormSection />
+          {/* Lead Form Section */}
+          <LeadFormSection />
 
-        {/* Product Section */}
-        <ProductSection />
+          {/* Product Section */}
+          <ProductSection />
 
-        {/* Why Choose Section */}
-        <WhyChooseSection />
+          {/* Why Choose Section */}
+          <WhyChooseSection />
 
-        {/* Skills and Tech Section */}
-        <SkillsTechSection />
+          {/* Skills and Tech Section */}
+          <SkillsTechSection />
 
-        {/* Why Leasing Talent Section */}
-        <WhyLeasingSection />
+          {/* Why Leasing Talent Section */}
+          <WhyLeasingSection />
 
-        {/* Delivery Process Section */}
-        <DeliveryProcessSection />
+          {/* Delivery Process Section */}
+          <DeliveryProcessSection />
 
-        {/* More From IQX */}
-        <MoreFromSection />
+          {/* More From IQX */}
+          <MoreFromSection />
 
-        {/* Final CTA Section */}
-        <FinalCTASection />
+          {/* Final CTA Section */}
+          <FinalCTASection />
 
-        {/* CTA Component */}
-        <CTA />
+          {/* CTA Component */}
+          <CTA />
+        </Suspense>
       </div>
       <Footer />
     </div>

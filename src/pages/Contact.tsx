@@ -1,11 +1,20 @@
 
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet";
-import ContactHero from "@/components/Contact/ContactHero";
-import LocationsSection from "@/components/Contact/LocationsSection";
-import ContactFormSection from "@/components/Contact/ContactFormSection";
+
+// Add fallback component for loading state
+const SectionLoader = () => (
+  <div className="flex items-center justify-center py-16">
+    <div className="w-12 h-12 border-4 border-newtheme-purple rounded-full border-t-transparent animate-spin"></div>
+  </div>
+);
+
+// Lazy load components
+const ContactHero = lazy(() => import("@/components/Contact/ContactHero"));
+const LocationsSection = lazy(() => import("@/components/Contact/LocationsSection"));
+const ContactFormSection = lazy(() => import("@/components/Contact/ContactFormSection"));
 
 const Contact = () => {
   const locations = {
@@ -49,8 +58,10 @@ const Contact = () => {
 
       <main>
         <ContactHero />
-        <LocationsSection locations={locations} />
-        <ContactFormSection />
+        <Suspense fallback={<SectionLoader />}>
+          <LocationsSection locations={locations} />
+          <ContactFormSection />
+        </Suspense>
       </main>
 
       <Footer />
