@@ -4,9 +4,8 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import AboutSection from "@/components/Home/AboutSection";
-import SolutionsSection from "@/components/Home/SolutionsSection";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle, Award, Users, Laptop, Briefcase, Code } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -15,10 +14,9 @@ const Index = () => {
       <Navbar />
       <Hero />
       <AboutSection />
-      <SolutionsSection />
       
-      {/* Service Highlights Section */}
-      <section className="py-20 bg-white">
+      {/* Core Services Section */}
+      <section className="py-20 bg-gradient-to-br from-white to-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="mb-4 inline-block bg-blue-100 px-3 py-1 rounded-full">
@@ -46,7 +44,7 @@ const Index = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">Microsoft Power Apps</h3>
                 <p className="text-gray-600 mb-6">
-                  Transform outdated processes into efficient, customized digital experiences. Automate what matters and empower what's next with no-code tools.
+                  Transform outdated processes into efficient, customized digital experiences. Automate what matters and empower what's next.
                 </p>
                 <Link to="/power-apps">
                   <Button className="w-full bg-newtheme-purple hover:bg-newtheme-purple/90">
@@ -70,7 +68,7 @@ const Index = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">Agentic AI</h3>
                 <p className="text-gray-600 mb-6">
-                  Harness the power of autonomous AI agents that can understand, decide, and act on your business needs with minimal human supervision.
+                  Harness the power of autonomous AI agents that understand, decide, and act on your business needs with minimal human supervision.
                 </p>
                 <Link to="/agentic-ai">
                   <Button className="w-full bg-newtheme-purple hover:bg-newtheme-purple/90">
@@ -94,7 +92,7 @@ const Index = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">Agile Development Teams</h3>
                 <p className="text-gray-600 mb-6">
-                  High-performance, cross-functional squads built to ship your digital product faster and with greater quality. Elite teams that work as an extension of your vision.
+                  High-performance, cross-functional squads built to ship your digital product faster and with greater quality.
                 </p>
                 <Link to="/agile-teams">
                   <Button className="w-full bg-newtheme-purple hover:bg-newtheme-purple/90">
@@ -118,7 +116,7 @@ const Index = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">Web & App Development</h3>
                 <p className="text-gray-600 mb-6">
-                  Custom-built cross-platform apps powered by Flutter, React Native, and flexible content architecture. Elegant, high-performance digital products with user-first design.
+                  Custom-built cross-platform apps powered by Flutter, React Native, and flexible content architecture.
                 </p>
                 <Link to="/web-apps">
                   <Button className="w-full bg-newtheme-purple hover:bg-newtheme-purple/90">
@@ -142,7 +140,7 @@ const Index = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">Shopify Website Design</h3>
                 <p className="text-gray-600 mb-6">
-                  Exceptional Shopify experiences engineered for performance and built for growth. Brand-first store design with UX+UI that converts visitors into customers.
+                  Exceptional Shopify experiences engineered for performance and built for growth with brand-first store design.
                 </p>
                 <Link to="/shopify">
                   <Button className="w-full bg-newtheme-purple hover:bg-newtheme-purple/90">
@@ -166,7 +164,7 @@ const Index = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">AI Chat Solutions</h3>
                 <p className="text-gray-600 mb-6">
-                  Advanced conversational AI interfaces that enhance customer engagement and streamline support. Intelligent chatbots that understand context and deliver personalized responses.
+                  Advanced conversational AI interfaces that enhance customer engagement and streamline support.
                 </p>
                 <Link to="/ai-chat">
                   <Button className="w-full bg-newtheme-purple hover:bg-newtheme-purple/90">
@@ -189,7 +187,7 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Why Choose IQBusiness Section */}
+      {/* Why Choose Us Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
@@ -205,16 +203,65 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {whyChooseUs.map((item, index) => (
-                <div key={index} className="flex flex-col items-center text-center p-6">
-                  <div className="h-16 w-16 rounded-full bg-purple-100 flex items-center justify-center mb-4 text-2xl">
-                    {item.icon}
-                  </div>
-                  <h3 className="font-bold text-xl mb-2">{item.title}</h3>
-                  <p className="text-gray-600">{item.description}</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
+                <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center mb-4">
+                  <Award className="h-6 w-6 text-newtheme-purple" />
                 </div>
-              ))}
+                <h3 className="font-bold text-xl mb-2">Expertise</h3>
+                <p className="text-gray-600">Industry leaders with deep knowledge across key business domains</p>
+              </div>
+              
+              <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
+                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+                  <Laptop className="h-6 w-6 text-blue-600" />
+                </div>
+                <h3 className="font-bold text-xl mb-2">Innovation</h3>
+                <p className="text-gray-600">Cutting-edge solutions leveraging the latest technological advancements</p>
+              </div>
+              
+              <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
+                <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center mb-4">
+                  <CheckCircle className="h-6 w-6 text-green-600" />
+                </div>
+                <h3 className="font-bold text-xl mb-2">Results-Driven</h3>
+                <p className="text-gray-600">Focused on delivering measurable outcomes and ROI for your business</p>
+              </div>
+              
+              <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
+                <div className="h-12 w-12 rounded-full bg-pink-100 flex items-center justify-center mb-4">
+                  <Users className="h-6 w-6 text-pink-600" />
+                </div>
+                <h3 className="font-bold text-xl mb-2">Partnership</h3>
+                <p className="text-gray-600">We work alongside you as a collaborative partner, not just a service provider</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Transform Your Business?
+            </h2>
+            <p className="text-xl opacity-80 mb-8 max-w-3xl mx-auto">
+              Let's work together to solve your business challenges and achieve sustainable growth.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact">
+                <Button className="bg-white text-newtheme-purple hover:bg-gray-100 px-8 py-3 text-lg">
+                  Contact Us Today
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link to="/web-apps">
+                <Button variant="outline" className="border-white text-white hover:bg-white/20 px-8 py-3 text-lg">
+                  Explore Our Solutions
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -224,28 +271,5 @@ const Index = () => {
     </div>
   );
 };
-
-const whyChooseUs = [
-  {
-    icon: "🔍",
-    title: "Expertise",
-    description: "Industry leaders with deep knowledge across key business domains and technologies"
-  },
-  {
-    icon: "⚡",
-    title: "Innovation",
-    description: "Cutting-edge solutions that leverage the latest technological advancements"
-  },
-  {
-    icon: "📊",
-    title: "Results-Driven",
-    description: "Focused on delivering measurable outcomes and ROI for your business"
-  },
-  {
-    icon: "🤝",
-    title: "Partnership",
-    description: "We work alongside you as a collaborative partner, not just a service provider"
-  }
-];
 
 export default Index;

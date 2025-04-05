@@ -5,9 +5,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { lazy, Suspense, useState, useEffect } from 'react';
+import { ErrorBoundary } from 'react-error-boundary';
 import NotFound from "./pages/NotFound";
 
-// Lazy load route components with error boundaries
+// Lazy load route components
 const Index = lazy(() => import('./pages/Index'));
 const Shopify = lazy(() => import('./pages/Shopify'));
 const PowerApps = lazy(() => import('./pages/PowerApps'));
@@ -56,8 +57,8 @@ const ErrorFallback = ({ error, resetErrorBoundary }: { error: Error, resetError
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 60 * 1000, // 1 minute
-      gcTime: 5 * 60 * 1000, // 5 minutes (renamed from cacheTime)
+      staleTime: 60 * 1000,
+      gcTime: 5 * 60 * 1000,
       refetchOnWindowFocus: false,
       retry: 1
     },
@@ -68,20 +69,21 @@ const AppRoutes = () => {
   return (
     <>
       <ScrollToTop />
-      <Suspense fallback={<LoadingFallback />}>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/shopify" element={<Shopify />} />
-          <Route path="/power-apps" element={<PowerApps />} />
-          <Route path="/agentic-ai" element={<AgenticAI />} />
-          <Route path="/agile-teams" element={<AgileTeams />} />
-          <Route path="/web-apps" element={<WebApps />} />
-          <Route path="/ai-chat" element={<AIChat />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
+      <ErrorBoundary FallbackComponent={ErrorFallback}>
+        <Suspense fallback={<LoadingFallback />}>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/shopify" element={<Shopify />} />
+            <Route path="/power-apps" element={<PowerApps />} />
+            <Route path="/agentic-ai" element={<AgenticAI />} />
+            <Route path="/agile-teams" element={<AgileTeams />} />
+            <Route path="/web-apps" element={<WebApps />} />
+            <Route path="/ai-chat" element={<AIChat />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </ErrorBoundary>
     </>
   );
 };
