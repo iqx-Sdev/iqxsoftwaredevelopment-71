@@ -14,8 +14,8 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/37f1ae05-8efa-47f2-a0c2-822a886c3534.png" 
-                alt="IQ Business Logo" 
+                src="/lovable-uploads/53caadcf-63a2-4dbd-a5dc-5e78b808af47.png" 
+                alt="IQX Logo" 
                 className="h-10" 
               />
             </Link>
