@@ -1,4 +1,3 @@
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
@@ -141,11 +140,13 @@ const AIChat = () => {
             <div className="max-w-5xl mx-auto">
               <div className="flex flex-col md:flex-row gap-12 items-center">
                 <div className="md:w-1/2 order-2 md:order-1">
-                  <img 
-                    src="/placeholder.svg" 
-                    alt="Stubber Platform" 
-                    className="rounded-xl shadow-lg"
-                  />
+                  <div className="rounded-xl shadow-lg overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/6b99bd87-02b1-4279-9ad8-46ed20ba8d86.png"
+                      alt="Healthcare WhatsApp Chatbot Interface" 
+                      className="w-full h-auto"
+                    />
+                  </div>
                 </div>
                 <div className="md:w-1/2 order-1 md:order-2">
                   <div className="mb-4 inline-block bg-green-100 px-3 py-1 rounded-full">
@@ -314,10 +315,10 @@ const AIChat = () => {
           </div>
         </section>
 
-        {/* Use Cases Section */}
+        {/* Use Cases Section with new visuals */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <div className="mb-4 inline-block bg-green-100 px-3 py-1 rounded-full">
                   <span className="text-green-700 font-medium">Use Cases</span>
@@ -328,34 +329,46 @@ const AIChat = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-3">
+                <div className="bg-white rounded-xl shadow-md overflow-hidden">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
                       <MessageCircle className="h-5 w-5 text-blue-500" />
-                      Customer Support
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">
+                      <h3 className="font-bold text-xl text-gray-800">Customer Support</h3>
+                    </div>
+                    <p className="text-gray-600 mb-6">
                       Automate FAQs, track issues, and intelligently escalate when human support is needed.
                     </p>
-                  </CardContent>
-                </Card>
+                    <div className="rounded-lg overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/eed4baee-2fb7-456d-932f-c9c9e93e8174.png" 
+                        alt="AI Conversation Flow Designer"
+                        className="w-full h-auto"
+                      />
+                    </div>
+                  </div>
+                </div>
                 
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-3">
+                <div className="bg-white rounded-xl shadow-md overflow-hidden">
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
                       <DollarSign className="h-5 w-5 text-green-500" />
-                      Sales Automation
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">
+                      <h3 className="font-bold text-xl text-gray-800">Sales Automation</h3>
+                    </div>
+                    <p className="text-gray-600 mb-6">
                       Qualify leads, share personalized offers, and close deals directly in chat.
                     </p>
-                  </CardContent>
-                </Card>
-                
+                    <div className="rounded-lg overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/a3d391a9-d5e4-4f9a-85c2-6e143cbef900.png" 
+                        alt="E-commerce WhatsApp Bot Interface"
+                        className="w-full h-auto"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                 <Card>
                   <CardHeader>
                     <CardTitle className="flex items-center gap-3">
@@ -388,7 +401,7 @@ const AIChat = () => {
           </div>
         </section>
 
-        {/* Product Suite */}
+        {/* Product Suite - Adding Visual Showcase */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
@@ -401,47 +414,61 @@ const AIChat = () => {
                 </h2>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="flex gap-4">
-                  <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <MessageCircle className="h-6 w-6 text-blue-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl mb-2 text-gray-800">Support Agent</h3>
-                    <p className="text-gray-600">Fast, reliable customer service automation that seamlessly hands off to human agents when needed.</p>
-                  </div>
-                </div>
-                
-                <div className="flex gap-4">
-                  <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <DollarSign className="h-6 w-6 text-green-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl mb-2 text-gray-800">AI Sales Agent</h3>
-                    <p className="text-gray-600">Drive intelligent, high-converting sales conversations that qualify leads and close deals.</p>
+              <div className="flex flex-col md:flex-row gap-8 mb-12">
+                <div className="md:w-1/2">
+                  <div className="bg-gray-50 p-6 rounded-xl shadow-sm h-full">
+                    <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mb-4">
+                      <MessageCircle className="h-6 w-6 text-blue-500" />
+                    </div>
+                    <h3 className="font-bold text-xl mb-4 text-gray-800">AI Conversation Builder</h3>
+                    <p className="text-gray-600 mb-6">Create complex, multi-path conversation flows with our visual designer. Enable your chatbots to handle various user intents and provide personalized responses.</p>
+                    
+                    <div className="rounded-lg overflow-hidden shadow-md">
+                      <img 
+                        src="/lovable-uploads/eed4baee-2fb7-456d-932f-c9c9e93e8174.png" 
+                        alt="AI Conversation Flow Designer Interface" 
+                        className="w-full h-auto"
+                      />
+                    </div>
                   </div>
                 </div>
                 
-                <div className="flex gap-4">
-                  <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <Link className="h-6 w-6 text-purple-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl mb-2 text-gray-800">API Automation</h3>
-                    <p className="text-gray-600">Seamlessly integrate and automate backend processes with your existing tech stack.</p>
+                <div className="md:w-1/2">
+                  <div className="grid grid-cols-1 gap-6 h-full">
+                    <div className="flex gap-4 bg-gray-50 p-5 rounded-xl shadow-sm">
+                      <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-1">
+                        <DollarSign className="h-6 w-6 text-green-500" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-xl mb-2 text-gray-800">AI Sales Agent</h3>
+                        <p className="text-gray-600">Drive intelligent, high-converting sales conversations that qualify leads and close deals.</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-4 bg-gray-50 p-5 rounded-xl shadow-sm">
+                      <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0 mt-1">
+                        <Link className="h-6 w-6 text-purple-500" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-xl mb-2 text-gray-800">API Automation</h3>
+                        <p className="text-gray-600">Seamlessly integrate and automate backend processes with your existing tech stack.</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-4 bg-gray-50 p-5 rounded-xl shadow-sm">
+                      <div className="h-12 w-12 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0 mt-1">
+                        <Bot className="h-6 w-6 text-orange-500" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-xl mb-2 text-gray-800">Virtual Worker</h3>
+                        <p className="text-gray-600">Replicate human tasks across digital systems for streamlined operations.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                
-                <div className="flex gap-4">
-                  <div className="h-12 w-12 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0 mt-1">
-                    <Bot className="h-6 w-6 text-orange-500" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl mb-2 text-gray-800">Virtual Worker</h3>
-                    <p className="text-gray-600">Replicate human tasks across digital systems for streamlined operations.</p>
-                  </div>
-                </div>
-                
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="flex gap-4">
                   <div className="h-12 w-12 rounded-full bg-yellow-100 flex items-center justify-center flex-shrink-0 mt-1">
                     <Database className="h-6 w-6 text-yellow-500" />
@@ -461,6 +488,16 @@ const AIChat = () => {
                     <p className="text-gray-600">Unified experiences across WhatsApp, chat, voice, and more communication channels.</p>
                   </div>
                 </div>
+                
+                <div className="flex gap-4">
+                  <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-1">
+                    <Clock className="h-6 w-6 text-red-500" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl mb-2 text-gray-800">24/7 Availability</h3>
+                    <p className="text-gray-600">Always-on service across time zones with intelligent conversation handling.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -472,7 +509,7 @@ const AIChat = () => {
             <div className="max-w-3xl mx-auto text-center">
               <div className="mb-6">
                 <svg className="h-12 w-12 text-gray-300 mx-auto" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                  <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.855-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                 </svg>
               </div>
               <p className="text-xl md:text-2xl text-gray-700 mb-8">
