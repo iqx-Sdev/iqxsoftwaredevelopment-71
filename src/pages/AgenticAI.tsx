@@ -1,11 +1,10 @@
-
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, ArrowRight, Code, Workflow, Bot, Settings, Book, Blocks, Brain, Shield, BarChart } from "lucide-react";
-import LeadForm from "@/components/LeadForm";
+import AILeadForm from "@/components/AILeadForm";
 
 const AgenticAI = () => {
   return (
@@ -32,9 +31,9 @@ const AgenticAI = () => {
           </div>
         </div>
 
-        {/* Lead Form Section */}
-        <div className="py-16 bg-gradient-to-b from-white to-gray-50">
-          <div className="container mx-auto px-4">
+        {/* Lead Form Section - Enhanced to match Shopify page */}
+        <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
               <div className="lg:col-span-2 flex flex-col justify-center">
                 <div className="mb-8">
@@ -58,15 +57,11 @@ const AgenticAI = () => {
               </div>
               
               <div className="lg:col-span-3">
-                <LeadForm 
-                  title="Get Your Free AI Consultation"
-                  subtitle="Fill out the form below and one of our AI experts will get back to you within 24 hours."
-                  serviceName="Agentic AI services"
-                />
+                <AILeadForm />
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Why Choose Section */}
         <div className="py-20 bg-white">
