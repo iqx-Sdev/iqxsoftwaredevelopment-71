@@ -22,11 +22,13 @@ const Navbar = () => {
           </div>
           
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="nav-link text-white hover:text-pink-400">Services</a>
-            <a href="#benefits" className="nav-link text-white hover:text-pink-400">Benefits</a>
-            <a href="#team" className="nav-link text-white hover:text-pink-400">Team</a>
+          <div className="hidden md:flex items-center space-x-4">
+            <Link to="/power-apps" className="nav-link text-white hover:text-pink-400">Power Apps</Link>
+            <Link to="/agentic-ai" className="nav-link text-white hover:text-pink-400">Agentic AI</Link>
+            <Link to="/agile-teams" className="nav-link text-white hover:text-pink-400">Agile Teams</Link>
+            <Link to="/web-apps" className="nav-link text-white hover:text-pink-400">Web Apps</Link>
             <Link to="/shopify" className="nav-link text-white hover:text-pink-400">Shopify</Link>
+            <Link to="/ai-chat" className="nav-link text-white hover:text-pink-400">AI Chat</Link>
             <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white">
               Contact Us
             </Button>
@@ -48,33 +50,47 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-newtheme-darkgray border-t border-gray-700 py-2">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
-              href="#services"
+            <Link
+              to="/power-apps"
               className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800"
               onClick={() => setIsMenuOpen(false)}
             >
-              Services
-            </a>
-            <a
-              href="#benefits"
+              Power Apps
+            </Link>
+            <Link
+              to="/agentic-ai"
               className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800"
               onClick={() => setIsMenuOpen(false)}
             >
-              Benefits
-            </a>
-            <a
-              href="#team"
+              Agentic AI
+            </Link>
+            <Link
+              to="/agile-teams"
               className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800"
               onClick={() => setIsMenuOpen(false)}
             >
-              Team
-            </a>
+              Agile Teams
+            </Link>
+            <Link
+              to="/web-apps"
+              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Web Apps
+            </Link>
             <Link
               to="/shopify"
               className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800"
               onClick={() => setIsMenuOpen(false)}
             >
               Shopify
+            </Link>
+            <Link
+              to="/ai-chat"
+              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              AI Chat
             </Link>
             <div className="px-3 py-2">
               <Button className="w-full bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600">
