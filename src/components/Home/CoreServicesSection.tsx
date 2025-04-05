@@ -8,20 +8,16 @@ const ServiceCard = ({
   title, 
   description, 
   icon,
-  gradientFrom, 
-  gradientTo, 
   linkTo 
 }: {
   title: string;
   description: string;
   icon: React.ReactNode;
-  gradientFrom: string;
-  gradientTo: string;
   linkTo: string;
 }) => (
   <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all h-full">
-    <div className={`h-32 relative bg-gradient-to-r from-${gradientFrom} to-${gradientTo} flex items-center justify-center`}>
-      <div className="text-white">{icon}</div>
+    <div className="h-32 relative bg-gray-50 flex items-center justify-center">
+      <div className="text-gray-700">{icon}</div>
     </div>
     <div className="p-6">
       <h3 className="text-2xl font-bold text-newtheme-purple mb-3">{title}</h3>
@@ -44,48 +40,36 @@ const CoreServicesSection = () => {
       title: "Microsoft Power Apps",
       description: "Transform outdated processes into efficient, customized digital experiences. Automate what matters and empower what's next.",
       icon: <Workflow size={48} strokeWidth={1.5} />,
-      gradientFrom: "purple-500",
-      gradientTo: "blue-600",
       linkTo: "/power-apps"
     },
     {
       title: "Agentic AI",
       description: "Harness the power of autonomous AI agents that understand, decide, and act on your business needs with minimal human supervision.",
       icon: <Bot size={48} strokeWidth={1.5} />,
-      gradientFrom: "blue-500",
-      gradientTo: "cyan-500",
       linkTo: "/agentic-ai"
     },
     {
       title: "Agile Development Teams",
       description: "High-performance, cross-functional squads built to ship your digital product faster and with greater quality.",
       icon: <Users size={48} strokeWidth={1.5} />,
-      gradientFrom: "green-500",
-      gradientTo: "emerald-600",
       linkTo: "/agile-teams"
     },
     {
       title: "Web & App Development",
       description: "Custom-built cross-platform apps powered by Flutter, React Native, and flexible content architecture.",
       icon: <Code size={48} strokeWidth={1.5} />,
-      gradientFrom: "indigo-500",
-      gradientTo: "purple-600",
       linkTo: "/web-apps"
     },
     {
       title: "Shopify Website Design",
       description: "Exceptional Shopify experiences engineered for performance and built for growth with brand-first store design.",
       icon: <ShoppingCart size={48} strokeWidth={1.5} />,
-      gradientFrom: "pink-500",
-      gradientTo: "rose-600",
       linkTo: "/shopify"
     },
     {
       title: "AI Chat Solutions",
       description: "Advanced conversational AI interfaces that enhance customer engagement and streamline support.",
       icon: <MessagesSquare size={48} strokeWidth={1.5} />,
-      gradientFrom: "blue-500",
-      gradientTo: "sky-600",
       linkTo: "/ai-chat"
     }
   ];
@@ -112,8 +96,6 @@ const CoreServicesSection = () => {
               title={service.title}
               description={service.description}
               icon={service.icon}
-              gradientFrom={service.gradientFrom}
-              gradientTo={service.gradientTo}
               linkTo={service.linkTo}
             />
           ))}
@@ -121,7 +103,7 @@ const CoreServicesSection = () => {
         
         <div className="mt-16 text-center">
           <Link to="/contact">
-            <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-8 py-6 text-lg rounded-lg">
+            <Button className="bg-newtheme-purple hover:bg-newtheme-purple/90 text-white px-8 py-6 text-lg rounded-lg">
               Get In Touch With Our Experts
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
