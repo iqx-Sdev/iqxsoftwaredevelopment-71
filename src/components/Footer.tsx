@@ -1,12 +1,13 @@
 
 import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-maverick-navy text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+          <div className="mb-8 md:mb-0">
             <div className="flex items-center mb-4">
               <img 
                 src="/lovable-uploads/53caadcf-63a2-4dbd-a5dc-5e78b808af47.png" 
@@ -35,39 +36,9 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">AI Automations</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">AI Workflows</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">AI Agents</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Prototyping</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">About Us</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Team</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Careers</a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">Contact</a>
-              </li>
-            </ul>
+            <Link to="/contact" className="px-6 py-3 bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white font-medium rounded-md shadow-md transition-colors">
+              Contact Us
+            </Link>
           </div>
         </div>
         
