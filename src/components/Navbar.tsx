@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,13 +12,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <span className="flex items-center">
+            <Link to="/" className="flex items-center">
               <img 
                 src="/lovable-uploads/37f1ae05-8efa-47f2-a0c2-822a886c3534.png" 
                 alt="IQ Business Logo" 
                 className="h-10" 
               />
-            </span>
+            </Link>
           </div>
           
           {/* Desktop menu */}
@@ -25,6 +26,7 @@ const Navbar = () => {
             <a href="#services" className="nav-link text-white hover:text-pink-400">Services</a>
             <a href="#benefits" className="nav-link text-white hover:text-pink-400">Benefits</a>
             <a href="#team" className="nav-link text-white hover:text-pink-400">Team</a>
+            <Link to="/shopify" className="nav-link text-white hover:text-pink-400">Shopify</Link>
             <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white">
               Contact Us
             </Button>
@@ -67,6 +69,13 @@ const Navbar = () => {
             >
               Team
             </a>
+            <Link
+              to="/shopify"
+              className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Shopify
+            </Link>
             <div className="px-3 py-2">
               <Button className="w-full bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600">
                 Contact Us
