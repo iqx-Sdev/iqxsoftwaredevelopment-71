@@ -1,10 +1,9 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, ArrowRight, Smartphone, Code, Layers, Database, Lightbulb, RefreshCw } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import LeadForm from "@/components/LeadForm";
 
 const WebApps = () => {
@@ -13,50 +12,76 @@ const WebApps = () => {
       <Navbar />
       <div className="flex-grow">
         {/* Hero Section */}
-        <div className="py-20 bg-gradient-to-br from-newtheme-purple to-newtheme-darkgray">
+        <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-5">
+                <span className="text-white font-medium">Web Application Development</span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
                 Web App Development by IQX
               </h1>
-              <p className="text-xl text-gray-100 mb-8">
+              <p className="text-xl text-white/80 mb-8">
                 Custom-built cross-platform apps, powered by Flutter, React Native, and flexible content architecture.
               </p>
-              <p className="text-lg text-gray-200 mb-8">
+              <p className="text-lg text-white/80 mb-8 max-w-3xl mx-auto">
                 "At IQX, we don't just build apps—we engineer elegant, high-performance digital products with user-first design, 
                 scalable architecture, and seamless functionality across iOS, Android, and web. Powered by headless CMS platforms 
                 like Strapi and Umbraco, your content stays as agile as your code."
               </p>
-              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-6 py-3 rounded-lg text-lg">
+              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
                 Talk to Our App Development Team
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>
-        </div>
+        </section>
         
-        {/* Value Proposition */}
-        <div className="py-20 bg-white">
+        {/* Stats Section - similar to Shopify page */}
+        <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-12">
-              <h2 className="text-3xl font-bold text-newtheme-purple mb-6">Your Product, Reimagined for Mobile & Web</h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Your app is more than code—it's a living product powered by dynamic content and intelligent design. We combine Flutter and React Native 
-                with robust, API-first CMS platforms like Strapi and Umbraco, giving your team full control over content without touching the code.
-              </p>
-              <p className="text-lg text-gray-600 mb-8">
-                With IQX, you get a performant, visually refined, and content-flexible application that delights users and adapts to change.
-              </p>
-              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
-                Get Your Free Consultation
-              </Button>
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">
+                  Web App Excellence
+                </h2>
+                <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+                  Real business impact with professional web application development:
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="bg-white p-8 rounded-xl shadow-md">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Check className="h-6 w-6 text-green-500" />
+                    <span className="font-bold text-2xl text-newtheme-purple">65%</span>
+                  </div>
+                  <p className="text-gray-600">Faster time-to-market with our development approach</p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-xl shadow-md">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Check className="h-6 w-6 text-green-500" />
+                    <span className="font-bold text-2xl text-newtheme-purple">40%</span>
+                  </div>
+                  <p className="text-gray-600">Improvement in user engagement metrics</p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-xl shadow-md">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Check className="h-6 w-6 text-green-500" />
+                    <span className="font-bold text-2xl text-newtheme-purple">98%</span>
+                  </div>
+                  <p className="text-gray-600">Client satisfaction with delivered applications</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Lead Form Section */}
-        <div className="py-16 bg-gradient-to-b from-white to-gray-50">
-          <div className="container mx-auto px-4">
+        {/* Lead Form Section - Styled like Shopify */}
+        <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
               <div className="lg:col-span-2 flex flex-col justify-center">
                 <div className="mb-8">
@@ -88,201 +113,188 @@ const WebApps = () => {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Why Choose IQX */}
-        <div className="py-20 bg-gray-50">
+        {/* Value Proposition - Styled like Shopify */}
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-newtheme-purple mb-6">Why Choose IQX for Web App Development?</h2>
-              <p className="text-xl text-gray-600 mb-4">Looking for a Bespoke App Experience?</p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <Card className="shadow-lg border border-gray-100">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Lightbulb className="h-5 w-5 text-pink-500" />
-                    Design That Thinks Ahead
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    We blend UX strategy with visual storytelling to create interfaces users love to engage with. 
-                    Our UI is tightly coupled with content systems that let you evolve your message anytime.
+            <div className="max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                  <div className="mb-4 inline-block bg-blue-100 px-3 py-1 rounded-full">
+                    <span className="text-blue-700 font-medium">Our Approach</span>
+                  </div>
+                  <h2 className="text-3xl font-bold text-newtheme-purple mb-6">Your Product, Reimagined for Mobile & Web</h2>
+                  <p className="text-gray-600 text-lg mb-8">
+                    Your app is more than code—it's a living product powered by dynamic content and intelligent design. We combine Flutter and React Native 
+                    with robust, API-first CMS platforms like Strapi and Umbraco, giving your team full control over content without touching the code.
                   </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="shadow-lg border border-gray-100">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <RefreshCw className="h-5 w-5 text-pink-500" />
-                    Performance That Scales
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    Whether you're launching an MVP or scaling globally, our builds are fast, modular, and API-ready—fueled 
-                    by CMS platforms like Strapi and Umbraco for seamless content delivery.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="shadow-lg border border-gray-100">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Smartphone className="h-5 w-5 text-pink-500" />
-                    One Codebase. All Devices.
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    With Flutter and React Native, your app performs natively across devices. And with headless CMS integration, 
-                    you manage content from one central source, powering every screen.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="text-center mt-12">
-              <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10">
-                See Our Work
-              </Button>
+                  <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
+                    Get Your Free Consultation
+                  </Button>
+                </div>
+                <div className="relative h-80 md:h-96 w-full rounded-2xl overflow-hidden shadow-xl">
+                  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-blue-500/20"></div>
+                  <img 
+                    src="/lovable-uploads/37f1ae05-8efa-47f2-a0c2-822a886c3534.png" 
+                    alt="Web app design showcase" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* What We Offer */}
-        <div className="py-20 bg-white">
+        {/* Why Choose IQX - Feature Grid */}
+        <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-newtheme-purple mb-12">What We Offer</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {whatWeOffer.map((service, index) => (
-                <Card key={index} className="shadow-lg border border-gray-100 hover:shadow-xl transition-all">
-                  <CardHeader>
-                    <CardTitle>{service.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600 mb-6">{service.description}</p>
-                    <Button variant="link" className="text-pink-500 hover:text-pink-600 p-0">
-                      {service.buttonText}
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-purple-100 px-3 py-1 rounded-full">
+                  <span className="text-purple-700 font-medium">Why Choose Us</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">Why Choose IQX for Web App Development?</h2>
+                <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+                  Looking for a Bespoke App Experience? Our data-driven development philosophy sets your brand apart from the rest.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {whatWeOffer.slice(0, 6).map((item, index) => (
+                  <Card key={index} className="shadow-lg border border-gray-100 hover:shadow-xl transition-all">
+                    <CardHeader>
+                      <CardTitle>{item.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600 mb-6">{item.description}</p>
+                      <Button variant="link" className="text-pink-500 hover:text-pink-600 p-0">
+                        {item.buttonText}
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Process Section */}
-        <div className="py-20 bg-gray-50">
+        {/* Design Process Section */}
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-newtheme-purple mb-4">Our Design + Build Process</h2>
-            <p className="text-center text-gray-600 text-lg mb-12">From Idea to App Store</p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
-              {process.map((step, index) => (
-                <div key={index} className="relative">
-                  <div className="bg-white rounded-xl p-8 shadow-lg h-full">
-                    <div className="bg-gradient-to-r from-pink-500 to-blue-500 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mb-6">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-green-100 px-3 py-1 rounded-full">
+                  <span className="text-green-700 font-medium">Our Process</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">Our Design + Build Process</h2>
+                <p className="text-gray-600 text-lg">From Idea to App Store: Our 5-Step Approach</p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                {process.map((step, index) => (
+                  <div key={index} className="relative">
+                    <div className="bg-white rounded-xl p-8 shadow-lg h-full">
+                      <div className="bg-gradient-to-r from-pink-500 to-blue-500 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mb-6">
+                        {index + 1}
+                      </div>
+                      <h3 className="text-xl font-bold text-newtheme-purple mb-4">{step.title}</h3>
+                      <p className="text-gray-600">{step.description}</p>
+                    </div>
+                    {index < process.length - 1 && (
+                      <div className="hidden lg:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 w-8 h-8">
+                        <ArrowRight className="text-gray-300" />
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Tech Stack Benefits - Dark Section */}
+        <section className="py-16 bg-gradient-to-br from-gray-900 to-newtheme-purple text-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
+                  <span className="text-white font-medium">Technology Stack</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Flutter, React Native + Headless CMS?</h2>
+                <p className="text-xl opacity-80 mb-6 max-w-3xl mx-auto">The Modern Stack for Speed, Flexibility & Control</p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {techBenefits.slice(0, 9).map((benefit, index) => (
+                  <div key={index} className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+                    <div className="bg-gradient-to-r from-pink-500 to-blue-500 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold shrink-0">
                       {index + 1}
                     </div>
-                    <h3 className="text-xl font-bold text-newtheme-purple mb-4">{step.title}</h3>
-                    <p className="text-gray-600">{step.description}</p>
+                    <p className="text-gray-100">{benefit}</p>
                   </div>
-                  {index < process.length - 1 && (
-                    <div className="hidden lg:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 w-8 h-8">
-                      <ArrowRight className="text-gray-300" />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-center mt-12">
-              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
-                Start Your Project
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* Tech Stack Benefits */}
-        <div className="py-20 bg-gradient-to-br from-newtheme-purple to-newtheme-darkgray">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-white mb-6">Why Flutter, React Native + Headless CMS?</h2>
-            <p className="text-center text-gray-300 text-lg mb-12">The Modern Stack for Speed, Flexibility & Control</p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {techBenefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                  <div className="bg-gradient-to-r from-pink-500 to-blue-500 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold shrink-0">
-                    {index + 1}
-                  </div>
-                  <p className="text-gray-100">{benefit}</p>
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-center mt-12">
-              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-6 py-3 rounded-lg text-lg">
-                Learn More About Our Tech Stack
-              </Button>
-            </div>
-          </div>
-        </div>
+        </section>
 
         {/* More From IQX */}
-        <div className="py-20 bg-white">
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-newtheme-purple mb-12">More From IQX</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {moreServices.map((service, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="bg-pink-100 rounded-full p-2">
-                    <Check className="h-6 w-6 text-pink-500" />
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-newtheme-purple mb-6">More From IQX</h2>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                {moreServices.map((service, index) => (
+                  <div key={index} className="flex items-start gap-4">
+                    <div className="bg-pink-100 rounded-full p-2">
+                      <Check className="h-6 w-6 text-pink-500" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold text-newtheme-purple mb-1">{service.title}</h3>
+                      <p className="text-gray-600">{service.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-newtheme-purple mb-1">{service.title}</h3>
-                    <p className="text-gray-600">{service.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-center mt-12">
-              <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10">
-                Explore All Services
-              </Button>
+                ))}
+              </div>
+              
+              <div className="text-center mt-12">
+                <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10">
+                  Explore All Services
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Final CTA */}
-        <div className="py-20 bg-gradient-to-r from-pink-500/90 to-blue-500/90 text-white">
+        <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Let's Build an App Worth Downloading</h2>
-            <p className="text-lg mb-8 max-w-3xl mx-auto">
-              Whether you're launching a new app, scaling a product, or transforming an old system, IQX is your partner in crafting beautiful, 
-              performant, and content-flexible digital products. Powered by Flutter, React Native, and CMS platforms like Strapi and Umbraco, 
-              we make app development smarter, faster, and more empowering.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-white text-blue-600 hover:bg-gray-100">
-                Talk to Our App Development Team
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/20">
-                Schedule a Free Consultation
-              </Button>
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Let's Build an App Worth Downloading
+              </h2>
+              <p className="text-xl opacity-80 mb-8 max-w-3xl mx-auto">
+                Whether you're launching a new app, scaling a product, or transforming an old system, IQX is your partner in crafting beautiful, 
+                performant, and content-flexible digital products. Powered by Flutter, React Native, and CMS platforms like Strapi and Umbraco, 
+                we make app development smarter, faster, and more empowering.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button className="bg-white text-blue-600 hover:bg-gray-100">
+                  Talk to Our App Development Team
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+                <Button variant="outline" className="border-white text-white hover:bg-white/20">
+                  Schedule a Free Consultation
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
       <Footer />
     </div>
@@ -357,8 +369,7 @@ const techBenefits = [
   "Role-Based Access: Strapi and Umbraco allow secure content control across teams.",
   "Scalable Architecture: Add features, integrations, and content layers as you grow.",
   "Rich Media Support: Easily manage assets like images, videos, and documents.",
-  "Localization & Multisite Ready: Global-ready experiences powered by CMS flexibility.",
-  "CI/CD + CMS Harmony: Agile dev meets agile content."
+  "Localization & Multisite Ready: Global-ready experiences powered by CMS flexibility."
 ];
 
 const moreServices = [
