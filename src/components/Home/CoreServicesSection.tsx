@@ -1,32 +1,27 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Code, ShoppingCart, Workflow, Robot, Users, MessagesSquare } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ 
   title, 
   description, 
-  imageSrc, 
+  icon,
   gradientFrom, 
   gradientTo, 
   linkTo 
 }: {
   title: string;
   description: string;
-  imageSrc: string;
+  icon: React.ReactNode;
   gradientFrom: string;
   gradientTo: string;
   linkTo: string;
 }) => (
-  <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all">
-    <div className="h-48 relative">
-      <img 
-        src={imageSrc} 
-        alt={title} 
-        className="w-full h-full object-cover"
-      />
-      <div className={`absolute inset-0 bg-gradient-to-r from-${gradientFrom}/40 to-${gradientTo}/40 mix-blend-multiply`}></div>
+  <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all h-full">
+    <div className={`h-32 relative bg-gradient-to-r from-${gradientFrom} to-${gradientTo} flex items-center justify-center`}>
+      <div className="text-white">{icon}</div>
     </div>
     <div className="p-6">
       <h3 className="text-2xl font-bold text-newtheme-purple mb-3">{title}</h3>
@@ -48,7 +43,7 @@ const CoreServicesSection = () => {
     {
       title: "Microsoft Power Apps",
       description: "Transform outdated processes into efficient, customized digital experiences. Automate what matters and empower what's next.",
-      imageSrc: "/lovable-uploads/c6f6534a-9f95-42c7-97d1-69f4442bc917.png",
+      icon: <Workflow size={48} strokeWidth={1.5} />,
       gradientFrom: "purple-500",
       gradientTo: "blue-600",
       linkTo: "/power-apps"
@@ -56,7 +51,7 @@ const CoreServicesSection = () => {
     {
       title: "Agentic AI",
       description: "Harness the power of autonomous AI agents that understand, decide, and act on your business needs with minimal human supervision.",
-      imageSrc: "/lovable-uploads/9f35ae55-312d-4ec6-93e2-4b68924a4037.png",
+      icon: <Robot size={48} strokeWidth={1.5} />,
       gradientFrom: "blue-500",
       gradientTo: "cyan-500",
       linkTo: "/agentic-ai"
@@ -64,7 +59,7 @@ const CoreServicesSection = () => {
     {
       title: "Agile Development Teams",
       description: "High-performance, cross-functional squads built to ship your digital product faster and with greater quality.",
-      imageSrc: "/lovable-uploads/71017797-223d-4dc7-ac2e-7dc6883755c8.png",
+      icon: <Users size={48} strokeWidth={1.5} />,
       gradientFrom: "green-500",
       gradientTo: "emerald-600",
       linkTo: "/agile-teams"
@@ -72,7 +67,7 @@ const CoreServicesSection = () => {
     {
       title: "Web & App Development",
       description: "Custom-built cross-platform apps powered by Flutter, React Native, and flexible content architecture.",
-      imageSrc: "/lovable-uploads/11746b3e-8d9f-4102-9a07-c9f1be35fd9b.png",
+      icon: <Code size={48} strokeWidth={1.5} />,
       gradientFrom: "indigo-500",
       gradientTo: "purple-600",
       linkTo: "/web-apps"
@@ -80,7 +75,7 @@ const CoreServicesSection = () => {
     {
       title: "Shopify Website Design",
       description: "Exceptional Shopify experiences engineered for performance and built for growth with brand-first store design.",
-      imageSrc: "/lovable-uploads/5bbd9e64-af22-4b2d-b12a-53a195d0201c.png",
+      icon: <ShoppingCart size={48} strokeWidth={1.5} />,
       gradientFrom: "pink-500",
       gradientTo: "rose-600",
       linkTo: "/shopify"
@@ -88,7 +83,7 @@ const CoreServicesSection = () => {
     {
       title: "AI Chat Solutions",
       description: "Advanced conversational AI interfaces that enhance customer engagement and streamline support.",
-      imageSrc: "/lovable-uploads/41b419da-57e6-4dce-bd8f-b8f3acffa74a.png",
+      icon: <MessagesSquare size={48} strokeWidth={1.5} />,
       gradientFrom: "blue-500",
       gradientTo: "sky-600",
       linkTo: "/ai-chat"
@@ -116,7 +111,7 @@ const CoreServicesSection = () => {
               key={service.title}
               title={service.title}
               description={service.description}
-              imageSrc={service.imageSrc}
+              icon={service.icon}
               gradientFrom={service.gradientFrom}
               gradientTo={service.gradientTo}
               linkTo={service.linkTo}
