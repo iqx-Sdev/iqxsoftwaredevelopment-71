@@ -132,6 +132,7 @@ export default {
 				'peach-teal-gradient': 'linear-gradient(135deg, #FEC6A1 0%, #6BBFAE 100%)',
 				'blue-teal-gradient': 'linear-gradient(135deg, #003B7A 0%, #00C2CB 100%)',
 				'purple-gray-gradient': 'linear-gradient(135deg, #47216c 0%, #232933 100%)',
+				'purple-blue-gradient': 'linear-gradient(135deg, #47216c 0%, #3b82f6 100%)'
 			},
 		}
 	},

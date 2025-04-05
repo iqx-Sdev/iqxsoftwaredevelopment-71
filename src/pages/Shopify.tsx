@@ -6,234 +6,242 @@ import ShopifyLeadForm from "@/components/ShopifyLeadForm";
 
 const Shopify = () => {
   return (
-    <div className="min-h-screen">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-newtheme-purple to-newtheme-darkgray py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <img 
-            src="/lovable-uploads/17da4675-01fe-498e-a39e-74c35ddb035f.png"
-            alt=""
-            className="w-full h-full object-cover opacity-30"
-          />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-              Shopify Website Design by IQX
-            </h1>
-            <p className="text-xl text-gray-100 mb-8">
-              Exceptional Shopify experiences engineered for performance and built for growth.
-            </p>
-            <p className="text-lg text-gray-200 mb-8">
-              At IQX, we create high-performance digital storefronts that capture your brand's unique identity 
-              and deliver real business results. Whether you're using Shopify Standard or Shopify Plus, 
-              our seasoned team of creative strategists, UX specialists, and Shopify experts tailors every 
-              project to exceed your expectations.
-            </p>
-            <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-6 py-3 rounded-lg text-lg">
-              Talk to Our Shopify Design Team
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
-        </div>
-      </section>
-      
-      {/* Lead Form - Prominent Position */}
-      <section className="py-16 bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
-            <div className="lg:col-span-2 flex flex-col justify-center">
-              <div className="mb-8">
-                <span className="inline-block px-3 py-1 rounded-full bg-pink-100 text-pink-800 font-semibold text-sm mb-4">Ready to Start?</span>
-                <h2 className="text-3xl font-bold text-newtheme-purple mb-6">Transform Your Online Store Today</h2>
-                <p className="text-lg text-gray-600 mb-6">
-                  Fill out our consultation form and get personalized recommendations for your Shopify store from our expert team.
-                </p>
-                
-                <div className="space-y-4">
-                  {leadFormBenefits.map((benefit, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <div className="bg-green-100 rounded-full p-1">
-                        <Check className="h-5 w-5 text-green-600" />
-                      </div>
-                      <p className="text-gray-700">{benefit}</p>
-                    </div>
-                  ))}
-                </div>
+      <div className="flex-grow">
+        {/* Hero Section */}
+        <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-5">
+                <span className="text-white font-medium">Shopify Website Design</span>
               </div>
-            </div>
-            
-            <div className="lg:col-span-3">
-              <ShopifyLeadForm />
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Value Proposition */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-newtheme-purple mb-6">Your Digital Storefront, Perfected</h2>
-              <p className="text-gray-600 text-lg mb-8">
-                Your website is more than just an online presence—it's a dynamic sales engine. With IQX, you 
-                get a conversion-optimized Shopify site that's as visually stunning as it is functionally robust. 
-                We harness the power of both Shopify Standard and Shopify Plus to provide scalable, secure, 
-                and high-performing ecommerce solutions.
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                Shopify Website Design by IQX
+              </h1>
+              <p className="text-xl text-white/80 mb-8">
+                Exceptional Shopify experiences engineered for performance and built for growth.
               </p>
-              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
-                Get Your Free Consultation
+              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+                Talk to Our Shopify Design Team
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
-            <div className="relative h-80 md:h-96 w-full rounded-2xl overflow-hidden shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-blue-500/20"></div>
-              <img 
-                src="/lovable-uploads/91f9a8d9-c7f0-4b15-ac36-b1f2ee41c021.png" 
-                alt="Shopify design showcase" 
-                className="w-full h-full object-cover"
-              />
+          </div>
+        </section>
+        
+        {/* Stats Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">
+                  Shopify Design Excellence
+                </h2>
+                <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+                  Real business impact with professional Shopify design:
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="bg-white p-8 rounded-xl shadow-md">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Check className="h-6 w-6 text-green-500" />
+                    <span className="font-bold text-2xl text-newtheme-purple">58%</span>
+                  </div>
+                  <p className="text-gray-600">Average increase in conversion rates</p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-xl shadow-md">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Check className="h-6 w-6 text-green-500" />
+                    <span className="font-bold text-2xl text-newtheme-purple">42%</span>
+                  </div>
+                  <p className="text-gray-600">Reduction in cart abandonment</p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-xl shadow-md">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Check className="h-6 w-6 text-green-500" />
+                    <span className="font-bold text-2xl text-newtheme-purple">95%</span>
+                  </div>
+                  <p className="text-gray-600">Customer satisfaction rate</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      
-      {/* Why Choose IQX */}
-      <section className="py-20 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-newtheme-purple mb-4">Why Choose IQX for Shopify Design?</h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              Looking for Shopify Design Expertise? In today's competitive market, a beautifully designed website 
-              is only part of the equation. At IQX, we focus on guiding your visitors through seamless user journeys 
-              that transform browsers into loyal customers. Our data-driven design philosophy sets your brand apart from the rest.
-            </p>
-            <Button variant="outline" className="mt-8 border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10">
-              See Our Work
-            </Button>
-          </div>
-        </div>
-      </section>
-      
-      {/* What We Offer */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-newtheme-purple mb-4">What We Offer</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {offerItems.map((item, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
-                <h3 className="text-xl font-bold text-newtheme-purple mb-4">{item.title}</h3>
-                <p className="text-gray-600 mb-6">{item.description}</p>
-                <Button variant="link" className="text-pink-500 hover:text-pink-600 p-0">
-                  {item.buttonText}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Our Design Process */}
-      <section className="py-20 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-newtheme-purple mb-4">Our Design Process</h2>
-            <p className="text-gray-600 text-lg">From Concept to Conversion: Our 4-Step Approach</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => (
-              <div key={index} className="relative">
-                <div className="bg-white rounded-xl p-8 shadow-lg h-full">
-                  <div className="bg-gradient-to-r from-pink-500 to-blue-500 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mb-6">
-                    {index + 1}
+        </section>
+        
+        {/* Lead Form - Prominent Position */}
+        <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+              <div className="lg:col-span-2 flex flex-col justify-center">
+                <div className="mb-8">
+                  <span className="inline-block px-3 py-1 rounded-full bg-pink-100 text-pink-800 font-semibold text-sm mb-4">Ready to Start?</span>
+                  <h2 className="text-3xl font-bold text-newtheme-purple mb-6">Transform Your Online Store Today</h2>
+                  <p className="text-lg text-gray-600 mb-6">
+                    Fill out our consultation form and get personalized recommendations for your Shopify store from our expert team.
+                  </p>
+                  
+                  <div className="space-y-4">
+                    {leadFormBenefits.map((benefit, index) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <div className="bg-green-100 rounded-full p-1">
+                          <Check className="h-5 w-5 text-green-600" />
+                        </div>
+                        <p className="text-gray-700">{benefit}</p>
+                      </div>
+                    ))}
                   </div>
-                  <h3 className="text-xl font-bold text-newtheme-purple mb-4">{step.title}</h3>
-                  <p className="text-gray-600">{step.description}</p>
                 </div>
-                {index < processSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 w-8 h-8">
-                    <ArrowRight className="text-gray-300" />
+              </div>
+              
+              <div className="lg:col-span-3">
+                <ShopifyLeadForm />
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Value Proposition */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                  <div className="mb-4 inline-block bg-blue-100 px-3 py-1 rounded-full">
+                    <span className="text-blue-700 font-medium">Our Approach</span>
                   </div>
-                )}
-              </div>
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
-              Start Your Project
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
-        </div>
-      </section>
-      
-      {/* Why Shopify is Superior */}
-      <section className="py-20 bg-gradient-to-br from-newtheme-purple to-newtheme-darkgray">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4">Why Shopify is the Superior Platform</h2>
-            <p className="text-gray-300 text-lg">10 Reasons Shopify Stands Out:</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {shopifyBenefits.map((benefit, index) => (
-              <div key={index} className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <div className="bg-gradient-to-r from-pink-500 to-blue-500 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold shrink-0">
-                  {index + 1}
+                  <h2 className="text-3xl font-bold text-newtheme-purple mb-6">Your Digital Storefront, Perfected</h2>
+                  <p className="text-gray-600 text-lg mb-8">
+                    Your website is more than just an online presence—it's a dynamic sales engine. With IQX, you 
+                    get a conversion-optimized Shopify site that's as visually stunning as it is functionally robust.
+                  </p>
+                  <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
+                    Get Your Free Consultation
+                  </Button>
                 </div>
-                <div>
-                  <h3 className="text-white font-bold mb-1">{benefit.title}</h3>
-                  <p className="text-gray-300">{benefit.description}</p>
+                <div className="relative h-80 md:h-96 w-full rounded-2xl overflow-hidden shadow-xl">
+                  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-blue-500/20"></div>
+                  <img 
+                    src="/lovable-uploads/91f9a8d9-c7f0-4b15-ac36-b1f2ee41c021.png" 
+                    alt="Shopify design showcase" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
-            ))}
+            </div>
           </div>
-          
-          <div className="text-center mt-12">
-            <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-6 py-3 rounded-lg text-lg">
-              Discover More Benefits
-            </Button>
-          </div>
-        </div>
-      </section>
-      
-      {/* More From IQX */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-newtheme-purple mb-4">More From IQX</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {moreServices.map((service, index) => (
-              <div key={index} className="flex items-start gap-4">
-                <div className="bg-pink-100 rounded-full p-2">
-                  <Check className="h-6 w-6 text-pink-500" />
+        </section>
+        
+        {/* Why Choose IQX - Feature Grid */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-purple-100 px-3 py-1 rounded-full">
+                  <span className="text-purple-700 font-medium">Why Choose Us</span>
                 </div>
-                <div>
-                  <h3 className="text-lg font-bold text-newtheme-purple mb-1">{service.title}</h3>
-                  <p className="text-gray-600">{service.description}</p>
-                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">Why Choose IQX for Shopify Design?</h2>
+                <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+                  In today's competitive market, a beautifully designed website is only part of the equation. 
+                  Our data-driven design philosophy sets your brand apart from the rest.
+                </p>
               </div>
-            ))}
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {offerItems.slice(0, 6).map((item, index) => (
+                  <div key={index} className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
+                    <h3 className="text-xl font-bold text-newtheme-purple mb-4">{item.title}</h3>
+                    <p className="text-gray-600 mb-6">{item.description}</p>
+                    <Button variant="link" className="text-pink-500 hover:text-pink-600 p-0">
+                      {item.buttonText}
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-          
-          <div className="text-center mt-12">
-            <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10">
-              Explore All Services
-            </Button>
+        </section>
+        
+        {/* Our Design Process */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-green-100 px-3 py-1 rounded-full">
+                  <span className="text-green-700 font-medium">Our Process</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">Our Design Process</h2>
+                <p className="text-gray-600 text-lg">From Concept to Conversion: Our 4-Step Approach</p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {processSteps.map((step, index) => (
+                  <div key={index} className="relative">
+                    <div className="bg-white rounded-xl p-8 shadow-lg h-full">
+                      <div className="bg-gradient-to-r from-pink-500 to-blue-500 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mb-6">
+                        {index + 1}
+                      </div>
+                      <h3 className="text-xl font-bold text-newtheme-purple mb-4">{step.title}</h3>
+                      <p className="text-gray-600">{step.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      
+        </section>
+        
+        {/* Why Shopify is Superior - Dark Section */}
+        <section className="py-16 bg-gradient-to-br from-gray-900 to-newtheme-purple text-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
+                  <span className="text-white font-medium">Platform Benefits</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Shopify is the Superior Platform</h2>
+                <p className="text-xl opacity-80 max-w-3xl mx-auto">10 Reasons Shopify Stands Out:</p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {shopifyBenefits.map((benefit, index) => (
+                  <div key={index} className="flex items-start gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+                    <div className="bg-gradient-to-r from-pink-500 to-blue-500 rounded-full w-8 h-8 flex items-center justify-center text-white font-bold shrink-0">
+                      {index + 1}
+                    </div>
+                    <div>
+                      <h3 className="text-white font-bold mb-1">{benefit.title}</h3>
+                      <p className="text-gray-300">{benefit.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Final CTA */}
+        <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600 text-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Ready to transform your online store?
+              </h2>
+              <p className="text-xl opacity-80 mb-8">
+                Beautiful design. Better conversions. Bigger sales.
+              </p>
+              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+                Start Your Shopify Project
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+          </div>
+        </section>
+      </div>
       <Footer />
     </div>
   );
@@ -247,7 +255,7 @@ const leadFormBenefits = [
   "Response within 24 hours",
 ];
 
-// Keep the existing data variables for other sections
+// Keep the existing data variables
 const offerItems = [
   {
     title: "Brand-First Shopify Store Design",

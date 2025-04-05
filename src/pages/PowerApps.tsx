@@ -3,12 +3,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, ExternalLink } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import CTA from "@/components/CTA";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -17,204 +15,220 @@ import { Checkbox } from "@/components/ui/checkbox";
 
 const PowerApps = () => {
   return (
-    <div className="min-h-screen">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-newtheme-purple to-newtheme-darkgray py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <img 
-            src="/lovable-uploads/17da4675-01fe-498e-a39e-74c35ddb035f.png"
-            alt=""
-            className="w-full h-full object-cover opacity-30"
-          />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-              Automate What Matters. Empower What's Next.
-            </h1>
-            <p className="text-xl text-gray-100 mb-6">
-              Struggling with manual, repetitive tasks? Frustrated by long onboarding, disconnected systems, or inefficient workflows?
-            </p>
-            <p className="text-lg text-gray-200 mb-8">
-              Power Apps is your gateway to automation, agility, and control.
-              At IQX, we help organizations like yours turn outdated processes into efficient, customized digital experiences—with rapid development and low-code tools built on the trusted Microsoft ecosystem.
-            </p>
-            <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-6 py-3 rounded-lg text-lg">
-              Let's build the future of your business—today
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+      <div className="flex-grow">
+        {/* Hero Section */}
+        <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-5">
+                <span className="text-white font-medium">Microsoft Power Platform</span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                Automate What Matters. Empower What's Next.
+              </h1>
+              <p className="text-xl text-white/80 mb-8">
+                Transform outdated processes into efficient, customized digital experiences with Microsoft Power Apps.
+              </p>
+              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+                Let's build the future of your business—today
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
           </div>
-        </div>
-      </section>
-      
-      {/* Why Use Power Apps */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-newtheme-purple mb-4">Why You Should Be Using Power Apps</h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              Power Apps is more than just an app builder—it's a low-code powerhouse within the Microsoft Power Platform. 
-              It empowers business users and IT teams to solve real problems with apps that are easy to create, deploy, and scale.
-            </p>
-            <div className="mt-6">
-              <p className="text-lg font-semibold text-green-600">
-                ✅ 86% of Fortune 500 companies use Power Apps to drive efficiency and innovation across departments.
+        </section>
+
+        {/* Stats Section - similar to AI Chat page */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">
+                  Power Apps Impact
+                </h2>
+                <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+                  Real business results with Power Apps automation:
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="bg-white p-8 rounded-xl shadow-md">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Check className="h-6 w-6 text-green-500" />
+                    <span className="font-bold text-2xl text-newtheme-purple">86%</span>
+                  </div>
+                  <p className="text-gray-600">of Fortune 500 companies use Power Apps</p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-xl shadow-md">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Check className="h-6 w-6 text-green-500" />
+                    <span className="font-bold text-2xl text-newtheme-purple">74%</span>
+                  </div>
+                  <p className="text-gray-600">Reduction in app development costs</p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-xl shadow-md">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Check className="h-6 w-6 text-green-500" />
+                    <span className="font-bold text-2xl text-newtheme-purple">188%</span>
+                  </div>
+                  <p className="text-gray-600">ROI when implementing Power Apps solutions</p>
+                </div>
+              </div>
+              
+              <p className="text-center mt-10 text-lg text-gray-600">
+                Empower your team with no-code tools while your business reaps the benefits.
               </p>
             </div>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {powerAppsFeatures.map((feature, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
-                <h3 className="text-xl font-bold text-newtheme-purple mb-4">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+        </section>
+        
+        {/* Key Components - Styled like AI Chat Features */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-purple-100 px-3 py-1 rounded-full">
+                  <span className="text-purple-700 font-medium">Key Components</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">
+                  4 Key Components of Power Apps
+                </h2>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Key Components */}
-      <section className="py-20 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-newtheme-purple mb-4">4 Key Components of Power Apps</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {componentItems.map((item, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg h-full">
-                <div className="text-3xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold text-newtheme-purple mb-4">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {componentItems.map((item, index) => (
+                  <div key={index} className="bg-gray-50 p-6 rounded-lg">
+                    <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-4 text-xl">
+                      {item.icon}
+                    </div>
+                    <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+                    <p className="text-gray-600 text-sm">{item.description}</p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Services We Offer */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-newtheme-purple mb-4">What Can IQX Do for You?</h2>
-            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              At IQX, we specialize in creating custom Power Apps that remove friction, automate workflows, and put data to work. 
-              From ideation to deployment, we help you streamline operations and unlock new possibilities.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {serviceItems.map((service, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-newtheme-purple">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Common Business Challenges */}
-      <section className="py-20 bg-gradient-to-br from-newtheme-purple to-newtheme-darkgray text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Common Business Challenges We Solve</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {challenges.map((challenge, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
-                <div className="text-2xl mb-4">{challenge.icon}</div>
-                <h3 className="text-xl font-bold mb-4">{challenge.title}</h3>
-                <p className="text-gray-300 mb-6">{challenge.description}</p>
-                <Button className="bg-white hover:bg-gray-100 text-newtheme-purple w-full">
-                  {challenge.buttonText}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Why IQX */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-newtheme-purple mb-4">Why IQX?</h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {whyIQXReasons.map((reason, index) => (
-              <div key={index} className="flex flex-col items-center text-center p-6">
-                <div className="text-3xl mb-4">{reason.icon}</div>
-                <p className="text-gray-600 font-medium">{reason.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Client Spotlight */}
-      <section className="py-20 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-newtheme-purple mb-4">Client Spotlight</h2>
-            <p className="text-gray-600 text-lg">
-              See how Iqx Solutions leveraged our Power Apps expertise to unlock agility and operational excellence.
-            </p>
-            <p className="text-gray-600 text-lg mt-2">
-              Join the businesses transforming with IQX.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Placeholder for client success stories - can be updated later with real case studies */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="h-40 bg-gray-200 rounded-md mb-4"></div>
-              <h3 className="text-xl font-bold text-newtheme-purple mb-2">Client Success Story</h3>
-              <p className="text-gray-600">Coming soon...</p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="h-40 bg-gray-200 rounded-md mb-4"></div>
-              <h3 className="text-xl font-bold text-newtheme-purple mb-2">Client Success Story</h3>
-              <p className="text-gray-600">Coming soon...</p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="h-40 bg-gray-200 rounded-md mb-4"></div>
-              <h3 className="text-xl font-bold text-newtheme-purple mb-2">Client Success Story</h3>
-              <p className="text-gray-600">Coming soon...</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       
-      {/* Final CTA */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-newtheme-purple to-newtheme-darkgray rounded-2xl shadow-2xl p-12 text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Let's Build Smarter, Together
-            </h2>
-            <p className="text-lg max-w-3xl mx-auto mb-8">
-              You're not just building apps—you're building a smarter way of working.
-              Partner with IQX to bring your Power Apps vision to life.
-            </p>
-            <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-6 py-3 rounded-lg text-lg">
-              Schedule a Free Consultation
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+        {/* Services We Offer - Card Format */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-green-100 px-3 py-1 rounded-full">
+                  <span className="text-green-700 font-medium">Our Services</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">
+                  What Can IQX Do for You?
+                </h2>
+                <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+                  From ideation to deployment, we help you streamline operations and unlock new possibilities.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {serviceItems.slice(0, 6).map((service, index) => (
+                  <Card key={index} className="border-none shadow-md">
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-3 text-newtheme-purple">
+                        <div className="text-xl">{service.title.split(" ")[0]}</div>
+                        {service.title.split(" ").slice(1).join(" ")}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600">{service.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       
+        {/* Common Business Challenges - Dark Section */}
+        <section className="py-16 bg-gradient-to-br from-gray-900 to-newtheme-purple text-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
+                  <span className="text-white font-medium">Business Challenges</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  Common Business Challenges We Solve
+                </h2>
+                <p className="text-xl opacity-80 max-w-3xl mx-auto">
+                  Real problems require real solutions. Here's how we help.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {challenges.map((challenge, index) => (
+                  <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="text-2xl">{challenge.icon}</div>
+                      <h3 className="font-bold text-lg">{challenge.title}</h3>
+                    </div>
+                    <p className="text-white/70 mb-6">{challenge.description}</p>
+                    <Button className="bg-white hover:bg-gray-100 text-newtheme-purple w-full">
+                      {challenge.buttonText}
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Why IQX - Simple Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-blue-100 px-3 py-1 rounded-full">
+                  <span className="text-blue-700 font-medium">Why Choose Us</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">
+                  Why IQX?
+                </h2>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {whyIQXReasons.map((reason, index) => (
+                  <div key={index} className="flex flex-col items-center text-center p-6">
+                    <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center mb-4 text-xl">
+                      {reason.icon}
+                    </div>
+                    <p className="text-gray-700 font-medium">{reason.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Final CTA */}
+        <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600 text-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Ready to redefine your business processes?
+              </h2>
+              <p className="text-xl opacity-80 mb-8">
+                Let's build smarter solutions together with Power Apps.
+              </p>
+              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+                Schedule a Free Consultation
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+          </div>
+        </section>
+        
+      </div>
       <Footer />
     </div>
   );
