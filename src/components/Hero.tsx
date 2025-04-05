@@ -40,29 +40,29 @@ const Hero = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=500&h=500&q=80" 
-                  alt="Business meeting" 
+                  src="/lovable-uploads/043f060f-4ca1-4331-968c-ecb3e3b6d290.png" 
+                  alt="Professional working in office" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg mt-8">
                 <img 
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=500&h=500&q=80" 
-                  alt="Data analysis" 
+                  src="/lovable-uploads/eb0a740d-3dc9-43b3-8ad8-e035b3a81170.png" 
+                  alt="Collaborative workspace" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=500&h=500&q=80" 
-                  alt="Technology solutions" 
+                  src="/lovable-uploads/c6f6534a-9f95-42c7-97d1-69f4442bc917.png" 
+                  alt="Business professional" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg mt-8">
                 <img 
-                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=500&h=500&q=80" 
-                  alt="Business growth" 
+                  src="/lovable-uploads/11746b3e-8d9f-4102-9a07-c9f1be35fd9b.png" 
+                  alt="Team meeting" 
                   className="w-full h-full object-cover"
                 />
               </div>

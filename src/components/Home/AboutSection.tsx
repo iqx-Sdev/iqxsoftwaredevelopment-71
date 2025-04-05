@@ -26,7 +26,7 @@ const AboutSection = () => {
           </div>
           <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-xl">
             <img 
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&h=800&q=80" 
+              src="/lovable-uploads/9f35ae55-312d-4ec6-93e2-4b68924a4037.png" 
               alt="Business consultancy meeting" 
               className="w-full h-full object-cover"
             />

@@ -35,10 +35,13 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Power Apps */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all">
-              <div className="h-48 bg-gradient-to-r from-purple-500 to-blue-600">
-                <div className="h-full w-full flex items-center justify-center">
-                  <span className="text-4xl">⚡</span>
-                </div>
+              <div className="h-48 relative">
+                <img 
+                  src="/lovable-uploads/c6f6534a-9f95-42c7-97d1-69f4442bc917.png" 
+                  alt="Business professional working on laptop" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/40 to-blue-600/40 mix-blend-multiply"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">Microsoft Power Apps</h3>
@@ -56,10 +59,13 @@ const Index = () => {
             
             {/* Agentic AI */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all">
-              <div className="h-48 bg-gradient-to-r from-blue-500 to-cyan-500">
-                <div className="h-full w-full flex items-center justify-center">
-                  <span className="text-4xl">🤖</span>
-                </div>
+              <div className="h-48 relative">
+                <img 
+                  src="/lovable-uploads/9f35ae55-312d-4ec6-93e2-4b68924a4037.png" 
+                  alt="Team collaborating at a meeting" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/40 to-cyan-500/40 mix-blend-multiply"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">Agentic AI</h3>
@@ -77,10 +83,13 @@ const Index = () => {
             
             {/* Agile Teams */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all">
-              <div className="h-48 bg-gradient-to-r from-green-500 to-emerald-600">
-                <div className="h-full w-full flex items-center justify-center">
-                  <span className="text-4xl">👥</span>
-                </div>
+              <div className="h-48 relative">
+                <img 
+                  src="/lovable-uploads/71017797-223d-4dc7-ac2e-7dc6883755c8.png" 
+                  alt="Business meeting discussion" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-green-500/40 to-emerald-600/40 mix-blend-multiply"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">Agile Development Teams</h3>
@@ -98,10 +107,13 @@ const Index = () => {
             
             {/* Web Apps */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all">
-              <div className="h-48 bg-gradient-to-r from-indigo-500 to-purple-600">
-                <div className="h-full w-full flex items-center justify-center">
-                  <span className="text-4xl">💻</span>
-                </div>
+              <div className="h-48 relative">
+                <img 
+                  src="/lovable-uploads/11746b3e-8d9f-4102-9a07-c9f1be35fd9b.png" 
+                  alt="Woman at business meeting" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/40 to-purple-600/40 mix-blend-multiply"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">Web & App Development</h3>
@@ -119,10 +131,13 @@ const Index = () => {
             
             {/* Shopify */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all">
-              <div className="h-48 bg-gradient-to-r from-pink-500 to-rose-600">
-                <div className="h-full w-full flex items-center justify-center">
-                  <span className="text-4xl">🛒</span>
-                </div>
+              <div className="h-48 relative">
+                <img 
+                  src="/lovable-uploads/5bbd9e64-af22-4b2d-b12a-53a195d0201c.png" 
+                  alt="Man working at computer" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-500/40 to-rose-600/40 mix-blend-multiply"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">Shopify Website Design</h3>
@@ -140,10 +155,13 @@ const Index = () => {
             
             {/* AI Chat */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all">
-              <div className="h-48 bg-gradient-to-r from-blue-500 to-sky-600">
-                <div className="h-full w-full flex items-center justify-center">
-                  <span className="text-4xl">💬</span>
-                </div>
+              <div className="h-48 relative">
+                <img 
+                  src="/lovable-uploads/41b419da-57e6-4dce-bd8f-b8f3acffa74a.png" 
+                  alt="Team collaborating in modern office" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/40 to-sky-600/40 mix-blend-multiply"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-newtheme-purple mb-3">AI Chat Solutions</h3>

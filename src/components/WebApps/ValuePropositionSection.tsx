@@ -22,7 +22,7 @@ const ValuePropositionSection = () => {
             </div>
             <div className="relative h-80 md:h-96 w-full rounded-2xl overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&h=800&q=80" 
+                src="/lovable-uploads/5bbd9e64-af22-4b2d-b12a-53a195d0201c.png" 
                 alt="Modern web app development" 
                 className="w-full h-full object-cover"
               />
