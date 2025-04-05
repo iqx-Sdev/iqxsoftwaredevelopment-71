@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -56,7 +57,7 @@ const WebApps = () => {
                     <Check className="h-6 w-6 text-green-500" />
                     <span className="font-bold text-2xl text-newtheme-purple">65%</span>
                   </div>
-                  <p className="text-gray-600">Faster time-to-market with our development approach</p>
+                  <p className="text-gray-600">Faster time-to-market with our Flutter and React Native development approach</p>
                 </div>
                 
                 <div className="bg-white p-8 rounded-xl shadow-md">
@@ -88,7 +89,7 @@ const WebApps = () => {
                   <span className="inline-block px-3 py-1 rounded-full bg-pink-100 text-pink-800 font-semibold text-sm mb-4">Ready to Start?</span>
                   <h2 className="text-3xl font-bold text-newtheme-purple mb-6">Transform Your Web Application Today</h2>
                   <p className="text-lg text-gray-600 mb-6">
-                    Fill out our consultation form and get personalized recommendations for your web app from our expert team.
+                    Fill out our consultation form and get personalized recommendations for your Flutter or React Native web app from our expert team.
                   </p>
                   
                   <div className="space-y-4">
@@ -107,7 +108,7 @@ const WebApps = () => {
               <div className="lg:col-span-3">
                 <LeadForm 
                   title="Get Your Free Web App Consultation"
-                  subtitle="Fill out the form below and one of our web app experts will get back to you within 24 hours."
+                  subtitle="Fill out the form below and one of our Flutter and React Native experts will get back to you within 24 hours."
                   serviceName="web app development services"
                 />
               </div>
@@ -155,7 +156,7 @@ const WebApps = () => {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">Why Choose IQX for Web App Development?</h2>
                 <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-                  Looking for a Bespoke App Experience? Our data-driven development philosophy sets your brand apart from the rest.
+                  Looking for a Bespoke App Experience? Our data-driven Flutter and React Native development philosophy sets your brand apart from the rest.
                 </p>
               </div>
               
@@ -279,7 +280,7 @@ const WebApps = () => {
               </h2>
               <p className="text-xl opacity-80 mb-8 max-w-3xl mx-auto">
                 Whether you're launching a new app, scaling a product, or transforming an old system, IQX is your partner in crafting beautiful, 
-                performant, and content-flexible digital products. Powered by Flutter, React Native, and CMS platforms like Strapi and Umbraco, 
+                performant, and content-flexible digital products. Powered by Flutter or React Native, and CMS platforms like Strapi and Umbraco, 
                 we make app development smarter, faster, and more empowering.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -303,7 +304,7 @@ const WebApps = () => {
 // Lead form benefits list
 const leadFormBenefits = [
   "Free no-obligation consultation",
-  "Expert app design and development advice",
+  "Expert Flutter and React Native app development advice",
   "Custom strategy for your business",
   "Response within 24 hours",
 ];
@@ -326,12 +327,12 @@ const whatWeOffer = [
   },
   {
     title: "MVP to Full Scale",
-    description: "Start lean, scale fast. We design flexible foundations, with CMS support to grow and iterate at speed.",
+    description: "Start lean, scale fast. We design flexible foundations with Flutter or React Native, with CMS support to grow and iterate at speed.",
     buttonText: "Start Your Build"
   },
   {
     title: "App Redesigns & Rebuilds",
-    description: "Modernize legacy apps with contemporary tech, modular design, and content systems that empower your team.",
+    description: "Modernize legacy apps with Flutter or React Native, modular design, and content systems that empower your team.",
     buttonText: "Let's Reimagine It"
   }
 ];
@@ -360,8 +361,8 @@ const process = [
 ];
 
 const techBenefits = [
-  "Cross-Platform Agility: Build once, deploy to iOS, Android, and web.",
-  "Native-Like Performance: Smooth animations and interactions.",
+  "Cross-Platform Agility: Build once with Flutter or React Native, deploy to iOS, Android, and web.",
+  "Native-Like Performance: Smooth animations and interactions with Flutter and React Native.",
   "Faster Time to Market: Modular code meets real-time content updates.",
   "Strapi & Umbraco Integration: Update app content without deploying code.",
   "Content API Power: REST or GraphQL APIs for flexible data delivery.",
@@ -374,11 +375,11 @@ const techBenefits = [
 const moreServices = [
   {
     title: "CMS Strategy & Implementation",
-    description: "We help you choose and configure the right CMS (Strapi, Umbraco, or others) for your business model."
+    description: "We help you choose and configure the right CMS (Strapi, Umbraco, or others) for your Flutter or React Native app."
   },
   {
     title: "UX Research & Prototyping",
-    description: "User testing and rapid prototypes that connect design with real content."
+    description: "User testing and rapid prototypes that connect design with real content for Flutter and React Native apps."
   },
   {
     title: "API Development & Backend Integration",
@@ -386,7 +387,7 @@ const moreServices = [
   },
   {
     title: "Ongoing Retainers",
-    description: "From content updates to feature rollouts—we're your long-term product partner."
+    description: "From content updates to feature rollouts in Flutter or React Native—we're your long-term product partner."
   }
 ];
 
