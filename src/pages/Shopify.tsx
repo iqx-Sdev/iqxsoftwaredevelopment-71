@@ -1,8 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ShopifyLeadForm from "@/components/ShopifyLeadForm";
 
 const Shopify = () => {
   return (
@@ -36,6 +36,38 @@ const Shopify = () => {
               Talk to Our Shopify Design Team
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+          </div>
+        </div>
+      </section>
+      
+      {/* Lead Form - Prominent Position */}
+      <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+            <div className="lg:col-span-2 flex flex-col justify-center">
+              <div className="mb-8">
+                <span className="inline-block px-3 py-1 rounded-full bg-pink-100 text-pink-800 font-semibold text-sm mb-4">Ready to Start?</span>
+                <h2 className="text-3xl font-bold text-newtheme-purple mb-6">Transform Your Online Store Today</h2>
+                <p className="text-lg text-gray-600 mb-6">
+                  Fill out our consultation form and get personalized recommendations for your Shopify store from our expert team.
+                </p>
+                
+                <div className="space-y-4">
+                  {leadFormBenefits.map((benefit, index) => (
+                    <div key={index} className="flex items-start gap-3">
+                      <div className="bg-green-100 rounded-full p-1">
+                        <Check className="h-5 w-5 text-green-600" />
+                      </div>
+                      <p className="text-gray-700">{benefit}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            
+            <div className="lg:col-span-3">
+              <ShopifyLeadForm />
+            </div>
           </div>
         </div>
       </section>
@@ -202,36 +234,20 @@ const Shopify = () => {
         </div>
       </section>
       
-      {/* Final CTA */}
-      <section className="py-20 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">
-              Let's Build Something Beautiful Together
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto mb-8 text-lg">
-              Whether you're launching your first Shopify site, revamping an existing store, or exploring headless commerce solutions, 
-              IQX is your partner for exceptional design and performance. We work with both Shopify Standard and Shopify Plus to tailor 
-              the perfect solution for your business.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
-                Talk to Our Shopify Design Team
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10">
-                Schedule a Free Consultation
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-      
       <Footer />
     </div>
   );
 };
 
+// Lead form benefits list
+const leadFormBenefits = [
+  "Free no-obligation consultation",
+  "Expert Shopify design advice",
+  "Custom strategy for your business",
+  "Response within 24 hours",
+];
+
+// Keep the existing data variables for other sections
 const offerItems = [
   {
     title: "Brand-First Shopify Store Design",
