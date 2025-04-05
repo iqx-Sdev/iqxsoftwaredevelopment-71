@@ -17,21 +17,28 @@
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
-    <!-- Preconnect to important domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Improved preconnect setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.gpteng.co" crossorigin>
     
-    <!-- Adding Aptos font from Google Fonts with display=swap for better performance -->
+    <!-- Preload critical resources -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aptos:wght@400;500;600;700&display=swap">
     
     <!-- Preload critical assets -->
+    <link rel="preload" href="/src/index.css" as="style">
+    <link rel="preload" href="/src/main.tsx" as="script" type="module">
+    <link rel="preload" as="image" href="/lovable-uploads/53caadcf-63a2-4dbd-a5dc-5e78b808af47.png">
     <link rel="preload" as="image" href="/lovable-uploads/17da4675-01fe-498e-a39e-74c35ddb035f.png">
     <link rel="preload" as="image" href="/lovable-uploads/6b99bd87-02b1-4279-9ad8-46ed20ba8d86.png">
-    <link rel="preload" as="image" href="/lovable-uploads/53caadcf-63a2-4dbd-a5dc-5e78b808af47.png">
     
     <!-- Add DNS prefetch for external resources -->
     <link rel="dns-prefetch" href="https://cdn.gpteng.co">
+    
+    <!-- Improve app initial load -->
+    <link rel="prefetch" href="/src/pages/Index.tsx" as="script">
+    <link rel="prefetch" href="/src/components/Navbar.tsx" as="script">
+    <link rel="prefetch" href="/src/components/Footer.tsx" as="script">
   </head>
 
   <body>
