@@ -7,16 +7,6 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { lazy, Suspense, useState, useEffect } from 'react';
 import NotFound from "./pages/NotFound";
 
-// Create a better loading component with fallback
-const PageLoader = () => (
-  <div className="flex items-center justify-center min-h-screen bg-white">
-    <div className="flex flex-col items-center">
-      <div className="w-16 h-16 border-4 border-newtheme-purple rounded-full border-t-transparent animate-spin mb-4"></div>
-      <p className="text-newtheme-purple font-medium">Loading...</p>
-    </div>
-  </div>
-);
-
 // Lazy load route components with error boundaries
 const Index = lazy(() => import('./pages/Index'));
 const Shopify = lazy(() => import('./pages/Shopify'));
@@ -77,20 +67,18 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/shopify" element={<Shopify />} />
-              <Route path="/power-apps" element={<PowerApps />} />
-              <Route path="/agentic-ai" element={<AgenticAI />} />
-              <Route path="/agile-teams" element={<AgileTeams />} />
-              <Route path="/web-apps" element={<WebApps />} />
-              <Route path="/ai-chat" element={<AIChat />} />
-              <Route path="/contact" element={<Contact />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/shopify" element={<Shopify />} />
+            <Route path="/power-apps" element={<PowerApps />} />
+            <Route path="/agentic-ai" element={<AgenticAI />} />
+            <Route path="/agile-teams" element={<AgileTeams />} />
+            <Route path="/web-apps" element={<WebApps />} />
+            <Route path="/ai-chat" element={<AIChat />} />
+            <Route path="/contact" element={<Contact />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

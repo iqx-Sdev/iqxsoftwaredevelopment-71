@@ -1,26 +1,17 @@
 
-import React, { Suspense } from "react";
+import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/WebApps/HeroSection";
-
-// Add fallback component for loading state
-const SectionLoader = () => (
-  <div className="flex items-center justify-center py-16">
-    <div className="w-12 h-12 border-4 border-newtheme-purple rounded-full border-t-transparent animate-spin"></div>
-  </div>
-);
-
-// Lazy load the remaining sections
-const StatsSection = React.lazy(() => import("@/components/WebApps/StatsSection"));
-const LeadFormSection = React.lazy(() => import("@/components/WebApps/LeadFormSection"));
-const ValuePropositionSection = React.lazy(() => import("@/components/WebApps/ValuePropositionSection"));
-const WhyChooseSection = React.lazy(() => import("@/components/WebApps/WhyChooseSection"));
-const ProcessSection = React.lazy(() => import("@/components/WebApps/ProcessSection"));
-const TechStackSection = React.lazy(() => import("@/components/WebApps/TechStackSection"));
-const MoreFromSection = React.lazy(() => import("@/components/WebApps/MoreFromSection"));
-const FinalCTASection = React.lazy(() => import("@/components/WebApps/FinalCTASection"));
-const DesignShowcaseSection = React.lazy(() => import("@/components/WebApps/DesignShowcaseSection"));
+import StatsSection from "@/components/WebApps/StatsSection";
+import LeadFormSection from "@/components/WebApps/LeadFormSection";
+import ValuePropositionSection from "@/components/WebApps/ValuePropositionSection";
+import WhyChooseSection from "@/components/WebApps/WhyChooseSection";
+import ProcessSection from "@/components/WebApps/ProcessSection";
+import TechStackSection from "@/components/WebApps/TechStackSection";
+import MoreFromSection from "@/components/WebApps/MoreFromSection";
+import FinalCTASection from "@/components/WebApps/FinalCTASection";
+import DesignShowcaseSection from "@/components/WebApps/DesignShowcaseSection";
 
 const WebApps = () => {
   return (
@@ -28,17 +19,15 @@ const WebApps = () => {
       <Navbar />
       <div className="flex-grow">
         <HeroSection />
-        <Suspense fallback={<SectionLoader />}>
-          <StatsSection />
-          <LeadFormSection />
-          <ValuePropositionSection />
-          <DesignShowcaseSection />
-          <WhyChooseSection />
-          <ProcessSection />
-          <TechStackSection />
-          <MoreFromSection />
-          <FinalCTASection />
-        </Suspense>
+        <StatsSection />
+        <LeadFormSection />
+        <ValuePropositionSection />
+        <DesignShowcaseSection />
+        <WhyChooseSection />
+        <ProcessSection />
+        <TechStackSection />
+        <MoreFromSection />
+        <FinalCTASection />
       </div>
       <Footer />
     </div>
