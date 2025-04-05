@@ -12,20 +12,29 @@ const Shopify = () => {
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-5">
-                <span className="text-white font-medium">Shopify Website Design</span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="max-w-xl">
+                <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full mb-5">
+                  <span className="text-white font-medium">Shopify Website Design</span>
+                </div>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                  Shopify Website Design by IQX
+                </h1>
+                <p className="text-xl text-white/80 mb-8">
+                  Exceptional Shopify experiences engineered for performance and built for growth.
+                </p>
+                <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+                  Talk to Our Shopify Design Team
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                Shopify Website Design by IQX
-              </h1>
-              <p className="text-xl text-white/80 mb-8">
-                Exceptional Shopify experiences engineered for performance and built for growth.
-              </p>
-              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
-                Talk to Our Shopify Design Team
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <div className="relative hidden lg:block">
+                <img 
+                  src="/lovable-uploads/635e1354-6078-476e-a647-c2d5340f8844.png" 
+                  alt="Digital storefront interface" 
+                  className="rounded-xl shadow-2xl w-2/3 mx-auto"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -122,13 +131,21 @@ const Shopify = () => {
                     Get Your Free Consultation
                   </Button>
                 </div>
-                <div className="relative h-80 md:h-96 w-full rounded-2xl overflow-hidden shadow-xl">
-                  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-blue-500/20"></div>
-                  <img 
-                    src="/lovable-uploads/91f9a8d9-c7f0-4b15-ac36-b1f2ee41c021.png" 
-                    alt="Shopify design showcase" 
-                    className="w-full h-full object-cover"
-                  />
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="rounded-lg overflow-hidden shadow-xl">
+                    <img 
+                      src="/lovable-uploads/9fdf3eef-0ab7-42c8-a13f-a2cb44cad407.png"
+                      alt="Mobile app interface" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="rounded-lg overflow-hidden shadow-xl mt-8">
+                    <img 
+                      src="/lovable-uploads/a9ef1970-ba1a-4294-8c6f-c1ed4f9dda3e.png"
+                      alt="Shopify app interface" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -190,6 +207,67 @@ const Shopify = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Website Portfolio */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-blue-100 px-3 py-1 rounded-full">
+                  <span className="text-blue-700 font-medium">Our Work</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">Website Design Portfolio</h2>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                  See our latest Shopify and e-commerce projects
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="overflow-hidden rounded-lg shadow-lg group">
+                  <div className="relative h-60">
+                    <img 
+                      src="/lovable-uploads/77479e54-2790-4b90-982a-54bbd8e631f5.png" 
+                      alt="Project management dashboard" 
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-6 bg-white">
+                    <h3 className="text-lg font-bold text-newtheme-purple">Admin Dashboard</h3>
+                    <p className="text-gray-600 mt-2">Modern admin interface for e-commerce management</p>
+                  </div>
+                </div>
+                
+                <div className="overflow-hidden rounded-lg shadow-lg group">
+                  <div className="relative h-60">
+                    <img 
+                      src="/lovable-uploads/635e1354-6078-476e-a647-c2d5340f8844.png" 
+                      alt="Mobile map interface" 
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-6 bg-white">
+                    <h3 className="text-lg font-bold text-newtheme-purple">Store Locator</h3>
+                    <p className="text-gray-600 mt-2">Interactive map to find physical store locations</p>
+                  </div>
+                </div>
+                
+                <div className="overflow-hidden rounded-lg shadow-lg group">
+                  <div className="relative h-60">
+                    <img 
+                      src="/lovable-uploads/9fdf3eef-0ab7-42c8-a13f-a2cb44cad407.png" 
+                      alt="Healthcare app interface" 
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-6 bg-white">
+                    <h3 className="text-lg font-bold text-newtheme-purple">Healthcare Portal</h3>
+                    <p className="text-gray-600 mt-2">Patient-focused healthcare booking system</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

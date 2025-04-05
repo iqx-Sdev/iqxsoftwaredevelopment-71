@@ -20,13 +20,38 @@ const ValuePropositionSection = () => {
                 Get Your Free Consultation
               </Button>
             </div>
-            <div className="relative h-80 md:h-96 w-full rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src="/lovable-uploads/5bbd9e64-af22-4b2d-b12a-53a195d0201c.png" 
-                alt="Modern web app development" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-500/30 mix-blend-overlay"></div>
+            <div className="relative">
+              <div className="grid grid-cols-2 gap-3">
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="/lovable-uploads/b4c8b66a-8da8-4636-8c43-d355fb188f22.png" 
+                    alt="Mobile app user interface showing trip metrics" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-lg mt-6">
+                  <img 
+                    src="/lovable-uploads/a9ef1970-ba1a-4294-8c6f-c1ed4f9dda3e.png" 
+                    alt="Mobile app onboarding screen" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="/lovable-uploads/9fdf3eef-0ab7-42c8-a13f-a2cb44cad407.png" 
+                    alt="Location tracking app interface" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-lg mt-6">
+                  <img 
+                    src="/lovable-uploads/635e1354-6078-476e-a647-c2d5340f8844.png" 
+                    alt="Mobile app map interface" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 mix-blend-overlay pointer-events-none"></div>
             </div>
           </div>
         </div>

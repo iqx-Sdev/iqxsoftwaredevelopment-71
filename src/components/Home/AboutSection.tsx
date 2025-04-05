@@ -26,8 +26,8 @@ const AboutSection = () => {
           </div>
           <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-xl">
             <img 
-              src="/lovable-uploads/9f35ae55-312d-4ec6-93e2-4b68924a4037.png" 
-              alt="Business consultancy meeting" 
+              src="/lovable-uploads/77479e54-2790-4b90-982a-54bbd8e631f5.png" 
+              alt="Project management dashboard" 
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-newtheme-purple/30 to-blue-500/30 mix-blend-overlay"></div>

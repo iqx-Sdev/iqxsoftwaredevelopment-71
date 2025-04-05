@@ -11,6 +11,7 @@ import ProcessSection from "@/components/WebApps/ProcessSection";
 import TechStackSection from "@/components/WebApps/TechStackSection";
 import MoreFromSection from "@/components/WebApps/MoreFromSection";
 import FinalCTASection from "@/components/WebApps/FinalCTASection";
+import DesignShowcaseSection from "@/components/WebApps/DesignShowcaseSection";
 
 const WebApps = () => {
   return (
@@ -21,6 +22,7 @@ const WebApps = () => {
         <StatsSection />
         <LeadFormSection />
         <ValuePropositionSection />
+        <DesignShowcaseSection />
         <WhyChooseSection />
         <ProcessSection />
         <TechStackSection />
