@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -127,8 +126,7 @@ const WebApps = () => {
                   </div>
                   <h2 className="text-3xl font-bold text-newtheme-purple mb-6">Your Product, Reimagined for Mobile & Web</h2>
                   <p className="text-gray-600 text-lg mb-8">
-                    Your app is more than code—it's a living product powered by dynamic content and intelligent design. We combine Flutter and React Native 
-                    with robust, API-first CMS platforms like Strapi and Umbraco, giving your team full control over content without touching the code.
+                    Your app is more than code, it's a living product powered by dynamic content and intelligent design. We use Flutter or React Native with robust, API-first CMS platforms like Strapi and Umbraco, giving your team full control over content without touching the code.
                   </p>
                   <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
                     Get Your Free Consultation
