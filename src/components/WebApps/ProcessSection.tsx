@@ -38,15 +38,15 @@ const ProcessSection = () => {
             <p className="text-gray-600 text-lg">From Idea to App Store: Our 5-Step Approach</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {process.map((step, index) => (
               <div key={index} className="relative group">
                 <div className="bg-white rounded-xl p-8 shadow-lg h-full transition-all duration-300 hover:shadow-xl border border-transparent hover:border-blue-100 group-hover:-translate-y-1">
-                  <div className="bg-gradient-to-r from-pink-500 to-blue-500 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold mb-6 transform transition-transform group-hover:scale-110">
+                  <div className="bg-gradient-to-r from-pink-500 to-blue-500 rounded-full w-14 h-14 flex items-center justify-center text-white font-bold mb-8 transform transition-transform group-hover:scale-110">
                     {index + 1}
                   </div>
-                  <h3 className="text-xl font-bold text-newtheme-purple mb-4">{step.title}</h3>
-                  <p className="text-gray-600">{step.description}</p>
+                  <h3 className="text-xl font-bold text-newtheme-purple mb-5">{step.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{step.description}</p>
                 </div>
                 {index < process.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 w-8 h-8 text-blue-300 group-hover:text-blue-500 transition-colors">
