@@ -28,6 +28,31 @@ function ScrollToTop() {
   return null;
 }
 
+// Loading fallback component
+const LoadingFallback = () => (
+  <div className="flex items-center justify-center min-h-screen">
+    <div className="text-newtheme-purple font-semibold">Loading...</div>
+  </div>
+);
+
+// Error fallback component
+const ErrorFallback = ({ error, resetErrorBoundary }: { error: Error, resetErrorBoundary: () => void }) => {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-red-50 px-4">
+      <div className="text-center">
+        <h1 className="text-2xl font-bold text-red-600 mb-4">Something went wrong</h1>
+        <p className="text-gray-700 mb-4">{error.message}</p>
+        <button 
+          onClick={resetErrorBoundary} 
+          className="bg-newtheme-purple text-white px-4 py-2 rounded-md hover:bg-newtheme-purple/90"
+        >
+          Try again
+        </button>
+      </div>
+    </div>
+  );
+};
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -39,25 +64,42 @@ const queryClient = new QueryClient({
   },
 });
 
+const AppRoutes = () => {
+  return (
+    <>
+      <ScrollToTop />
+      <Suspense fallback={<LoadingFallback />}>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/shopify" element={<Shopify />} />
+          <Route path="/power-apps" element={<PowerApps />} />
+          <Route path="/agentic-ai" element={<AgenticAI />} />
+          <Route path="/agile-teams" element={<AgileTeams />} />
+          <Route path="/web-apps" element={<WebApps />} />
+          <Route path="/ai-chat" element={<AIChat />} />
+          <Route path="/contact" element={<Contact />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
+    </>
+  );
+};
+
 const App = () => {
-  // Add error handling for the entire app
   const [error, setError] = useState<Error | null>(null);
 
+  const handleError = (error: Error) => {
+    console.error("Application error:", error);
+    setError(error);
+  };
+
+  const resetError = () => {
+    setError(null);
+  };
+
   if (error) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-red-50 px-4">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-red-600 mb-4">Something went wrong</h1>
-          <p className="text-gray-700 mb-4">{error.message}</p>
-          <button 
-            onClick={() => window.location.reload()} 
-            className="bg-newtheme-purple text-white px-4 py-2 rounded-md hover:bg-newtheme-purple/90"
-          >
-            Reload Application
-          </button>
-        </div>
-      </div>
-    );
+    return <ErrorFallback error={error} resetErrorBoundary={resetError} />;
   }
 
   return (
@@ -66,19 +108,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/shopify" element={<Shopify />} />
-            <Route path="/power-apps" element={<PowerApps />} />
-            <Route path="/agentic-ai" element={<AgenticAI />} />
-            <Route path="/agile-teams" element={<AgileTeams />} />
-            <Route path="/web-apps" element={<WebApps />} />
-            <Route path="/ai-chat" element={<AIChat />} />
-            <Route path="/contact" element={<Contact />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <AppRoutes />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
