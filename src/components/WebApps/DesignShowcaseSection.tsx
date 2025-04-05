@@ -1,110 +1,116 @@
 
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselNext, 
+  CarouselPrevious 
+} from "@/components/ui/carousel";
 
 const DesignShowcaseSection = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="mb-4 inline-block bg-pink-100 px-3 py-1 rounded-full">
-              <span className="text-pink-700 font-medium">Design Showcase</span>
+              <span className="text-pink-800 font-medium">Web App Designs</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">
-              Beautiful, Functional App Design
+              Web Application Design Showcase
             </h2>
-            <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-              Our apps aren't just functional—they're beautiful. We combine stunning UI with
-              intuitive UX to create digital products users love to engage with.
+            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+              Beautiful and functional interfaces built for real-world business problems
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <div className="bg-blue-50 rounded-2xl p-8 h-full">
-                <div className="relative mx-auto max-w-xs">
-                  <img
-                    src="/lovable-uploads/9fdf3eef-0ab7-42c8-a13f-a2cb44cad407.png"
-                    alt="Healthcare app interface"
-                    className="rounded-xl shadow-lg mx-auto"
-                  />
-                  <div className="absolute -bottom-6 -right-6">
-                    <div className="bg-white rounded-full p-4 shadow-lg">
-                      <div className="bg-gradient-to-r from-pink-500 to-blue-500 rounded-full w-12 h-12"></div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-6xl mx-auto"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <Card className="overflow-hidden border-none shadow-lg">
+                  <CardContent className="p-0">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/914737f9-1a98-46d7-bb9c-332d9cc6b211.png" 
+                        alt="E-commerce web app interface" 
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                      />
                     </div>
-                  </div>
-                </div>
-                <div className="mt-12 text-center">
-                  <h3 className="text-xl font-bold text-newtheme-purple mb-2">Healthcare Solution</h3>
-                  <p className="text-gray-600 mb-4">Patient management and appointment booking made simple</p>
-                  <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10">
-                    View Case Study <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 gap-8">
-              <div className="bg-purple-50 rounded-2xl p-6">
-                <div className="flex items-center gap-6">
-                  <div className="flex-shrink-0">
-                    <img
-                      src="/lovable-uploads/635e1354-6078-476e-a647-c2d5340f8844.png"
-                      alt="Map interface"
-                      className="w-32 h-auto rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-newtheme-purple mb-2">Location Services</h3>
-                    <p className="text-gray-600 mb-2">Smart geolocation with interactive mapping</p>
-                    <Button variant="link" className="text-pink-500 hover:text-pink-600 p-0">
-                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </div>
-                </div>
-              </div>
+                    <div className="p-6">
+                      <h3 className="font-bold text-lg text-newtheme-purple mb-2">E-commerce Platform</h3>
+                      <p className="text-gray-600 text-sm">Modern shopping experience with user-centric design</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
               
-              <div className="bg-pink-50 rounded-2xl p-6">
-                <div className="flex items-center gap-6">
-                  <div className="flex-shrink-0">
-                    <img
-                      src="/lovable-uploads/a9ef1970-ba1a-4294-8c6f-c1ed4f9dda3e.png"
-                      alt="Onboarding interface"
-                      className="w-32 h-auto rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-newtheme-purple mb-2">Smart Onboarding</h3>
-                    <p className="text-gray-600 mb-2">Intuitive first-time user experiences</p>
-                    <Button variant="link" className="text-pink-500 hover:text-pink-600 p-0">
-                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </div>
-                </div>
-              </div>
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <Card className="overflow-hidden border-none shadow-lg">
+                  <CardContent className="p-0">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/e8098bea-0128-43dc-9d97-49d4cb60de99.png" 
+                        alt="Product showcase interface" 
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="font-bold text-lg text-newtheme-purple mb-2">Product Catalog</h3>
+                      <p className="text-gray-600 text-sm">Interactive product showcase with detailed information</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
               
-              <div className="bg-blue-50 rounded-2xl p-6">
-                <div className="flex items-center gap-6">
-                  <div className="flex-shrink-0">
-                    <img
-                      src="/lovable-uploads/b4c8b66a-8da8-4636-8c43-d355fb188f22.png"
-                      alt="Analytics dashboard"
-                      className="w-32 h-auto rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-newtheme-purple mb-2">Data Visualization</h3>
-                    <p className="text-gray-600 mb-2">Beautiful, actionable analytics dashboards</p>
-                    <Button variant="link" className="text-pink-500 hover:text-pink-600 p-0">
-                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </div>
-                </div>
-              </div>
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <Card className="overflow-hidden border-none shadow-lg">
+                  <CardContent className="p-0">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/d91346d2-b226-407b-b32f-754cd37a32a0.png" 
+                        alt="Healthcare app interface" 
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="font-bold text-lg text-newtheme-purple mb-2">Healthcare Portal</h3>
+                      <p className="text-gray-600 text-sm">Patient-focused healthcare management system</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+              
+              <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <Card className="overflow-hidden border-none shadow-lg">
+                  <CardContent className="p-0">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/4aa2cbcd-56c2-4332-8657-b6c0b0e00108.png"
+                        alt="Fashion web app interface" 
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="font-bold text-lg text-newtheme-purple mb-2">Fashion Platform</h3>
+                      <p className="text-gray-600 text-sm">Visually stunning clothing and accessories showcase</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            </CarouselContent>
+            <div className="flex justify-center mt-8">
+              <CarouselPrevious className="relative inset-auto mr-2" />
+              <CarouselNext className="relative inset-auto ml-2" />
             </div>
-          </div>
+          </Carousel>
         </div>
       </div>
     </section>
@@ -112,3 +118,4 @@ const DesignShowcaseSection = () => {
 };
 
 export default DesignShowcaseSection;
+

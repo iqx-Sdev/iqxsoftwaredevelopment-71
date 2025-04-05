@@ -1,8 +1,17 @@
+
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, ChevronRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ShopifyLeadForm from "@/components/ShopifyLeadForm";
+import { Card, CardContent } from "@/components/ui/card";
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselNext, 
+  CarouselPrevious 
+} from "@/components/ui/carousel";
 
 const Shopify = () => {
   return (
@@ -30,9 +39,9 @@ const Shopify = () => {
               </div>
               <div className="relative hidden lg:block">
                 <img 
-                  src="/lovable-uploads/635e1354-6078-476e-a647-c2d5340f8844.png" 
-                  alt="Digital storefront interface" 
-                  className="rounded-xl shadow-2xl w-2/3 mx-auto"
+                  src="/lovable-uploads/914737f9-1a98-46d7-bb9c-332d9cc6b211.png" 
+                  alt="Modern Shopify storefront design" 
+                  className="rounded-xl shadow-2xl w-full mx-auto"
                 />
               </div>
             </div>
@@ -77,6 +86,111 @@ const Shopify = () => {
                   <p className="text-gray-600">Customer satisfaction rate</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Design Showcase Section - New Carousel */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="mb-4 inline-block bg-pink-100 px-3 py-1 rounded-full">
+                  <span className="text-pink-800 font-medium">Shopify Examples</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">
+                  Modern Shopify Design Showcase
+                </h2>
+                <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                  See how we transform brands with beautiful, conversion-focused Shopify experiences
+                </p>
+              </div>
+              
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full max-w-6xl mx-auto"
+              >
+                <CarouselContent className="-ml-2 md:-ml-4">
+                  <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                    <Card className="overflow-hidden border-none shadow-lg">
+                      <CardContent className="p-0">
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/914737f9-1a98-46d7-bb9c-332d9cc6b211.png" 
+                            alt="Eco-friendly products Shopify design" 
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                        <div className="p-6">
+                          <h3 className="font-bold text-lg text-newtheme-purple mb-2">Eco-Friendly Collection</h3>
+                          <p className="text-gray-600 text-sm">Modern product showcase with sustainability focus</p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                  
+                  <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                    <Card className="overflow-hidden border-none shadow-lg">
+                      <CardContent className="p-0">
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/e8098bea-0128-43dc-9d97-49d4cb60de99.png" 
+                            alt="Fashion eyewear Shopify store" 
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                        <div className="p-6">
+                          <h3 className="font-bold text-lg text-newtheme-purple mb-2">Premium Eyewear</h3>
+                          <p className="text-gray-600 text-sm">Sophisticated product presentation for luxury brand</p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                  
+                  <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                    <Card className="overflow-hidden border-none shadow-lg">
+                      <CardContent className="p-0">
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/d91346d2-b226-407b-b32f-754cd37a32a0.png" 
+                            alt="Health supplements Shopify design" 
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                        <div className="p-6">
+                          <h3 className="font-bold text-lg text-newtheme-purple mb-2">Wellness Products</h3>
+                          <p className="text-gray-600 text-sm">Health-focused e-commerce with clean design</p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                  
+                  <CarouselItem className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                    <Card className="overflow-hidden border-none shadow-lg">
+                      <CardContent className="p-0">
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/3693622a-8ec7-479e-ad02-b39237646dfb.png" 
+                            alt="Footwear Shopify store" 
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                        <div className="p-6">
+                          <h3 className="font-bold text-lg text-newtheme-purple mb-2">Footwear Collection</h3>
+                          <p className="text-gray-600 text-sm">Dynamic product showcase for sports brand</p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                </CarouselContent>
+                <div className="flex justify-center mt-8">
+                  <CarouselPrevious className="relative inset-auto mr-2" />
+                  <CarouselNext className="relative inset-auto ml-2" />
+                </div>
+              </Carousel>
             </div>
           </div>
         </section>
@@ -134,15 +248,15 @@ const Shopify = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-lg overflow-hidden shadow-xl">
                     <img 
-                      src="/lovable-uploads/9fdf3eef-0ab7-42c8-a13f-a2cb44cad407.png"
-                      alt="Mobile app interface" 
+                      src="/lovable-uploads/4aa2cbcd-56c2-4332-8657-b6c0b0e00108.png"
+                      alt="Fashion shopping interface" 
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="rounded-lg overflow-hidden shadow-xl mt-8">
                     <img 
-                      src="/lovable-uploads/a9ef1970-ba1a-4294-8c6f-c1ed4f9dda3e.png"
-                      alt="Shopify app interface" 
+                      src="/lovable-uploads/e8098bea-0128-43dc-9d97-49d4cb60de99.png"
+                      alt="Sunglasses product page" 
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -212,60 +326,64 @@ const Shopify = () => {
           </div>
         </section>
         
-        {/* Website Portfolio */}
+        {/* Featured Projects Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-12">
                 <div className="mb-4 inline-block bg-blue-100 px-3 py-1 rounded-full">
-                  <span className="text-blue-700 font-medium">Our Work</span>
+                  <span className="text-blue-700 font-medium">Featured Work</span>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">Website Design Portfolio</h2>
-                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  See our latest Shopify and e-commerce projects
+                <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">Shopify Success Stories</h2>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+                  See how we've transformed businesses with our Shopify expertise
                 </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="overflow-hidden rounded-lg shadow-lg group">
-                  <div className="relative h-60">
-                    <img 
-                      src="/lovable-uploads/77479e54-2790-4b90-982a-54bbd8e631f5.png" 
-                      alt="Project management dashboard" 
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-6 bg-white">
-                    <h3 className="text-lg font-bold text-newtheme-purple">Admin Dashboard</h3>
-                    <p className="text-gray-600 mt-2">Modern admin interface for e-commerce management</p>
-                  </div>
-                </div>
                 
-                <div className="overflow-hidden rounded-lg shadow-lg group">
-                  <div className="relative h-60">
-                    <img 
-                      src="/lovable-uploads/635e1354-6078-476e-a647-c2d5340f8844.png" 
-                      alt="Mobile map interface" 
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                  <div className="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div className="relative aspect-video overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/e8098bea-0128-43dc-9d97-49d4cb60de99.png" 
+                        alt="Fashion eyewear store" 
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                        <div className="p-6">
+                          <span className="text-white/80 text-sm">Fashion & Accessories</span>
+                          <h3 className="text-xl font-bold text-white mt-1">FrameVision Eyewear</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <p className="text-gray-600 mb-4">Luxury eyewear brand saw a 75% increase in online conversions after our Shopify redesign.</p>
+                      <Button variant="outline" className="group">
+                        View Case Study
+                        <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      </Button>
+                    </div>
                   </div>
-                  <div className="p-6 bg-white">
-                    <h3 className="text-lg font-bold text-newtheme-purple">Store Locator</h3>
-                    <p className="text-gray-600 mt-2">Interactive map to find physical store locations</p>
-                  </div>
-                </div>
-                
-                <div className="overflow-hidden rounded-lg shadow-lg group">
-                  <div className="relative h-60">
-                    <img 
-                      src="/lovable-uploads/9fdf3eef-0ab7-42c8-a13f-a2cb44cad407.png" 
-                      alt="Healthcare app interface" 
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-6 bg-white">
-                    <h3 className="text-lg font-bold text-newtheme-purple">Healthcare Portal</h3>
-                    <p className="text-gray-600 mt-2">Patient-focused healthcare booking system</p>
+                  
+                  <div className="bg-white rounded-xl overflow-hidden shadow-lg group">
+                    <div className="relative aspect-video overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/d91346d2-b226-407b-b32f-754cd37a32a0.png" 
+                        alt="Health supplements store" 
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                        <div className="p-6">
+                          <span className="text-white/80 text-sm">Health & Wellness</span>
+                          <h3 className="text-xl font-bold text-white mt-1">VitaLife Supplements</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <p className="text-gray-600 mb-4">Health brand achieved 120% revenue growth in 6 months with our custom Shopify Plus solution.</p>
+                      <Button variant="outline" className="group">
+                        View Case Study
+                        <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -359,6 +477,11 @@ const offerItems = [
     title: "Shopify Theme Customisation",
     description: "Already have a theme? We refine and enhance your existing Shopify template to align perfectly with your brand vision.",
     buttonText: "Customize Today"
+  },
+  {
+    title: "Advanced Shopify Apps Integration",
+    description: "Enhance your store functionality with expertly integrated apps that boost conversion and streamline operations.",
+    buttonText: "Explore Options"
   }
 ];
 
@@ -424,23 +547,5 @@ const shopifyBenefits = [
   }
 ];
 
-const moreServices = [
-  {
-    title: "Project Management",
-    description: "A dedicated IQX project lead ensures your project stays on track—from kickoff to launch."
-  },
-  {
-    title: "Shopify App Design",
-    description: "Extend your store's functionality with apps designed for intuitive user experiences."
-  },
-  {
-    title: "Klaviyo Email Design",
-    description: "Engaging, automated email campaigns that drive customer retention and ROI."
-  },
-  {
-    title: "Ongoing Retainers",
-    description: "Continuous access to our design team keeps your site current and competitive."
-  }
-];
-
 export default Shopify;
+
