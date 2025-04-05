@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, ShoppingCart, Workflow, Robot, Users, MessagesSquare } from "lucide-react";
+import { ArrowRight, Code, ShoppingCart, Workflow, Bot, Users, MessagesSquare } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ServiceCard = ({ 
@@ -51,7 +51,7 @@ const CoreServicesSection = () => {
     {
       title: "Agentic AI",
       description: "Harness the power of autonomous AI agents that understand, decide, and act on your business needs with minimal human supervision.",
-      icon: <Robot size={48} strokeWidth={1.5} />,
+      icon: <Bot size={48} strokeWidth={1.5} />,
       gradientFrom: "blue-500",
       gradientTo: "cyan-500",
       linkTo: "/agentic-ai"
