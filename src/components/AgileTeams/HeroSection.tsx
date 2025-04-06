@@ -1,4 +1,3 @@
-
 import { ArrowRight, Users2, Briefcase, LineChart, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -22,12 +21,12 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              Agile Development 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300"> Teams</span>
+              Scale Your Tech Team Without the Headaches
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300"></span>
             </h1>
             
             <p className="text-lg md:text-xl mb-8 text-gray-100 max-w-xl">
-              High-performance, cross-functional squads built to ship your digital product faster and with greater quality.
+              IQX makes it easy to grow your development capacity. We lease top-tier tech talent to your business, while handling everything from onboarding and contracts to roadmaps and team management so you can stay focused on delivery.
             </p>
             
             <div className="flex flex-wrap gap-4 mb-10">
