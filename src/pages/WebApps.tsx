@@ -27,13 +27,13 @@ const WebApps = () => {
       <div className="flex-grow">
         <HeroSection />
         <StatsSection />
-        <LeadFormSection leadFormBenefits={leadFormBenefits} />
         <ValuePropositionSection />
         <DesignShowcaseSection />
         <WhyChooseSection whatWeOffer={whatWeOffer} />
         <ProcessSection process={process} />
         <TechStackSection techBenefits={techBenefits} />
         <MoreFromSection moreServices={moreServices} />
+        <LeadFormSection leadFormBenefits={leadFormBenefits} />
         <FinalCTASection />
       </div>
       <Footer />
