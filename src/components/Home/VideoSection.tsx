@@ -1,6 +1,5 @@
 
 import React from "react";
-import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const VideoSection = () => {
   return (
@@ -15,15 +14,14 @@ const VideoSection = () => {
           </div>
           
           <div className="relative rounded-xl overflow-hidden shadow-2xl aspect-video">
-            <video
-              className="w-full h-full object-cover"
-              controls
-              autoPlay={false}
-              poster="/lovable-uploads/1488590528505-98d2b5aba04b.png"
-            >
-              <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/hr-fDS6SY-A"
+              title="IQX Software Development Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
           
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
