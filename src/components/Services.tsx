@@ -1,25 +1,26 @@
 
-import { Lightbulb, Workflow, Bot, Zap } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLightbulb, faDiagram, faRobot, faBolt } from "@fortawesome/free-solid-svg-icons";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const servicesData = [
   {
-    icon: <Lightbulb className="h-12 w-12 text-maverick-navy" />,
+    icon: <FontAwesomeIcon icon={faLightbulb} className="h-12 w-12 text-maverick-navy" />,
     title: "AI Automations",
     description: "Streamline repetitive tasks, improve efficiency, and reduce manual effort allowing teams to focus on what matters most.",
   },
   {
-    icon: <Workflow className="h-12 w-12 text-maverick-navy" />,
+    icon: <FontAwesomeIcon icon={faDiagram} className="h-12 w-12 text-maverick-navy" />,
     title: "AI Workflows",
     description: "Harness the power of artificial intelligence to enhance decision-making and deliver personalized experiences.",
   },
   {
-    icon: <Bot className="h-12 w-12 text-maverick-navy" />,
+    icon: <FontAwesomeIcon icon={faRobot} className="h-12 w-12 text-maverick-navy" />,
     title: "AI Agents",
     description: "Intelligent, autonomous systems that can reason, plan, and act independently to achieve specific objectives.",
   },
   {
-    icon: <Zap className="h-12 w-12 text-maverick-navy" />,
+    icon: <FontAwesomeIcon icon={faBolt} className="h-12 w-12 text-maverick-navy" />,
     title: "AI Prototyping",
     description: "Build and validate AI prototypes and proofs of concepts with lower upfront investment at double the speed.",
   },

@@ -1,7 +1,8 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const CareersSection = () => {
   return (
@@ -21,7 +22,7 @@ const CareersSection = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button className="bg-white text-newtheme-purple hover:bg-gray-100">
                   View Open Positions
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
                 </Button>
                 <Button variant="outline" className="border-white text-white hover:bg-white/10">
                   Our Culture

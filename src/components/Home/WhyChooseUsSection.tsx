@@ -1,6 +1,7 @@
 
 import React from "react";
-import { Award, Laptop, CheckCircle, Users } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrophy, faLaptop, faCheckCircle, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 type FeatureCardProps = {
   icon: React.ReactNode;
@@ -24,25 +25,25 @@ const FeatureCard = ({ icon, title, description, bgColor }: FeatureCardProps) =>
 const WhyChooseUsSection = () => {
   const features = [
     {
-      icon: <Award className="h-6 w-6 text-white" />,
+      icon: <FontAwesomeIcon icon={faTrophy} className="h-6 w-6 text-white" />,
       title: "Expertise",
       description: "Industry leaders with deep knowledge across key business domains",
       bgColor: "bg-purple-500"
     },
     {
-      icon: <Laptop className="h-6 w-6 text-white" />,
+      icon: <FontAwesomeIcon icon={faLaptop} className="h-6 w-6 text-white" />,
       title: "Innovation",
       description: "Cutting-edge solutions leveraging the latest technological advancements",
       bgColor: "bg-blue-500"
     },
     {
-      icon: <CheckCircle className="h-6 w-6 text-white" />,
+      icon: <FontAwesomeIcon icon={faCheckCircle} className="h-6 w-6 text-white" />,
       title: "Results-Driven",
       description: "Focused on delivering measurable outcomes and ROI for your business",
       bgColor: "bg-green-500"
     },
     {
-      icon: <Users className="h-6 w-6 text-white" />,
+      icon: <FontAwesomeIcon icon={faUsers} className="h-6 w-6 text-white" />,
       title: "Partnership",
       description: "We work alongside you as a collaborative partner, not just a service provider",
       bgColor: "bg-pink-500"

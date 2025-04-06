@@ -1,41 +1,42 @@
 
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Trophy, Users, Clock, CheckCircle, Workflow, Lightbulb, Target } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrophy, faUsers, faClock, faCheckCircle, faDiagram, faLightbulb, faBullseye } from "@fortawesome/free-solid-svg-icons";
 
 const benefits = [
   {
-    icon: <Trophy className="h-12 w-12 text-newtheme-purple" />,
+    icon: <FontAwesomeIcon icon={faTrophy} className="h-12 w-12 text-newtheme-purple" />,
     title: "Proven Track Record",
     description: "Delivered complex, high-impact solutions across diverse industries.",
   },
   {
-    icon: <Users className="h-12 w-12 text-newtheme-purple" />,
+    icon: <FontAwesomeIcon icon={faUsers} className="h-12 w-12 text-newtheme-purple" />,
     title: "Top Talent",
     description: "Senior architects and analysts who reverse-engineer legacy systems and craft forward-thinking solutions.",
   },
   {
-    icon: <Clock className="h-12 w-12 text-newtheme-purple" />,
+    icon: <FontAwesomeIcon icon={faClock} className="h-12 w-12 text-newtheme-purple" />,
     title: "Agile Delivery",
     description: "Flexible, iterative workflows that meet deadlines and stay on budget.",
   },
   {
-    icon: <CheckCircle className="h-12 w-12 text-newtheme-purple" />,
+    icon: <FontAwesomeIcon icon={faCheckCircle} className="h-12 w-12 text-newtheme-purple" />,
     title: "Relentless Quality",
     description: "Code excellence, rigorous testing, and optimized performance come standard.",
   },
   {
-    icon: <Workflow className="h-12 w-12 text-newtheme-purple" />,
+    icon: <FontAwesomeIcon icon={faDiagram} className="h-12 w-12 text-newtheme-purple" />,
     title: "End-to-End Services",
     description: "From consulting and design to integration and ongoing support—we've got it covered.",
   },
   {
-    icon: <Lightbulb className="h-12 w-12 text-newtheme-purple" />,
+    icon: <FontAwesomeIcon icon={faLightbulb} className="h-12 w-12 text-newtheme-purple" />,
     title: "Innovation-Driven",
     description: "We stay ahead with emerging tech and continuous learning.",
   },
   {
-    icon: <Target className="h-12 w-12 text-newtheme-purple" />,
+    icon: <FontAwesomeIcon icon={faBullseye} className="h-12 w-12 text-newtheme-purple" />,
     title: "Client-Focused",
     description: "Custom solutions aligned with your goals, built for long-term success.",
   }

@@ -1,7 +1,8 @@
 
 import React from "react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@/components/ui/button";
 
 const insights = [
@@ -41,7 +42,7 @@ const InsightsSection = () => {
               <h2 className="text-3xl font-bold text-newtheme-purple">Latest Thinking</h2>
             </div>
             <Button variant="link" className="text-newtheme-purple flex items-center">
-              View All Insights <ArrowRight className="ml-2 h-4 w-4" />
+              View All Insights <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-4 w-4" />
             </Button>
           </div>
           
@@ -67,7 +68,7 @@ const InsightsSection = () => {
                   <span className="text-sm text-gray-500">{insight.date}</span>
                   <a href={insight.link} className="text-pink-500 hover:text-pink-600 flex items-center">
                     Read More
-                    <ArrowRight className="ml-1 h-4 w-4" />
+                    <FontAwesomeIcon icon={faArrowRight} className="ml-1 h-4 w-4" />
                   </a>
                 </CardFooter>
               </Card>

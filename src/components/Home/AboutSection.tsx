@@ -1,7 +1,8 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const AboutSection = () => {
@@ -31,7 +32,7 @@ const AboutSection = () => {
               <Link to="/contact">
                 <Button className="bg-newtheme-purple hover:bg-newtheme-purple/90 text-white">
                   Learn More About Us
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
             </div>

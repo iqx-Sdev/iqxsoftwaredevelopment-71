@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const CTA = () => {
   return (
@@ -16,7 +17,7 @@ const CTA = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg font-medium">
               Start Your AI Journey
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
             </Button>
             <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10 font-medium">
               Schedule a Demo

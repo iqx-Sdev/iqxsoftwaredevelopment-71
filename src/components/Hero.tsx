@@ -1,5 +1,6 @@
 
-import { ArrowRight } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -22,7 +23,7 @@ const Hero = () => {
             <Link to="/contact">
               <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg font-medium">
                 Contact Us
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link to="/agentic-ai">

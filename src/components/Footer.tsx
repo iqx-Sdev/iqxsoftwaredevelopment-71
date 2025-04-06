@@ -1,5 +1,7 @@
 
-import { Github, Facebook, Instagram, Linkedin, Twitter, Youtube, Mail } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faFacebook, faInstagram, faLinkedin, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -21,22 +23,22 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/iqbusinessgroup/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Facebook size={20} />
+                <FontAwesomeIcon icon={faFacebook} size="lg" />
               </a>
               <a href="https://www.instagram.com/iqbusiness_sa/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Instagram size={20} />
+                <FontAwesomeIcon icon={faInstagram} size="lg" />
               </a>
               <a href="https://www.linkedin.com/company/iq-business/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Linkedin size={20} />
+                <FontAwesomeIcon icon={faLinkedin} size="lg" />
               </a>
               <a href="https://x.com/iqbusiness?s=21&t=lvqA4MpAGujtHr4bz4NoDQ" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Twitter size={20} />
+                <FontAwesomeIcon icon={faTwitter} size="lg" />
               </a>
               <a href="https://www.youtube.com/@iqbusiness_sa" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Youtube size={20} />
+                <FontAwesomeIcon icon={faYoutube} size="lg" />
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <Mail size={20} />
+                <FontAwesomeIcon icon={faEnvelope} size="lg" />
               </a>
             </div>
           </div>

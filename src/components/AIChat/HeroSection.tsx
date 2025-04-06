@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const HeroSection = () => {
   return (
@@ -18,7 +19,7 @@ const HeroSection = () => {
           </p>
           <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg font-medium">
             Request a Demo
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </div>

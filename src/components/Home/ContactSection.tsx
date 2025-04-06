@@ -1,7 +1,8 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 const ContactSection = () => {
   return (
@@ -21,7 +22,7 @@ const ContactSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="mb-4 inline-flex p-3 bg-pink-100 rounded-full">
-                <Mail className="h-6 w-6 text-pink-500" />
+                <FontAwesomeIcon icon={faEnvelope} className="h-6 w-6 text-pink-500" />
               </div>
               <h3 className="text-xl font-bold text-newtheme-purple mb-2">Email Us</h3>
               <p className="text-gray-600 mb-4">For general inquiries and information</p>
@@ -32,7 +33,7 @@ const ContactSection = () => {
             
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="mb-4 inline-flex p-3 bg-green-100 rounded-full">
-                <Phone className="h-6 w-6 text-green-500" />
+                <FontAwesomeIcon icon={faPhone} className="h-6 w-6 text-green-500" />
               </div>
               <h3 className="text-xl font-bold text-newtheme-purple mb-2">Call Us</h3>
               <p className="text-gray-600 mb-4">Available Monday to Friday, 8am to 5pm</p>
@@ -43,7 +44,7 @@ const ContactSection = () => {
             
             <div className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="mb-4 inline-flex p-3 bg-purple-100 rounded-full">
-                <MapPin className="h-6 w-6 text-purple-500" />
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="h-6 w-6 text-purple-500" />
               </div>
               <h3 className="text-xl font-bold text-newtheme-purple mb-2">Visit Us</h3>
               <p className="text-gray-600 mb-4">Our headquarters in Johannesburg</p>

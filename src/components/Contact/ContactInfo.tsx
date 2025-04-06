@@ -1,6 +1,7 @@
 
 import React from "react";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt, faPhone, faEnvelope, faClock } from "@fortawesome/free-solid-svg-icons";
 
 interface ContactInfoProps {
   location: {
@@ -21,7 +22,7 @@ const ContactInfo = ({ location }: ContactInfoProps) => {
       <div className="flex-grow space-y-6">
         <div className="flex items-start gap-4">
           <div className="flex-shrink-0 bg-blue-100 p-3 rounded-full text-blue-500">
-            <MapPin size={20} />
+            <FontAwesomeIcon icon={faMapMarkerAlt} size="lg" />
           </div>
           <div>
             <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
@@ -43,7 +44,7 @@ const ContactInfo = ({ location }: ContactInfoProps) => {
 
         <div className="flex items-start gap-4">
           <div className="flex-shrink-0 bg-green-100 p-3 rounded-full text-green-500">
-            <Phone size={20} />
+            <FontAwesomeIcon icon={faPhone} size="lg" />
           </div>
           <div>
             <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
@@ -55,7 +56,7 @@ const ContactInfo = ({ location }: ContactInfoProps) => {
 
         <div className="flex items-start gap-4">
           <div className="flex-shrink-0 bg-violet-100 p-3 rounded-full text-violet-500">
-            <Mail size={20} />
+            <FontAwesomeIcon icon={faEnvelope} size="lg" />
           </div>
           <div>
             <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
@@ -67,7 +68,7 @@ const ContactInfo = ({ location }: ContactInfoProps) => {
 
         <div className="flex items-start gap-4">
           <div className="flex-shrink-0 bg-amber-100 p-3 rounded-full text-amber-500">
-            <Clock size={20} />
+            <FontAwesomeIcon icon={faClock} size="lg" />
           </div>
           <div>
             <h4 className="font-semibold text-gray-900 mb-1">Business Hours</h4>

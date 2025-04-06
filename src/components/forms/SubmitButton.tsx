@@ -1,5 +1,6 @@
 
-import { ArrowRight } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "@/components/ui/button";
 
 interface SubmitButtonProps {
@@ -18,7 +19,7 @@ const SubmitButton = ({ isSubmitting }: SubmitButtonProps) => {
       ) : (
         <>
           Submit Request
-          <ArrowRight className="ml-2 h-5 w-5" />
+          <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
         </>
       )}
     </Button>
