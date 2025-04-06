@@ -88,12 +88,12 @@ const ClientLogosSection = () => {
             {clientLogos.map((client) => (
               <div 
                 key={client.name} 
-                className="flex items-center justify-center p-3 h-20 w-full grayscale hover:grayscale-0 transition-all duration-300"
+                className="flex items-center justify-center p-3 h-14 w-full grayscale hover:grayscale-0 transition-all duration-300"
               >
                 <OptimizedImage
                   src={client.logoUrl}
                   alt={`${client.name} logo`}
-                  className="max-h-full max-w-full object-contain"
+                  className="max-h-full max-w-[70%] object-contain"
                 />
               </div>
             ))}
