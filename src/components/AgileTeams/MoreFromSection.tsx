@@ -12,30 +12,37 @@ const MoreFromSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h4 className="text-xl font-semibold mb-3 text-gray-800">Product Strategy & Roadmapping</h4>
+            <h4 className="text-xl font-semibold mb-3 text-gray-800">Product Discovery & Strategy</h4>
             <p className="text-gray-700">
-              We help define your product vision and translate it into sprints that deliver value early and often.
+              We collaborate with you to shape your product vision, define user needs, and build a clear roadmap—turning ideas into validated plans that guide development with purpose.
             </p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h4 className="text-xl font-semibold mb-3 text-gray-800">UX/UI Design</h4>
+            <h4 className="text-xl font-semibold mb-3 text-gray-800">UX/UI Design Excellence</h4>
             <p className="text-gray-700">
-              Embedded designers who work directly with developers—ensuring cohesive, intuitive experiences.
+              Our designers work hand-in-hand with developers to craft seamless, user-friendly interfaces—grounded in research, driven by design thinking, and focused on delivering real impact.
             </p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h4 className="text-xl font-semibold mb-3 text-gray-800">API Integration & Platform Engineering</h4>
+            <h4 className="text-xl font-semibold mb-3 text-gray-800">System Architecture & Integration</h4>
             <p className="text-gray-700">
-              Our teams connect your systems and services, building scalable, secure backend infrastructure.
+              From robust backend systems to smart API connections, we design scalable, secure platforms that integrate effortlessly with your existing ecosystem.
             </p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h4 className="text-xl font-semibold mb-3 text-gray-800">Ongoing Retainers</h4>
+            <h4 className="text-xl font-semibold mb-3 text-gray-800">Cloud Infrastructure & Migrations</h4>
             <p className="text-gray-700">
-              Whether you need long-term team support or post-launch evolution—we've got you covered.
+              We architect and migrate web applications to modern cloud environments—improving performance, scalability, and security while reducing infrastructure overhead.
+            </p>
+          </div>
+          
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h4 className="text-xl font-semibold mb-3 text-gray-800">Data & AI Enablement</h4>
+            <p className="text-gray-700">
+              Unlock the power of your data. From analytics dashboards to AI-driven features, we help you design smarter products by embedding intelligence into your web applications.
             </p>
           </div>
         </div>
