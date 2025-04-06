@@ -1,3 +1,4 @@
+
 import { ArrowRight, Users2, Briefcase, LineChart, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -46,12 +47,6 @@ const HeroSection = () => {
                 <CheckCircle2 className="h-5 w-5 text-blue-300" />
                 <span className="text-sm">Quality Assurance</span>
               </div>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg mb-8 italic">
-              <p className="text-lg">
-                "At IQX, we don't just offer developers—we deliver fully integrated agile teams that think, build, and scale with your business. Led by engineering experts and powered by proven delivery frameworks, our squads work as an extension of your product vision."
-              </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
