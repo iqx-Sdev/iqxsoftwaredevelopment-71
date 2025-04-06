@@ -1,4 +1,3 @@
-
 import { ArrowRight, Users2, Briefcase, LineChart, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -55,11 +54,6 @@ const HeroSection = () => {
                 <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-6 py-3 rounded-lg text-lg font-medium">
                   Book a Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link to="/book-consultation">
-                <Button variant="outline" className="bg-blue-500 border-blue-600 text-white hover:bg-blue-600 transition-colors px-6 py-3 rounded-lg text-lg font-medium">
-                  Learn More
                 </Button>
               </Link>
             </div>
