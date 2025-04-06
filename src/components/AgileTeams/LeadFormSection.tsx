@@ -1,4 +1,3 @@
-
 import { Check } from "lucide-react";
 import LeadForm from "@/components/LeadForm";
 const leadFormBenefits = ["Get matched with technical experts in 24-48 hours", "We manage all contracts, payroll, and compliance", "Flexible team scaling based on your roadmap", "No recruitment fees or long-term commitments"];
