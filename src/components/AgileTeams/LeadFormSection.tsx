@@ -8,10 +8,9 @@ const LeadFormSection = () => {
           <div className="lg:col-span-2 flex flex-col justify-center">
             <div className="mb-8">
               <span className="inline-block px-3 py-1 rounded-full bg-purple-100 text-purple-800 font-semibold text-sm mb-4">Get Started Now</span>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Why IQX Talent-as-a-Service Works</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Fill out our team staffing form and get custom recommendations for your project from our experts.
-              </p>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">Build Your Agile Team Today</h2>
+              <p className="text-lg text-gray-600 mb-6">Speed to Scale
+Skip the search. We’ve already vetted the right people, ready to go.</p>
               
               <div className="space-y-4">
                 {leadFormBenefits.map((benefit, index) => <div key={index} className="flex items-start gap-3">
