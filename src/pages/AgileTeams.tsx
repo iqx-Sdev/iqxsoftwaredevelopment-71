@@ -22,7 +22,7 @@ const VisualSection = lazy(() => import("../components/AgileTeams/VisualSection"
 const WhyChooseSection = lazy(() => import("../components/AgileTeams/WhyChooseSection"));
 const SkillsTechSection = lazy(() => import("../components/AgileTeams/SkillsTechSection"));
 const WhyLeasingSection = lazy(() => import("../components/AgileTeams/WhyLeasingSection"));
-const DeliveryProcessSection = lazy(() => import("../components/AgileTeams/DeliveryProcessSection"));
+const DeveloperProfilesSection = lazy(() => import("../components/AgileTeams/DeveloperProfilesSection"));
 const ContactFormSection = lazy(() => import("../components/AgileTeams/ContactFormSection"));
 
 const AgileTeams = () => {
@@ -53,8 +53,8 @@ const AgileTeams = () => {
           {/* Why Leasing Talent Section */}
           <WhyLeasingSection />
 
-          {/* Delivery Process Section */}
-          <DeliveryProcessSection />
+          {/* Developer Profiles Section */}
+          <DeveloperProfilesSection />
 
           {/* Contact Form Section */}
           <ContactFormSection />
