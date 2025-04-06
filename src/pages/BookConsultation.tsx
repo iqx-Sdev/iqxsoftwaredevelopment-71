@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import LeadForm from "@/components/LeadForm";
 import CalendlyEmbed from "@/components/Calendly/CalendlyEmbed";
-import { Check } from "lucide-react";
 
 // Loading fallback
 const SectionLoader = () => (
@@ -15,13 +14,6 @@ const SectionLoader = () => (
 );
 
 const BookConsultationPage = () => {
-  const consultationBenefits = [
-    "Free 30-minute consultation with our experts",
-    "No obligation to purchase any services",
-    "Get tailored advice for your specific business needs",
-    "Learn how our solutions can solve your challenges"
-  ];
-
   return (
     <>
       <Helmet>
@@ -51,24 +43,6 @@ const BookConsultationPage = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 {/* Contact Form Side */}
                 <div>
-                  <div className="mb-8">
-                    <h2 className="text-2xl font-bold text-newtheme-purple mb-4">Contact Us Directly</h2>
-                    <p className="text-gray-600 mb-6">
-                      If you prefer, fill out the form below and one of our team members will get back to you within 24 hours.
-                    </p>
-                    
-                    <div className="space-y-4 mb-8">
-                      {consultationBenefits.map((benefit, index) => (
-                        <div key={index} className="flex items-start gap-3">
-                          <div className="bg-green-100 rounded-full p-1">
-                            <Check className="h-5 w-5 text-green-600" />
-                          </div>
-                          <p className="text-gray-700">{benefit}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  
                   <LeadForm 
                     title="Get in Touch" 
                     subtitle="Fill out the form below and we'll contact you to schedule your consultation."
