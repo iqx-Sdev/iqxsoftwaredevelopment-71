@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLightbulb, faDiagram, faRobot, faBolt } from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb, faProjectDiagram, faRobot, faBolt } from "@fortawesome/free-solid-svg-icons";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const servicesData = [
@@ -10,7 +10,7 @@ const servicesData = [
     description: "Streamline repetitive tasks, improve efficiency, and reduce manual effort allowing teams to focus on what matters most.",
   },
   {
-    icon: <FontAwesomeIcon icon={faDiagram} className="h-12 w-12 text-maverick-navy" />,
+    icon: <FontAwesomeIcon icon={faProjectDiagram} className="h-12 w-12 text-maverick-navy" />,
     title: "AI Workflows",
     description: "Harness the power of artificial intelligence to enhance decision-making and deliver personalized experiences.",
   },

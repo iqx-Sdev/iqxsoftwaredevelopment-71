@@ -2,7 +2,7 @@
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrophy, faUsers, faClock, faCheckCircle, faDiagram, faLightbulb, faBullseye } from "@fortawesome/free-solid-svg-icons";
+import { faTrophy, faUsers, faClock, faCheckCircle, faProjectDiagram, faLightbulb, faBullseye } from "@fortawesome/free-solid-svg-icons";
 
 const benefits = [
   {
@@ -26,7 +26,7 @@ const benefits = [
     description: "Code excellence, rigorous testing, and optimized performance come standard.",
   },
   {
-    icon: <FontAwesomeIcon icon={faDiagram} className="h-12 w-12 text-newtheme-purple" />,
+    icon: <FontAwesomeIcon icon={faProjectDiagram} className="h-12 w-12 text-newtheme-purple" />,
     title: "End-to-End Services",
     description: "From consulting and design to integration and ongoing support—we've got it covered.",
   },
