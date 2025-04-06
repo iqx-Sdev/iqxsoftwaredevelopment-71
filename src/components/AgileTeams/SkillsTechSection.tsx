@@ -1,12 +1,5 @@
 
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const SkillsTechSection = () => {
   return (
@@ -108,12 +101,6 @@ const SkillsTechSection = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        
-        <div className="flex justify-center mt-10">
-          <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-100">
-            Learn More About Our Tech Stack <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </div>
       </div>
     </div>
   );
