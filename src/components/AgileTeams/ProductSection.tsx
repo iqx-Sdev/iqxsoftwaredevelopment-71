@@ -1,6 +1,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const ProductSection = () => {
   return (
@@ -17,9 +18,11 @@ const ProductSection = () => {
             With IQX, you get more than capacity—you get capability.
           </p>
           <div className="flex justify-center">
-            <Button className="bg-white text-purple-700 hover:bg-gray-100 font-medium">
-              Get Your Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link to="/contact">
+              <Button className="bg-white text-purple-700 hover:bg-gray-100 font-medium">
+                Get Your Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
