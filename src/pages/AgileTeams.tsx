@@ -17,7 +17,6 @@ const SectionLoader = () => (
 const CTA = lazy(() => import("../components/CTA"));
 const FinalCTASection = lazy(() => import("../components/AgileTeams/FinalCTASection"));
 const ProductSection = lazy(() => import("../components/AgileTeams/ProductSection"));
-const LeadFormSection = lazy(() => import("../components/AgileTeams/LeadFormSection"));
 const MoreFromSection = lazy(() => import("../components/AgileTeams/MoreFromSection"));
 const VisualSection = lazy(() => import("../components/AgileTeams/VisualSection"));
 const WhyChooseSection = lazy(() => import("../components/AgileTeams/WhyChooseSection"));
@@ -40,9 +39,6 @@ const AgileTeams = () => {
         <Suspense fallback={<SectionLoader />}>
           {/* Visual Section */}
           <VisualSection />
-
-          {/* Lead Form Section */}
-          <LeadFormSection />
 
           {/* Product Section */}
           <ProductSection />
