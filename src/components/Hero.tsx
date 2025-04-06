@@ -26,11 +26,7 @@ const Hero = () => {
                 <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link to="/agentic-ai">
-              <Button variant="outline" className="border-white text-newtheme-purple bg-white hover:bg-gray-100 px-8 py-6 rounded-lg text-lg font-medium">
-                Explore Solutions
-              </Button>
-            </Link>
+            {/* Removed the "Explore Solutions" button as requested */}
           </div>
         </div>
       </div>
