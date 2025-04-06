@@ -64,7 +64,7 @@ const DeveloperProfilesSection = () => {
           Our Expert Development Team
         </h2>
         <p className="text-xl font-semibold text-center mb-12 text-gray-700">
-          Meet the talented professionals ready to build your next project
+          Meet some of our 300+ talented professionals ready to build your next project
         </p>
         
         <div className="max-w-7xl mx-auto px-4">
