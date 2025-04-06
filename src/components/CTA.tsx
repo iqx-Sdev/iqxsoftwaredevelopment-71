@@ -18,7 +18,7 @@ const CTA = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/book-consultation">
               <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg font-medium">
-                Contact Us
+                Book a Consultation
                 <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
               </Button>
             </Link>
