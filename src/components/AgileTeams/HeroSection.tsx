@@ -54,7 +54,7 @@ const HeroSection = () => {
                 Talk to Our Agile Team Experts
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/20 transition-colors px-6 py-3 rounded-lg text-lg font-medium">
+              <Button variant="outline" className="bg-blue-500 border-blue-600 text-white hover:bg-blue-600 transition-colors px-6 py-3 rounded-lg text-lg font-medium">
                 Learn More
               </Button>
             </div>
