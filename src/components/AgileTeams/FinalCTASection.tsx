@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const FinalCTASection = () => {
   return (
@@ -16,8 +17,12 @@ const FinalCTASection = () => {
             <Button className="bg-white text-purple-700 hover:bg-gray-100">
               Schedule a Consultation
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button 
+              variant="outline" 
+              className="bg-white/20 border-2 border-white text-white hover:bg-white/30 font-medium"
+            >
               View Our Case Studies
+              <ArrowRight className="ml-1 h-4 w-4" />
             </Button>
           </div>
         </div>
