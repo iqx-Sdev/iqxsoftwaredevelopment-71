@@ -1,9 +1,11 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { useContactModal } from "@/hooks/useContactModal";
 
 const MoreFromSection = () => {
+  const { openContactModal } = useContactModal();
+
   return (
     <div className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -42,11 +44,13 @@ const MoreFromSection = () => {
         </div>
         
         <div className="flex justify-center mt-10">
-          <Link to="/contact">
-            <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-100">
-              Explore All Services <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link>
+          <Button 
+            variant="outline" 
+            className="border-purple-700 text-purple-700 hover:bg-purple-100"
+            onClick={openContactModal.forConsultation}
+          >
+            Explore All Services <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
         </div>
       </div>
     </div>
