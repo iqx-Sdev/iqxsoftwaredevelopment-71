@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, ExternalLink } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -12,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Checkbox } from "@/components/ui/checkbox";
+import LeadFormSection from "@/components/PowerApps/LeadFormSection";
 
 const PowerApps = () => {
   return (
@@ -209,6 +209,9 @@ const PowerApps = () => {
             </div>
           </div>
         </section>
+        
+        {/* Lead Form Section */}
+        <LeadFormSection />
         
         {/* Final CTA */}
         <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600 text-white">
