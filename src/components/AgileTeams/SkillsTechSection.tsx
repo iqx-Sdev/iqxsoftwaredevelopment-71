@@ -15,9 +15,7 @@ const SkillsTechSection = () => {
         <Accordion type="single" collapsible className="max-w-4xl mx-auto">
           <AccordionItem value="frontend">
             <AccordionTrigger className="text-lg font-medium">
-              <div className="flex items-center">
-                <span className="text-2xl mr-3">🖥️</span> Front-End
-              </div>
+              Front-End
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
               React, Angular, Vue.js, Next.js, Tailwind CSS, HTML5, SASS, Web Components, Flutter Web
@@ -26,9 +24,7 @@ const SkillsTechSection = () => {
           
           <AccordionItem value="backend">
             <AccordionTrigger className="text-lg font-medium">
-              <div className="flex items-center">
-                <span className="text-2xl mr-3">🧠</span> Back-End
-              </div>
+              Back-End
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
               Node.js, .NET, Java, Python, PHP, Ruby on Rails, Go, Express.js, NestJS
@@ -37,9 +33,7 @@ const SkillsTechSection = () => {
           
           <AccordionItem value="databases">
             <AccordionTrigger className="text-lg font-medium">
-              <div className="flex items-center">
-                <span className="text-2xl mr-3">🗄️</span> Databases
-              </div>
+              Databases
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
               PostgreSQL, MySQL, MongoDB, Redis, Firebase, DynamoDB, MSSQL, ElasticSearch
@@ -48,9 +42,7 @@ const SkillsTechSection = () => {
           
           <AccordionItem value="cloud">
             <AccordionTrigger className="text-lg font-medium">
-              <div className="flex items-center">
-                <span className="text-2xl mr-3">☁️</span> Cloud & DevOps
-              </div>
+              Cloud & DevOps
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
               AWS, Azure, Google Cloud, Terraform, Kubernetes, Docker, Jenkins, GitHub Actions, Bitbucket Pipelines, Vercel
@@ -59,9 +51,7 @@ const SkillsTechSection = () => {
           
           <AccordionItem value="security">
             <AccordionTrigger className="text-lg font-medium">
-              <div className="flex items-center">
-                <span className="text-2xl mr-3">🔐</span> Security
-              </div>
+              Security
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
               OAuth2, JWT, SSO, OWASP Best Practices, Pen Testing, Secrets Management (Vault, AWS Secrets Manager)
@@ -70,9 +60,7 @@ const SkillsTechSection = () => {
           
           <AccordionItem value="api">
             <AccordionTrigger className="text-lg font-medium">
-              <div className="flex items-center">
-                <span className="text-2xl mr-3">🔗</span> API & Integrations
-              </div>
+              API & Integrations
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
               GraphQL, REST, Webhooks, Stripe, Twilio, SendGrid, Shopify, Salesforce, Zapier, ERP Systems
@@ -81,9 +69,7 @@ const SkillsTechSection = () => {
           
           <AccordionItem value="data">
             <AccordionTrigger className="text-lg font-medium">
-              <div className="flex items-center">
-                <span className="text-2xl mr-3">📊</span> Data & Analytics
-              </div>
+              Data & Analytics
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
               Power BI, Tableau, Superset, BigQuery, Snowflake, ETL pipelines, Python (Pandas, NumPy), R, Apache Kafka
@@ -92,9 +78,7 @@ const SkillsTechSection = () => {
           
           <AccordionItem value="cicd">
             <AccordionTrigger className="text-lg font-medium">
-              <div className="flex items-center">
-                <span className="text-2xl mr-3">🚀</span> CI/CD & Automation
-              </div>
+              CI/CD & Automation
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
               CI/CD pipelines, Test automation (Selenium, Cypress, Playwright), Infrastructure as Code, Release orchestration
