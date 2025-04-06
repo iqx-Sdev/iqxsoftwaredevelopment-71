@@ -19,7 +19,7 @@ const ValuePropositionSection = () => {
               </p>
               <Link to="/book-consultation">
                 <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
-                  Get Your Free Consultation
+                  Book a Consultation
                 </Button>
               </Link>
             </div>

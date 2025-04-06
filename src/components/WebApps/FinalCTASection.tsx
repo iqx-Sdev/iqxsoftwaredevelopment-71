@@ -20,7 +20,7 @@ const FinalCTASection = () => {
           <div className="flex justify-center">
             <Link to="/book-consultation">
               <Button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
-                Talk to Our App Development Team
+                Book a Consultation
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
