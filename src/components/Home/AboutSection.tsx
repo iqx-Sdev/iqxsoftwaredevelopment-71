@@ -4,14 +4,22 @@ import { Button } from "@/components/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+
 const AboutSection = () => {
   return <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2 order-2 md:order-1">
-              <div className="rounded-xl shadow-lg overflow-hidden">
-                <img src="/lovable-uploads/043f060f-4ca1-4331-968c-ecb3e3b6d290.png" alt="Business professional" className="w-full h-auto" />
+              <div className="rounded-xl shadow-lg overflow-hidden aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/hr-fDS6SY-A"
+                  title="IQX Software Development Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
             <div className="md:w-1/2 order-1 md:order-2">
@@ -32,4 +40,5 @@ const AboutSection = () => {
       </div>
     </section>;
 };
+
 export default AboutSection;
