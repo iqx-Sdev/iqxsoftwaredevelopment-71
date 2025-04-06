@@ -12,6 +12,7 @@ import {
   CarouselNext, 
   CarouselPrevious 
 } from "@/components/ui/carousel";
+import { Link } from "react-router-dom";
 
 const Shopify = () => {
   return (
@@ -32,10 +33,12 @@ const Shopify = () => {
                 <p className="text-xl text-white/80 mb-8">
                   Exceptional Shopify experiences engineered for performance and built for growth.
                 </p>
-                <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
-                  Talk to Our Shopify Design Team
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                <Link to="/book-consultation">
+                  <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+                    Talk to Our Shopify Design Team
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
               </div>
               <div className="relative hidden lg:block">
                 <img 
@@ -430,10 +433,12 @@ const Shopify = () => {
               <p className="text-xl opacity-80 mb-8">
                 Beautiful design. Better conversions. Bigger sales.
               </p>
-              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
-                Start Your Shopify Project
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link to="/book-consultation">
+                <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+                  Start Your Shopify Project
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -548,4 +553,3 @@ const shopifyBenefits = [
 ];
 
 export default Shopify;
-
