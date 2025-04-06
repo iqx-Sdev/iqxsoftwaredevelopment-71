@@ -17,6 +17,7 @@ const AgileTeams = lazy(() => import('./pages/AgileTeams'));
 const WebApps = lazy(() => import('./pages/WebApps'));
 const AIChat = lazy(() => import('./pages/AIChat'));
 const Contact = lazy(() => import('./pages/Contact'));
+const BookConsultation = lazy(() => import('./pages/BookConsultation'));
 
 // Create ScrollToTop component to ensure page scrolls to top on route change
 function ScrollToTop() {
@@ -80,6 +81,7 @@ const AppRoutes = () => {
             <Route path="/web-apps" element={<WebApps />} />
             <Route path="/ai-chat" element={<AIChat />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/book-consultation" element={<BookConsultation />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
