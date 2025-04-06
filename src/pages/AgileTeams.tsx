@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroSection from "../components/AgileTeams/HeroSection";
+import ClientLogosSection from "../components/Home/ClientLogosSection";
 
 // Add fallback component for loading state
 const SectionLoader = () => (
@@ -35,6 +36,9 @@ const AgileTeams = () => {
       <div className="flex-grow">
         {/* Hero Section */}
         <HeroSection />
+
+        {/* Client Logos Section */}
+        <ClientLogosSection />
 
         <Suspense fallback={<SectionLoader />}>
           {/* Visual Section */}
