@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const ValuePropositionSection = () => {
   return (
@@ -16,9 +17,11 @@ const ValuePropositionSection = () => {
                 Your website is more than just an online presence—it's a dynamic sales engine. With IQX, you 
                 get a conversion-optimized Shopify site that's as visually stunning as it is functionally robust.
               </p>
-              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
-                Get Your Free Consultation
-              </Button>
+              <Link to="/book-consultation">
+                <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
+                  Get Your Free Consultation
+                </Button>
+              </Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-lg overflow-hidden shadow-xl">
