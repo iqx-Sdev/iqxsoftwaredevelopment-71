@@ -41,7 +41,7 @@ const ChallengesSection: React.FC<ChallengesSectionProps> = ({ challenges }) => 
                 </div>
                 <p className="text-white/70 mb-6">{challenge.description}</p>
                 <Link to="/book-consultation">
-                  <Button className="bg-white hover:bg-gray-100 text-newtheme-purple w-full">
+                  <Button className="w-full font-medium">
                     Book a Consultation
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>

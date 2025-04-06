@@ -15,7 +15,7 @@ const FinalCTASection = () => {
           </p>
           <div className="flex justify-center">
             <Link to="/book-consultation">
-              <Button className="bg-white text-purple-700 hover:bg-gray-100 font-medium">
+              <Button className="font-medium">
                 Book a Consultation
               </Button>
             </Link>

@@ -22,13 +22,13 @@ const CareersSection = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/book-consultation">
-                  <Button className="bg-white text-newtheme-purple hover:bg-gray-100">
+                  <Button className="font-medium">
                     Book a Consultation
                     <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
                 <Link to="/book-consultation">
-                  <Button variant="outline" className="border-white text-white hover:bg-white/10">
+                  <Button variant="outline" className="font-medium">
                     Learn More
                   </Button>
                 </Link>

@@ -16,7 +16,7 @@ const FinalCTASection = () => {
             Let's build smarter solutions together with Power Apps.
           </p>
           <Link to="/book-consultation">
-            <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+            <Button className="font-medium">
               Book a Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

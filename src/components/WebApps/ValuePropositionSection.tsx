@@ -18,7 +18,7 @@ const ValuePropositionSection = () => {
                 Your app is more than code, it's a living product powered by dynamic content and intelligent design. We use Flutter or React Native with robust, API-first CMS platforms like Strapi and Umbraco, giving your team full control over content without touching the code.
               </p>
               <Link to="/book-consultation">
-                <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
+                <Button className="font-medium">
                   Book a Consultation
                 </Button>
               </Link>

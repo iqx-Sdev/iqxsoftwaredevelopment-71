@@ -25,7 +25,7 @@ const ServiceCard = ({
         {description}
       </p>
       <Link to={linkTo}>
-        <Button className="w-full bg-newtheme-purple hover:bg-newtheme-purple/90">
+        <Button className="w-full font-medium">
           {`Explore ${title}`}
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>

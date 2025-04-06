@@ -57,7 +57,7 @@ const ContactSection = () => {
           
           <div className="mt-12 text-center">
             <Link to="/book-consultation">
-              <Button className="bg-newtheme-purple hover:bg-newtheme-purple/90 text-white px-8 py-6 text-lg">
+              <Button className="font-medium">
                 Book a Consultation
                 <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
               </Button>

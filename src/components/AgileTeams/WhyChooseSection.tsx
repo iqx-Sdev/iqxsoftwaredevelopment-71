@@ -56,7 +56,7 @@ const WhyChooseSection = () => {
         </div>
         <div className="flex justify-center mt-8">
           <Link to="/book-consultation">
-            <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-100 font-medium">
+            <Button variant="outline" className="font-medium">
               Book a Consultation <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>

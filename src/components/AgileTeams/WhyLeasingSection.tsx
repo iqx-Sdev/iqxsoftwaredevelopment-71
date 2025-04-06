@@ -78,7 +78,7 @@ const WhyLeasingSection = () => {
         
         <div className="flex justify-center mt-10">
           <Link to="/book-consultation">
-            <Button className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white font-medium">
+            <Button className="font-medium">
               Book a Consultation <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
