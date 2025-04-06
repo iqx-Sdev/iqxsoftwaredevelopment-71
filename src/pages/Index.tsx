@@ -9,6 +9,7 @@ import WhyChooseUsSection from "@/components/Home/WhyChooseUsSection";
 import CTASection from "@/components/Home/CTASection";
 import SolutionsSection from "@/components/Home/SolutionsSection";
 import ClientLogosSection from "@/components/Home/ClientLogosSection";
+import VideoSection from "@/components/Home/VideoSection";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <AboutSection />
+      <VideoSection />
       <CoreServicesSection />
       <SolutionsSection />
       <ClientLogosSection />
