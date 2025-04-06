@@ -16,8 +16,8 @@ const Hero = () => {
             Creating value through innovative solutions
           </h1>
           <p className="text-xl text-white/80 mb-8">
-            IQBusiness is South Africa's leading independent management consulting firm, helping 
-            clients overcome business challenges and achieve sustainable growth.
+            High-speed, low-risk AI prototyping and development for businesses ready 
+            to harness the power of artificial intelligence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
