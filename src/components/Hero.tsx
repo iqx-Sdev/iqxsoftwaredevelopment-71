@@ -26,7 +26,6 @@ const Hero = () => {
                 <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            {/* Removed the "Explore Solutions" button as requested */}
           </div>
         </div>
       </div>

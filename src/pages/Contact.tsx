@@ -23,7 +23,7 @@ const Contact = () => {
       address: ["The Campus", "57 Sloane Street", "Bryanston, 2191"],
       coordinates: "https://maps.google.com/maps?q=IQbusiness%20Johannesburg&t=&z=13&ie=UTF8&iwloc=&output=embed",
       phone: "+27 11 259 4000",
-      email: "info@iqbusiness.co.za",
+      email: "info@iqx.co.za",
       hours: "8:00am - 5:00pm",
       mapLink: "https://goo.gl/maps/123456"
     },
@@ -32,7 +32,7 @@ const Contact = () => {
       address: ["2nd Floor, Block F South", "Waverley Business Park", "Wyecroft Road, Observatory, 7925"],
       coordinates: "https://maps.google.com/maps?q=IQbusiness%20Cape%20Town&t=&z=13&ie=UTF8&iwloc=&output=embed",
       phone: "+27 21 447 5585",
-      email: "info@iqbusiness.co.za", 
+      email: "info@iqx.co.za", 
       hours: "8:00am - 5:00pm",
       mapLink: "https://goo.gl/maps/789012"
     },
@@ -41,7 +41,7 @@ const Contact = () => {
       address: ["The Boulevard", "19 Park Lane", "Umhlanga Ridge, 4319"],
       coordinates: "https://maps.google.com/maps?q=IQbusiness%20Durban&t=&z=13&ie=UTF8&iwloc=&output=embed",
       phone: "+27 31 566 8000",
-      email: "info@iqbusiness.co.za",
+      email: "info@iqx.co.za",
       hours: "8:00am - 5:00pm",
       mapLink: "https://goo.gl/maps/345678"
     }
