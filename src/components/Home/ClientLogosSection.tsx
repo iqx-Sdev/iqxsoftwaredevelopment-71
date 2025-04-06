@@ -4,36 +4,68 @@ import { OptimizedImage } from "@/components/ui/optimized-image";
 
 const clientLogos = [
   {
+    name: "Ackermans",
+    logoUrl: "/lovable-uploads/8235f860-205d-4fa4-abe7-f92b545a09ff.png",
+  },
+  {
+    name: "Clickatell",
+    logoUrl: "/lovable-uploads/96368969-190b-40f9-94fe-1a42e859489d.png",
+  },
+  {
     name: "Coricraft",
-    logoUrl: "/lovable-uploads/3ca4afbb-bc75-49b3-a944-edde61dc0733.png",
-  },
-  {
-    name: "Zando",
-    logoUrl: "/lovable-uploads/bf58a296-d3be-4935-8fb4-8bd268b4b6a7.png",
-  },
-  {
-    name: "Flash",
-    logoUrl: "/lovable-uploads/b5b92171-6fdf-4183-aae9-25edcd55f42f.png",
-  },
-  {
-    name: "EY",
-    logoUrl: "/lovable-uploads/1c70efe7-57e9-4d87-875f-295118ccf930.png",
+    logoUrl: "/lovable-uploads/7de6954a-94e5-4325-9851-f524e21ada36.png",
   },
   {
     name: "Engen",
-    logoUrl: "/lovable-uploads/91d0bbba-5c11-46af-aad7-d725571737e9.png",
+    logoUrl: "/lovable-uploads/2bdb321b-02db-482c-ac1e-915981b35bc5.png",
   },
   {
-    name: "PEP",
-    logoUrl: "/lovable-uploads/f29ebb12-0131-45d0-9adb-0254d0dfa666.png",
+    name: "EY",
+    logoUrl: "/lovable-uploads/5b2d775f-05b0-4957-8352-6b386472a6e7.png",
   },
   {
-    name: "KIA",
-    logoUrl: "/lovable-uploads/cbfc29dd-4224-4d52-ba67-e7d18aa6a94b.png",
+    name: "Flash",
+    logoUrl: "/lovable-uploads/3d13b575-c392-4e7c-9e38-0abce9367963.png",
+  },
+  {
+    name: "Hertex",
+    logoUrl: "/lovable-uploads/d3f88f09-5078-4878-b7d3-9af5cb91423e.png",
   },
   {
     name: "Imagemakers",
-    logoUrl: "/lovable-uploads/0fbe53f7-8021-40fb-9cd5-bf39fb1b5917.png",
+    logoUrl: "/lovable-uploads/d7d469b8-1ba0-4fe2-8f21-ef999e9adcc3.png",
+  },
+  {
+    name: "KIA",
+    logoUrl: "/lovable-uploads/b3b67ca0-bdb9-4417-84fd-0a19099f48c8.png",
+  },
+  {
+    name: "KitchenAid",
+    logoUrl: "/lovable-uploads/5cf7ebf5-333b-4edd-9438-62f9c3387fcb.png",
+  },
+  {
+    name: "MotorHappy",
+    logoUrl: "/lovable-uploads/d5cd0a2a-3468-4274-9584-cc903b2dd9aa.png",
+  },
+  {
+    name: "MTN",
+    logoUrl: "/lovable-uploads/8c7a6bcd-f243-48a7-ba72-e5be613b1ad6.png",
+  },
+  {
+    name: "Nedbank",
+    logoUrl: "/lovable-uploads/2381b1b6-8c2e-4ca3-9f84-8cf25c14c000.png",
+  },
+  {
+    name: "Pearson",
+    logoUrl: "/lovable-uploads/c4aa8c7f-ac22-429e-8a3c-d0194258d828.png",
+  },
+  {
+    name: "PEP",
+    logoUrl: "/lovable-uploads/9f023c09-f850-46c3-8306-d7d34559e6ec.png",
+  },
+  {
+    name: "Zando",
+    logoUrl: "/lovable-uploads/cd66abd4-5cbb-43e0-908b-b3e62b9aaf5e.png",
   },
 ];
 
@@ -52,11 +84,11 @@ const ClientLogosSection = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 items-center justify-items-center">
             {clientLogos.map((client) => (
               <div 
                 key={client.name} 
-                className="flex items-center justify-center p-4 h-24 w-full grayscale hover:grayscale-0 transition-all duration-300"
+                className="flex items-center justify-center p-3 h-20 w-full grayscale hover:grayscale-0 transition-all duration-300"
               >
                 <OptimizedImage
                   src={client.logoUrl}
