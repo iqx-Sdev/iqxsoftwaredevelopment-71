@@ -12,6 +12,7 @@ import UseCasesSection from "../components/AIChat/UseCasesSection";
 import ProductSuiteSection from "../components/AIChat/ProductSuiteSection";
 import TestimonialSection from "../components/AIChat/TestimonialSection";
 import FinalCTASection from "../components/AIChat/FinalCTASection";
+import LeadFormSection from "../components/AIChat/LeadFormSection";
 
 const AIChat = () => {
   return (
@@ -27,6 +28,7 @@ const AIChat = () => {
         <UseCasesSection />
         <ProductSuiteSection />
         <TestimonialSection />
+        <LeadFormSection />
         <FinalCTASection />
       </div>
       <Footer />
