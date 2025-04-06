@@ -1,6 +1,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const WhyLeasingSection = () => {
   return (
@@ -76,9 +77,11 @@ const WhyLeasingSection = () => {
         </div>
         
         <div className="flex justify-center mt-10">
-          <Button className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white font-medium">
-            Talk to a Talent Advisor <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link to="/book-consultation">
+            <Button className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white font-medium">
+              Book a Consultation <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

@@ -17,16 +17,18 @@ const FinalCTASection = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/book-consultation">
               <Button className="bg-white text-purple-700 hover:bg-gray-100 font-medium">
-                Schedule a Consultation
+                Book a Consultation
               </Button>
             </Link>
-            <Button 
-              variant="outline" 
-              className="bg-white/20 border-2 border-white text-white hover:bg-white/30 font-medium"
-            >
-              View Our Case Studies
-              <ArrowRight className="ml-1 h-4 w-4" />
-            </Button>
+            <Link to="/book-consultation">
+              <Button 
+                variant="outline" 
+                className="bg-white/20 border-2 border-white text-white hover:bg-white/30 font-medium"
+              >
+                View Our Case Studies
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

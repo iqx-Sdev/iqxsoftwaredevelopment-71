@@ -20,7 +20,7 @@ const ProductSection = () => {
           <div className="flex justify-center">
             <Link to="/book-consultation">
               <Button className="bg-white text-purple-700 hover:bg-gray-100 font-medium">
-                Get Your Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
+                Book a Consultation <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>

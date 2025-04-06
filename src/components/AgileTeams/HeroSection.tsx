@@ -53,13 +53,15 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/book-consultation">
                 <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-6 py-3 rounded-lg text-lg font-medium">
-                  Talk to Our Agile Team Experts
+                  Book a Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Button variant="outline" className="bg-blue-500 border-blue-600 text-white hover:bg-blue-600 transition-colors px-6 py-3 rounded-lg text-lg font-medium">
-                Learn More
-              </Button>
+              <Link to="/book-consultation">
+                <Button variant="outline" className="bg-blue-500 border-blue-600 text-white hover:bg-blue-600 transition-colors px-6 py-3 rounded-lg text-lg font-medium">
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
           
