@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, ShoppingCart, Workflow, Bot, Users, MessagesSquare } from "lucide-react";
@@ -103,9 +102,10 @@ const CoreServicesSection = () => {
         
         <div className="mt-16 text-center">
           <Link to="/contact">
-            <Button className="bg-newtheme-purple hover:bg-newtheme-purple/90 text-white px-8 py-6 text-lg rounded-lg">
-              Get In Touch With Our Experts
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button className="bg-newtheme-purple hover:bg-newtheme-purple/90 text-white px-8 py-6 text-lg rounded-lg flex items-center gap-2 relative overflow-hidden group">
+              <span>Get In Touch With Our Experts</span>
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
             </Button>
           </Link>
         </div>
