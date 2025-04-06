@@ -43,7 +43,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/53caadcf-63a2-4dbd-a5dc-5e78b808af47.png" 
                 alt="IQX Logo" 
-                className="h-10" 
+                className="h-10 w-auto" 
                 width="40"
                 height="40"
                 loading="eager"
