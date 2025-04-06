@@ -7,7 +7,7 @@ const WhyLeasingSection = () => {
     <div className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">
-          Why Leasing Talent Is Smart
+          Why IQX Talent-as-a-Service Works
         </h2>
         <p className="text-lg text-center mb-12 max-w-3xl mx-auto text-gray-700">
           The IQX model gives you speed, flexibility, and peace of mind.
@@ -17,60 +17,60 @@ const WhyLeasingSection = () => {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
               <span className="text-2xl mr-3">⚡</span>
-              <h4 className="text-xl font-semibold text-gray-800">Find Talent Fast</h4>
+              <h4 className="text-xl font-semibold text-gray-800">Speed to Scale</h4>
             </div>
             <p className="text-gray-700">
-              We already have the perfect person in our pool of proven techies, ready to plug in and deliver from day one.
+              Skip the search. We've already vetted the right people, ready to go.
             </p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
               <span className="text-2xl mr-3">💸</span>
-              <h4 className="text-xl font-semibold text-gray-800">No Recruitment Fees</h4>
+              <h4 className="text-xl font-semibold text-gray-800">Zero Upfront Fees</h4>
             </div>
             <p className="text-gray-700">
-              You won't pay anything upfront. Your first bill only arrives after 30 days of delivery.
+              No recruitment or setup costs. You only start paying after the first 30 days.
             </p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
               <span className="text-2xl mr-3">📈</span>
-              <h4 className="text-xl font-semibold text-gray-800">Flexible Contracts</h4>
+              <h4 className="text-xl font-semibold text-gray-800">Flexible Engagements</h4>
             </div>
             <p className="text-gray-700">
-              Scale up, down, or sideways—our agile contracts let you move as your product demands change.
+              Scale up or down as needed. Our contracts flex with your business.
             </p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
               <span className="text-2xl mr-3">🔄</span>
-              <h4 className="text-xl font-semibold text-gray-800">We Plug Into Your Process</h4>
+              <h4 className="text-xl font-semibold text-gray-800">Seamless Integration</h4>
             </div>
             <p className="text-gray-700">
-              Each team member or Maven integrates directly into your systems, processes, and company culture.
+              Our talent plugs into your tools, processes, and culture—like they've always been there.
             </p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
               <span className="text-2xl mr-3">✅</span>
-              <h4 className="text-xl font-semibold text-gray-800">Vetted and Tested</h4>
+              <h4 className="text-xl font-semibold text-gray-800">Proven Professionals</h4>
             </div>
             <p className="text-gray-700">
-              Every IQX Maven is carefully screened, technically tested, and selected based on real capability—not just a resume.
+              Every team member is tested, vetted, and proven in real-world delivery—no guesswork.
             </p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
               <span className="text-2xl mr-3">🛠️</span>
-              <h4 className="text-xl font-semibold text-gray-800">Our Person, Our Problem</h4>
+              <h4 className="text-xl font-semibold text-gray-800">We Handle the Admin</h4>
             </div>
             <p className="text-gray-700">
-              From performance to sick leave, we handle all HR issues. Need a replacement? We'll do it fast and at no cost.
+              From sick leave to underperformance, we take full responsibility and manage replacements if needed.
             </p>
           </div>
         </div>
