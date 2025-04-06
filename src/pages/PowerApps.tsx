@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, ExternalLink } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -12,6 +13,7 @@ import {
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Checkbox } from "@/components/ui/checkbox";
 import LeadFormSection from "@/components/PowerApps/LeadFormSection";
+import { Link } from "react-router-dom";
 
 const PowerApps = () => {
   return (
@@ -31,10 +33,12 @@ const PowerApps = () => {
               <p className="text-xl text-white/80 mb-8">
                 Transform outdated processes into efficient, customized digital experiences with Microsoft Power Apps.
               </p>
-              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
-                Let's build the future of your business—today
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link to="/book-consultation">
+                <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+                  Book a Consultation
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -172,10 +176,12 @@ const PowerApps = () => {
                       <h3 className="font-bold text-lg">{challenge.title}</h3>
                     </div>
                     <p className="text-white/70 mb-6">{challenge.description}</p>
-                    <Button className="bg-white hover:bg-gray-100 text-newtheme-purple w-full">
-                      {challenge.buttonText}
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    <Link to="/book-consultation">
+                      <Button className="bg-white hover:bg-gray-100 text-newtheme-purple w-full">
+                        Book a Consultation
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -223,10 +229,12 @@ const PowerApps = () => {
               <p className="text-xl opacity-80 mb-8">
                 Let's build smarter solutions together with Power Apps.
               </p>
-              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
-                Schedule a Free Consultation
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link to="/book-consultation">
+                <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+                  Book a Consultation
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -315,19 +323,19 @@ const challenges = [
     icon: "⚙️",
     title: "Manual Processes Draining Time?",
     description: "Transform outdated workflows into automated systems that save time and free up resources.",
-    buttonText: "Start automating now"
+    buttonText: "Book a Consultation"
   },
   {
     icon: "🔁",
     title: "Repetitive Tasks Slowing Productivity?",
     description: "Let us build smart solutions that shift your team's focus from admin to impact.",
-    buttonText: "Talk to an expert"
+    buttonText: "Book a Consultation"
   },
   {
     icon: "🧑‍💼",
     title: "Complex Onboarding Hurting Efficiency?",
     description: "Streamline employee onboarding with customized apps that centralize paperwork, training, and tasks.",
-    buttonText: "Request a demo"
+    buttonText: "Book a Consultation"
   }
 ];
 
