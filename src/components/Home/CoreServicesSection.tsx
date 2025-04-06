@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, ShoppingCart, Workflow, Bot, Users, MessagesSquare } from "lucide-react";
@@ -26,7 +25,7 @@ const ServiceCard = ({
       </p>
       <Link to={linkTo}>
         <Button className="w-full font-medium">
-          {`Explore ${title}`}
+          Explore More
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
       </Link>
