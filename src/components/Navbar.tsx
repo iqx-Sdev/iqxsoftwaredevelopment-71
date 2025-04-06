@@ -90,7 +90,7 @@ const Navbar = () => {
               AI Chat
             </Link>
             <Link to="/contact">
-              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white ml-2">
+              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white ml-2 border border-gray-300">
                 Contact Us
               </Button>
             </Link>
@@ -153,7 +153,7 @@ const Navbar = () => {
             </Link>
             <div className="px-3 py-2">
               <Link to="/contact">
-                <Button className="w-full bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600">
+                <Button className="w-full bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 border border-gray-300">
                   Contact Us
                 </Button>
               </Link>

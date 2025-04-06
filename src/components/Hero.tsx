@@ -21,7 +21,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/book-consultation">
-              <Button className="font-medium">
+              <Button className="font-medium border border-gray-300">
                 Book a Consultation
                 <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
               </Button>

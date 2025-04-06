@@ -2,6 +2,7 @@
 import LeadForm from "./LeadForm";
 import { Link } from "react-router-dom";
 import { Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const AILeadForm = () => {
   return (
