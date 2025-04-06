@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -18,10 +19,12 @@ const HeroSection = () => {
             <p className="text-xl text-white/80 mb-8">
               Custom-built cross-platform apps, powered by Flutter, React Native, and flexible content architecture.
             </p>
-            <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
-              Talk to Our App Development Team
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link to="/book-consultation">
+              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+                Talk to Our App Development Team
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
           
           <div className="relative hidden lg:block">
