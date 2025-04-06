@@ -2,6 +2,7 @@
 import React from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const moreServices = [
   {
@@ -46,9 +47,11 @@ const MoreFromSection = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10">
-              Explore All Services
-            </Button>
+            <Link to="/contact">
+              <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10">
+                Explore All Services
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

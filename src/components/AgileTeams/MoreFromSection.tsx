@@ -1,6 +1,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const MoreFromSection = () => {
   return (
@@ -41,9 +42,11 @@ const MoreFromSection = () => {
         </div>
         
         <div className="flex justify-center mt-10">
-          <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-100">
-            Explore All Services <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link to="/contact">
+            <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-100">
+              Explore All Services <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
