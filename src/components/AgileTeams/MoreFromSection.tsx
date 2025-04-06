@@ -39,12 +39,6 @@ const MoreFromSection = () => {
             </p>
           </div>
         </div>
-        
-        <div className="flex justify-center mt-10">
-          <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-100">
-            Explore All Services <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </div>
       </div>
     </div>
   );

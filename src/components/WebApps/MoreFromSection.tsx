@@ -1,7 +1,6 @@
 
 import React from "react";
 import { Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 interface ServiceItem {
   title: string;
@@ -33,12 +32,6 @@ const MoreFromSection: React.FC<MoreFromSectionProps> = ({ moreServices }) => {
                 </div>
               </div>
             ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10">
-              Explore All Services
-            </Button>
           </div>
         </div>
       </div>
