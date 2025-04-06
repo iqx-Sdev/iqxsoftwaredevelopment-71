@@ -8,6 +8,7 @@ import CoreServicesSection from "@/components/Home/CoreServicesSection";
 import WhyChooseUsSection from "@/components/Home/WhyChooseUsSection";
 import CTASection from "@/components/Home/CTASection";
 import SolutionsSection from "@/components/Home/SolutionsSection";
+import ClientLogosSection from "@/components/Home/ClientLogosSection";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <AboutSection />
       <CoreServicesSection />
       <SolutionsSection />
+      <ClientLogosSection />
       <WhyChooseUsSection />
       <CTASection />
       <Footer />
