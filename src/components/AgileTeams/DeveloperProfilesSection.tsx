@@ -36,7 +36,7 @@ const developers: Developer[] = [
     bio: "Maria has been leading teams in developing enterprise-grade applications for global clients across multiple industries. With expertise in cloud architecture and microservices, she specializes in building scalable, high-performance applications that solve complex business problems.",
     skills: ["React", "Node.js", "AWS", "GraphQL", "Docker", "Kubernetes", "TypeScript", "PostgreSQL", "Redis", "Jest"],
     experience: "12+ yrs experience",
-    location: "Canada"
+    location: "South Africa" // Updated location
   },
   {
     name: "Alex",
@@ -44,7 +44,7 @@ const developers: Developer[] = [
     bio: "Alex is an expert in infrastructure automation, CI/CD pipelines, and cloud-native technologies. His experience spans from startups to Fortune 500 companies, building resilient systems that can handle massive scale while maintaining security and compliance requirements.",
     skills: ["AWS", "Azure", "GCP", "Terraform", "Kubernetes", "Docker", "Jenkins", "GitHub Actions", "Python", "Go"],
     experience: "15+ yrs experience",
-    location: "United Kingdom"
+    location: "South Africa" // Updated location
   },
   {
     name: "Priya",
@@ -52,7 +52,88 @@ const developers: Developer[] = [
     bio: "Priya combines strong software engineering skills with data science expertise. She has implemented machine learning solutions across various domains including recommendation systems, natural language processing, and computer vision. Her focus is on building production-ready AI systems.",
     skills: ["Python", "TensorFlow", "PyTorch", "scikit-learn", "NLP", "Computer Vision", "MLOps", "SQL", "AWS SageMaker", "Kafka"],
     experience: "8+ yrs experience",
-    location: "Singapore"
+    location: "South Africa" // Updated location
+  },
+  // Adding 10 more developers with a mix of skills
+  {
+    name: "Thabo",
+    title: "Flutter Developer",
+    bio: "Thabo specializes in creating beautiful, responsive mobile applications with Flutter. He has shipped multiple apps to both the App Store and Google Play, and is passionate about creating seamless cross-platform experiences with a single codebase.",
+    skills: ["Flutter", "Dart", "Firebase", "RESTful APIs", "GraphQL", "BLoC Pattern", "Provider", "GetX", "CI/CD", "App Store Optimization"],
+    experience: "6+ yrs experience",
+    location: "South Africa"
+  },
+  {
+    name: "Lerato",
+    title: "React Native Specialist",
+    bio: "Lerato has extensive experience in mobile app development, specializing in React Native. She has helped numerous startups launch their products and has built apps used by millions of users across Africa.",
+    skills: ["React Native", "JavaScript", "TypeScript", "Redux", "MobX", "Jest", "Detox", "Firebase", "OAuth", "Push Notifications"],
+    experience: "7+ yrs experience",
+    location: "South Africa"
+  },
+  {
+    name: "Johan",
+    title: "Java Enterprise Architect",
+    bio: "Johan has architected large-scale enterprise systems for banking, insurance, and telecom clients. He specializes in high-throughput, low-latency applications that can handle millions of transactions daily.",
+    skills: ["Java", "Spring Boot", "Hibernate", "Microservices", "JUnit", "Maven", "Gradle", "Oracle", "Kafka", "Docker"],
+    experience: "14+ yrs experience",
+    location: "South Africa"
+  },
+  {
+    name: "Nomsa",
+    title: ".NET Team Lead",
+    bio: "Nomsa leads development teams using Microsoft technologies to build robust enterprise applications. She has particular expertise in financial services applications and secure transaction processing.",
+    skills: [".NET Core", "C#", "ASP.NET", "SQL Server", "Entity Framework", "Azure DevOps", "Blazor", "CQRS", "Microservices", "Identity Server"],
+    experience: "11+ yrs experience",
+    location: "South Africa"
+  },
+  {
+    name: "Daniel",
+    title: "Azure Cloud Solutions Architect",
+    bio: "Daniel helps businesses migrate legacy systems to the cloud and architect cloud-native solutions. He has expertise in cost optimization, security compliance, and implementing best practices for Azure deployments.",
+    skills: ["Azure", "Cloud Architecture", "IaaS", "PaaS", "Azure Functions", "Cosmos DB", "Application Insights", "Terraform", "PowerShell", "ARM Templates"],
+    experience: "10+ yrs experience",
+    location: "South Africa"
+  },
+  {
+    name: "Zintle",
+    title: "UX/UI Designer",
+    bio: "Zintle creates beautiful, intuitive user experiences that balance business goals with user needs. She has expertise in design thinking methodologies and has helped transform digital products for major South African brands.",
+    skills: ["Figma", "Adobe XD", "Sketch", "User Research", "Wireframing", "Prototyping", "Design Systems", "Accessibility", "User Testing", "Information Architecture"],
+    experience: "9+ yrs experience",
+    location: "South Africa"
+  },
+  {
+    name: "Trevor",
+    title: "AI Research Engineer",
+    bio: "Trevor specializes in developing cutting-edge AI solutions across various domains. His research background in machine learning has helped clients implement innovative solutions for complex business problems.",
+    skills: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Python", "TensorFlow", "PyTorch", "Computer Vision", "NLP", "Reinforcement Learning", "MLOps"],
+    experience: "8+ yrs experience",
+    location: "South Africa"
+  },
+  {
+    name: "Ayanda",
+    title: "LLM Specialist",
+    bio: "Ayanda is at the forefront of implementing large language models for business applications. She specializes in fine-tuning models, developing prompt engineering frameworks, and creating novel applications of generative AI.",
+    skills: ["Large Language Models", "GPT", "Prompt Engineering", "Fine-tuning", "Vector Databases", "Semantic Search", "RAG", "LangChain", "Embeddings", "OpenAI API"],
+    experience: "5+ yrs experience",
+    location: "South Africa"
+  },
+  {
+    name: "Kagiso",
+    title: "Data Engineering Lead",
+    bio: "Kagiso specializes in building robust data pipelines and data platforms that turn raw information into valuable business insights. His expertise spans both batch and real-time data processing at scale.",
+    skills: ["Apache Spark", "Kafka", "Airflow", "dbt", "Snowflake", "BigQuery", "Data Modeling", "ETL/ELT", "SQL", "Python"],
+    experience: "10+ yrs experience",
+    location: "South Africa"
+  },
+  {
+    name: "Thandiwe",
+    title: "AWS Solutions Architect",
+    bio: "Thandiwe designs scalable, fault-tolerant systems on AWS. She has helped numerous organizations optimize their cloud infrastructure for performance, cost, and security while meeting compliance requirements.",
+    skills: ["AWS", "CloudFormation", "Lambda", "ECS", "DynamoDB", "S3", "API Gateway", "IAM", "CloudWatch", "RDS"],
+    experience: "9+ yrs experience",
+    location: "South Africa"
   }
 ];
 
