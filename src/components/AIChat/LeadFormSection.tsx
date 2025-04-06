@@ -2,6 +2,8 @@
 import React from "react";
 import AILeadForm from "@/components/AILeadForm";
 import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const leadFormBenefits = [
   "Free AI consultation with our experts",
@@ -32,6 +34,14 @@ const LeadFormSection = () => {
                     <p className="text-gray-700">{benefit}</p>
                   </div>
                 ))}
+              </div>
+              
+              <div className="mt-6">
+                <Link to="/book-consultation">
+                  <Button className="bg-gradient-to-r from-blue-500 to-newtheme-purple hover:from-blue-600 hover:to-newtheme-purple/90 text-white px-6 py-2 rounded-lg font-medium">
+                    Book a Consultation
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
