@@ -14,7 +14,6 @@ const SectionLoader = () => (
 );
 
 // Lazy load the components
-const CTA = lazy(() => import("../components/CTA"));
 const FinalCTASection = lazy(() => import("../components/AgileTeams/FinalCTASection"));
 const ProductSection = lazy(() => import("../components/AgileTeams/ProductSection"));
 const MoreFromSection = lazy(() => import("../components/AgileTeams/MoreFromSection"));
@@ -64,9 +63,6 @@ const AgileTeams = () => {
 
           {/* Final CTA Section */}
           <FinalCTASection />
-
-          {/* CTA Component */}
-          <CTA />
         </Suspense>
       </div>
       <Footer />
