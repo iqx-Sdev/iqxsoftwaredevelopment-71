@@ -10,7 +10,6 @@ import CTASection from "@/components/Home/CTASection";
 import SolutionsSection from "@/components/Home/SolutionsSection";
 import ClientLogosSection from "@/components/Home/ClientLogosSection";
 import ContactSection from "@/components/Home/ContactSection";
-import CareersSection from "@/components/Home/CareersSection";
 import CTA from "@/components/CTA";
 
 const Index = () => {
@@ -23,7 +22,6 @@ const Index = () => {
       <SolutionsSection />
       <ClientLogosSection />
       <WhyChooseUsSection />
-      <CareersSection />
       <ContactSection />
       <CTASection />
       <Footer />
