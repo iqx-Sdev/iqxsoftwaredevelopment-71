@@ -2,11 +2,8 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { useContactModal } from "@/hooks/useContactModal";
 
 const HeroSection = () => {
-  const { openContactModal } = useContactModal();
-  
   return (
     <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600">
       <div className="container mx-auto px-4">
@@ -21,10 +18,7 @@ const HeroSection = () => {
             <p className="text-xl text-white/80 mb-8">
               Custom-built cross-platform apps, powered by Flutter, React Native, and flexible content architecture.
             </p>
-            <Button 
-              className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg"
-              onClick={openContactModal.forExpert}
-            >
+            <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
               Talk to Our App Development Team
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

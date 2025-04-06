@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { lazy, Suspense, useState, useEffect } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import NotFound from "./pages/NotFound";
-import ContactModal from "./components/ContactModal";
 
 // Lazy load route components
 const Index = lazy(() => import('./pages/Index'));
@@ -85,7 +84,6 @@ const AppRoutes = () => {
           </Routes>
         </Suspense>
       </ErrorBoundary>
-      <ContactModal />
     </>
   );
 };
@@ -108,7 +106,6 @@ const App = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Fixed the TooltipProvider placement */}
       <TooltipProvider>
         <Toaster />
         <Sonner />

@@ -2,7 +2,6 @@
 import React from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useContactModal } from "@/hooks/useContactModal";
 
 const moreServices = [
   {
@@ -24,8 +23,6 @@ const moreServices = [
 ];
 
 const MoreFromSection = () => {
-  const { openContactModal } = useContactModal();
-
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -49,11 +46,7 @@ const MoreFromSection = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Button 
-              variant="outline" 
-              className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10"
-              onClick={openContactModal.forConsultation}
-            >
+            <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10">
               Explore All Services
             </Button>
           </div>

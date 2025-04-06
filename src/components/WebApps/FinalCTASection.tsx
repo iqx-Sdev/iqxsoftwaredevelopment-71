@@ -2,11 +2,8 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { useContactModal } from "@/hooks/useContactModal";
 
 const FinalCTASection = () => {
-  const { openContactModal } = useContactModal();
-
   return (
     <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600 text-white">
       <div className="container mx-auto px-4 text-center">
@@ -20,18 +17,11 @@ const FinalCTASection = () => {
             we make app development smarter, faster, and more empowering.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              className="bg-white text-blue-600 hover:bg-gray-100 font-semibold"
-              onClick={openContactModal.forExpert}
-            >
+            <Button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
               Talk to Our App Development Team
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button 
-              variant="outline" 
-              className="border-white text-white hover:bg-white/20 font-medium"
-              onClick={openContactModal.forConsultation}
-            >
+            <Button variant="outline" className="border-white text-white hover:bg-white/20 font-medium">
               Schedule a Free Consultation
             </Button>
           </div>

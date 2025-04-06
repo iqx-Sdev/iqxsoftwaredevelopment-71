@@ -27,11 +27,9 @@ const CareersSection = () => {
                     <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-                <Link to="/contact">
-                  <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                    Our Culture
-                  </Button>
-                </Link>
+                <Button variant="outline" className="border-white text-white hover:bg-white/10">
+                  Our Culture
+                </Button>
               </div>
             </div>
             

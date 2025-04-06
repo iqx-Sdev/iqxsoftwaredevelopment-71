@@ -2,7 +2,6 @@
 import { Button } from "@/components/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 const FinalCTASection = () => {
   return (
@@ -15,12 +14,10 @@ const FinalCTASection = () => {
           <p className="text-xl opacity-80 mb-8">
             Engage smarter. Convert faster. Support better — all through WhatsApp.
           </p>
-          <Link to="/contact">
-            <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg font-medium">
-              Request a Demo
-              <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+          <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg font-medium">
+            Request a Demo
+            <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
+          </Button>
         </div>
       </div>
     </section>
