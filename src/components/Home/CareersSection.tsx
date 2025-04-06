@@ -21,15 +21,17 @@ const CareersSection = () => {
                 innovators and industry experts.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contact">
+                <Link to="/book-consultation">
                   <Button className="bg-white text-newtheme-purple hover:bg-gray-100">
-                    Contact Us
+                    Book a Consultation
                     <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10">
-                  Our Culture
-                </Button>
+                <Link to="/book-consultation">
+                  <Button variant="outline" className="border-white text-white hover:bg-white/10">
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
             

@@ -24,7 +24,7 @@ const CTA = () => {
             </Link>
             <Link to="/book-consultation">
               <Button variant="outline" className="border-newtheme-purple text-newtheme-purple hover:bg-newtheme-purple/10 font-medium">
-                Schedule a Demo
+                Book a Consultation
               </Button>
             </Link>
           </div>
