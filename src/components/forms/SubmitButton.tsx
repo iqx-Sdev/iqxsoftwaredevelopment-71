@@ -12,7 +12,7 @@ const SubmitButton = ({ isSubmitting }: SubmitButtonProps) => {
     <Button 
       type="submit" 
       disabled={isSubmitting}
-      className="w-full text-lg font-semibold"
+      className="w-full text-lg font-semibold bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg"
     >
       {isSubmitting ? (
         "Submitting..."

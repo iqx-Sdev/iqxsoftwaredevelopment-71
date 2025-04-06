@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ValuePropositionSection = () => {
@@ -18,8 +19,9 @@ const ValuePropositionSection = () => {
                 get a conversion-optimized Shopify site that's as visually stunning as it is functionally robust.
               </p>
               <Link to="/book-consultation">
-                <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white px-6 py-3 rounded-lg text-lg">
-                  Get Your Free Consultation
+                <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+                  Book a Consultation
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
             </div>

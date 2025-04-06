@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const FeaturedProjectsSection = () => {
   return (
@@ -33,9 +33,9 @@ const FeaturedProjectsSection = () => {
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-4">Luxury eyewear brand saw a 75% increase in online conversions after our Shopify redesign.</p>
-                  <Button variant="outline" className="group">
+                  <Button className="bg-white hover:bg-gray-100 text-newtheme-purple rounded-lg">
                     View Case Study
-                    <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
               </div>
@@ -56,9 +56,9 @@ const FeaturedProjectsSection = () => {
                 </div>
                 <div className="p-6">
                   <p className="text-gray-600 mb-4">Health brand achieved 120% revenue growth in 6 months with our custom Shopify Plus solution.</p>
-                  <Button variant="outline" className="group">
+                  <Button className="bg-white hover:bg-gray-100 text-newtheme-purple rounded-lg">
                     View Case Study
-                    <ChevronRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
               </div>
