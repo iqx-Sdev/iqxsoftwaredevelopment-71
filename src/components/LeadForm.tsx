@@ -22,12 +22,11 @@ const LeadForm = ({ title, subtitle, serviceName, hideTitle = false }: LeadFormP
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      firstName: "",
-      lastName: "",
+      name: "",
       email: "",
       company: "",
       message: "",
-      marketingConsent: false,
+      marketing: false,
     },
   });
 
@@ -61,47 +60,49 @@ const LeadForm = ({ title, subtitle, serviceName, hideTitle = false }: LeadFormP
       )}
       
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4">
           <FormInput
-            name="firstName"
-            label="First Name"
-            placeholder="John"
-            form={form}
-          />
-          <FormInput
-            name="lastName"
-            label="Last Name"
-            placeholder="Doe"
-            form={form}
+            control={form.control}
+            name="name"
+            label="Full Name"
+            placeholder="John Doe"
+            type="text"
+            icon="user"
           />
         </div>
         
         <FormInput
+          control={form.control}
           name="email"
           label="Email"
           placeholder="john.doe@example.com"
-          form={form}
+          type="email"
+          icon="email"
         />
         
         <FormInput
+          control={form.control}
           name="company"
           label="Company"
           placeholder="Acme Inc."
-          form={form}
+          type="text"
+          icon="company"
+          optional={true}
         />
         
         <FormInput
+          control={form.control}
           name="message"
           label="Message"
           placeholder="Tell us about your project or inquiries..."
-          form={form}
-          textarea
+          type="textarea"
+          icon="message"
         />
         
-        <MarketingCheckbox form={form} />
+        <MarketingCheckbox control={form.control} />
         
         <div className="pt-2">
-          <SubmitButton form={form} />
+          <SubmitButton isSubmitting={form.formState.isSubmitting} />
         </div>
       </form>
     </div>
