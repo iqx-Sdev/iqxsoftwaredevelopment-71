@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -17,10 +18,12 @@ const HeroSection = () => {
           <p className="text-xl text-white/80 mb-8">
             Turn WhatsApp into a smart, real-time customer engagement channel.
           </p>
-          <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg font-medium">
-            Request a Demo
-            <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
-          </Button>
+          <Link to="/book-consultation">
+            <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg font-medium">
+              Book a Consultation
+              <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
