@@ -14,7 +14,7 @@ const FinalCTASection = () => {
             Whether you're scaling fast, launching new features, or rebuilding legacy systems, IQX provides agile teams that think beyond code. You bring the vision—we'll bring the velocity.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-white text-purple-700 hover:bg-gray-100">
+            <Button className="bg-white text-purple-700 hover:bg-gray-100 font-medium">
               Schedule a Consultation
             </Button>
             <Button 

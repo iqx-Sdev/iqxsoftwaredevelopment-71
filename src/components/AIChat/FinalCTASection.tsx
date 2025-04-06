@@ -13,7 +13,7 @@ const FinalCTASection = () => {
           <p className="text-xl opacity-80 mb-8">
             Engage smarter. Convert faster. Support better — all through WhatsApp.
           </p>
-          <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+          <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg font-medium">
             Request a Demo
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>

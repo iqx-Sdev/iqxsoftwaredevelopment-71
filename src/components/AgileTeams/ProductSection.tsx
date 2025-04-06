@@ -17,7 +17,7 @@ const ProductSection = () => {
             With IQX, you get more than capacity—you get capability.
           </p>
           <div className="flex justify-center">
-            <Button className="bg-white text-purple-700 hover:bg-gray-100">
+            <Button className="bg-white text-purple-700 hover:bg-gray-100 font-medium">
               Get Your Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>

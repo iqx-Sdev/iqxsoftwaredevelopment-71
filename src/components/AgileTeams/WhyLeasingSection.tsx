@@ -76,7 +76,7 @@ const WhyLeasingSection = () => {
         </div>
         
         <div className="flex justify-center mt-10">
-          <Button className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white">
+          <Button className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white font-medium">
             Talk to a Talent Advisor <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>

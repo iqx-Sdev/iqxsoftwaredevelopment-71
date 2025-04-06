@@ -54,7 +54,7 @@ const WhyChooseSection = () => {
           </div>
         </div>
         <div className="flex justify-center mt-8">
-          <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-100">
+          <Button variant="outline" className="border-purple-700 text-purple-700 hover:bg-purple-100 font-medium">
             See Our Work <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>

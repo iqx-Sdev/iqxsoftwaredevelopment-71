@@ -16,7 +16,7 @@ const HeroSection = () => {
           <p className="text-xl text-white/80 mb-8">
             Turn WhatsApp into a smart, real-time customer engagement channel.
           </p>
-          <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+          <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg font-medium">
             Request a Demo
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>

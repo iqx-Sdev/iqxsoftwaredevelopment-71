@@ -20,13 +20,13 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
+              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg font-medium">
                 Contact Us
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link to="/agentic-ai">
-              <Button variant="outline" className="border-white text-newtheme-purple bg-white hover:bg-gray-100 px-8 py-6 rounded-lg text-lg">
+              <Button variant="outline" className="border-white text-newtheme-purple bg-white hover:bg-gray-100 px-8 py-6 rounded-lg text-lg font-medium">
                 Explore Solutions
               </Button>
             </Link>

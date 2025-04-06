@@ -17,11 +17,11 @@ const FinalCTASection = () => {
             we make app development smarter, faster, and more empowering.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-blue-600 hover:bg-gray-100">
+            <Button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
               Talk to Our App Development Team
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white/20">
+            <Button variant="outline" className="border-white text-white hover:bg-white/20 font-medium">
               Schedule a Free Consultation
             </Button>
           </div>
