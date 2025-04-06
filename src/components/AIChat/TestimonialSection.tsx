@@ -10,7 +10,7 @@ const TestimonialSection = () => {
             </svg>
           </div>
           <p className="text-xl md:text-2xl text-gray-700 mb-8">
-            "Stubber's WhatsApp integration completely transformed how we handle support — faster responses, happier customers, and no missed opportunities."
+            "IQX's WhatsApp integration completely transformed how we handle support — faster responses, happier customers, and no missed opportunities."
           </p>
         </div>
       </div>

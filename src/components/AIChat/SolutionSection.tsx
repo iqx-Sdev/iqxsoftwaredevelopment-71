@@ -33,7 +33,7 @@ const SolutionSection = () => {
                 Smart, scalable customer engagement. Built for WhatsApp.
               </h2>
               <p className="text-gray-600 mb-6">
-                Stubber by IQX transforms WhatsApp into a powerful, always-on channel for support, sales, and automation. Whether you're using AI chatbots, live agents, or both — you'll launch in minutes, not days, with our low-code platform.
+                IQX transforms WhatsApp into a powerful, always-on channel for support, sales, and automation. Whether you're using AI chatbots, live agents, or both — you'll launch in minutes, not days, with our low-code platform.
               </p>
             </div>
           </div>
