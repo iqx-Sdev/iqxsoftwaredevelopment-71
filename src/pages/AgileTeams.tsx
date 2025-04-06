@@ -23,6 +23,7 @@ const WhyChooseSection = lazy(() => import("../components/AgileTeams/WhyChooseSe
 const SkillsTechSection = lazy(() => import("../components/AgileTeams/SkillsTechSection"));
 const WhyLeasingSection = lazy(() => import("../components/AgileTeams/WhyLeasingSection"));
 const DeliveryProcessSection = lazy(() => import("../components/AgileTeams/DeliveryProcessSection"));
+const ContactFormSection = lazy(() => import("../components/AgileTeams/ContactFormSection"));
 
 const AgileTeams = () => {
   useEffect(() => {
@@ -54,6 +55,9 @@ const AgileTeams = () => {
 
           {/* Delivery Process Section */}
           <DeliveryProcessSection />
+
+          {/* Contact Form Section */}
+          <ContactFormSection />
 
           {/* More From IQX */}
           <MoreFromSection />
