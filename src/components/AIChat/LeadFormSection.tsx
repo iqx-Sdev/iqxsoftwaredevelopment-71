@@ -38,7 +38,7 @@ const LeadFormSection = () => {
               
               <div className="mt-6">
                 <Link to="/book-consultation">
-                  <Button className="bg-gradient-to-r from-blue-500 to-newtheme-purple hover:from-blue-600 hover:to-newtheme-purple/90 text-white px-6 py-2 rounded-lg font-medium">
+                  <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
                     Book a Consultation
                   </Button>
                 </Link>

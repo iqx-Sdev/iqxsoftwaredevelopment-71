@@ -34,7 +34,7 @@ const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({ whatWeOffer }) => {
       </CardHeader>
       <CardContent>
         <p className={`${item.featured ? 'text-gray-700' : 'text-gray-600'} mb-6`}>{item.description}</p>
-        <Button variant="link" className="text-pink-500 hover:text-pink-600 p-0">
+        <Button className="bg-white hover:bg-gray-100 text-newtheme-purple rounded-lg">
           {item.buttonText}
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>

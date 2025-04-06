@@ -19,7 +19,7 @@ const HeroSection = () => {
             Unlock next-generation automation and operational intelligence with Agentic AI. IQX builds intelligent, autonomous systems that think, plan, and act — transforming your business processes with speed, precision, and impact.
           </p>
           <Link to="/book-consultation">
-            <Button className="font-medium">
+            <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
               Book a Consultation <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>

@@ -17,13 +17,13 @@ const CTA = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/book-consultation">
-              <Button className="font-medium">
+              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
                 Book a Consultation
                 <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link to="/book-consultation">
-              <Button variant="outline" className="font-medium">
+              <Button variant="outline" className="px-8 py-6 text-lg">
                 Book a Consultation
               </Button>
             </Link>

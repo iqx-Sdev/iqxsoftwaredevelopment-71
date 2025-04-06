@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 const ValuePropositionSection = () => {
   return (
@@ -18,8 +19,9 @@ const ValuePropositionSection = () => {
                 Your app is more than code, it's a living product powered by dynamic content and intelligent design. We use Flutter or React Native with robust, API-first CMS platforms like Strapi and Umbraco, giving your team full control over content without touching the code.
               </p>
               <Link to="/book-consultation">
-                <Button className="font-medium">
+                <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
                   Book a Consultation
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
             </div>

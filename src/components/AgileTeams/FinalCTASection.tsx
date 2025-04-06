@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 const FinalCTASection = () => {
   return (
@@ -15,8 +16,9 @@ const FinalCTASection = () => {
           </p>
           <div className="flex justify-center">
             <Link to="/book-consultation">
-              <Button className="font-medium">
+              <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
                 Book a Consultation
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>

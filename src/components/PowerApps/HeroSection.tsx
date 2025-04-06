@@ -19,7 +19,7 @@ const HeroSection = () => {
             Transform outdated processes into efficient, customized digital experiences with Microsoft Power Apps.
           </p>
           <Link to="/book-consultation">
-            <Button className="font-medium">
+            <Button className="bg-white hover:bg-gray-100 text-newtheme-purple px-8 py-6 rounded-lg text-lg">
               Book a Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
