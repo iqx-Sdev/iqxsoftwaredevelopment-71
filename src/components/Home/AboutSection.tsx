@@ -28,12 +28,6 @@ const AboutSection = () => {
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-newtheme-purple mb-6">We're business smart, but techies at heart </h2>
               <p className="text-gray-600 mb-6">At our core we're a bunch of coders, who love tech. We started small, and now run a company that has 300+ talented people, across three countries. We know business, and that's something that sets us apart. We know how important it is to hire the right people, and have solid partnerships you can trust in. </p>
-              <Link to="/contact">
-                <Button className="bg-newtheme-purple hover:bg-newtheme-purple/90 text-white">
-                  Learn More About Us
-                  <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
             </div>
           </div>
         </div>
