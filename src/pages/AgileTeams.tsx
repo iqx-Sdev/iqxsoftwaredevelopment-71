@@ -37,9 +37,6 @@ const AgileTeams = () => {
         {/* Hero Section */}
         <HeroSection />
 
-        {/* Client Logos Section */}
-        <ClientLogosSection />
-
         <Suspense fallback={<SectionLoader />}>
           {/* Visual Section */}
           <VisualSection />
@@ -67,6 +64,9 @@ const AgileTeams = () => {
 
           {/* Final CTA Section */}
           <FinalCTASection />
+          
+          {/* Client Logos Section - Moved to bottom */}
+          <ClientLogosSection />
         </Suspense>
       </div>
       <Footer />
