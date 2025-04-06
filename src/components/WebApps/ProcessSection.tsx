@@ -2,30 +2,16 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
-const process = [
-  {
-    title: "Discovery & Strategy",
-    description: "We learn your goals, audience, and technical landscape—including the ideal CMS to support your content needs."
-  },
-  {
-    title: "UX Architecture & Wireframing",
-    description: "Crafting intuitive structures with scalable information architecture—designed for API-driven content flow."
-  },
-  {
-    title: "Pixel-Perfect UI Design",
-    description: "Delightful, responsive interfaces that pull in real-time content from Strapi, Umbraco, or your CMS of choice."
-  },
-  {
-    title: "Cross-Platform Development",
-    description: "Robust Flutter or React Native codebases, powered by flexible content APIs and real-time updates."
-  },
-  {
-    title: "Launch, Test, Iterate",
-    description: "Ongoing testing, performance tuning, and CMS-enabled agility so you can adapt and grow post-launch."
-  }
-];
+interface ProcessStep {
+  title: string;
+  description: string;
+}
 
-const ProcessSection = () => {
+interface ProcessSectionProps {
+  process: ProcessStep[];
+}
+
+const ProcessSection: React.FC<ProcessSectionProps> = ({ process }) => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">

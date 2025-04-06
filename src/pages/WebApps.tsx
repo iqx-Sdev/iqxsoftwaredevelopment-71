@@ -12,6 +12,13 @@ import TechStackSection from "@/components/WebApps/TechStackSection";
 import MoreFromSection from "@/components/WebApps/MoreFromSection";
 import FinalCTASection from "@/components/WebApps/FinalCTASection";
 import DesignShowcaseSection from "@/components/WebApps/DesignShowcaseSection";
+import { 
+  whatWeOffer,
+  process,
+  techBenefits,
+  moreServices,
+  leadFormBenefits
+} from "@/components/WebApps/data";
 
 const WebApps = () => {
   return (
@@ -20,13 +27,13 @@ const WebApps = () => {
       <div className="flex-grow">
         <HeroSection />
         <StatsSection />
-        <LeadFormSection />
+        <LeadFormSection leadFormBenefits={leadFormBenefits} />
         <ValuePropositionSection />
         <DesignShowcaseSection />
-        <WhyChooseSection />
-        <ProcessSection />
-        <TechStackSection />
-        <MoreFromSection />
+        <WhyChooseSection whatWeOffer={whatWeOffer} />
+        <ProcessSection process={process} />
+        <TechStackSection techBenefits={techBenefits} />
+        <MoreFromSection moreServices={moreServices} />
         <FinalCTASection />
       </div>
       <Footer />

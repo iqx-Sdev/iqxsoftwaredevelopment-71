@@ -8,16 +8,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const techBenefits = [
-  "Cross-Platform Agility: Build once with Flutter or React Native, deploy to iOS, Android, and web.",
-  "Native-Like Performance: Smooth animations and interactions with Flutter and React Native.",
-  "Faster Time to Market: Modular code meets real-time content updates.",
-  "Strapi & Umbraco Integration: Update app content without deploying code.",
-  "Content API Power: REST or GraphQL APIs for flexible data delivery.",
-  "Role-Based Access: Strapi and Umbraco allow secure content control across teams."
-];
+interface TechStackSectionProps {
+  techBenefits: string[];
+}
 
-const TechStackSection = () => {
+const TechStackSection: React.FC<TechStackSectionProps> = ({ techBenefits }) => {
   return (
     <section className="py-16 bg-gradient-to-br from-gray-900 to-newtheme-purple text-white">
       <div className="container mx-auto px-4">

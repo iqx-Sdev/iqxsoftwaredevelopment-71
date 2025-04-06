@@ -4,36 +4,18 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const whatWeOffer = [
-  {
-    title: "Bespoke App Design",
-    description: "Custom UX/UI designed for your audience and brand—fully integrated with a headless CMS for ultimate flexibility.",
-    buttonText: "Learn More"
-  },
-  {
-    title: "Flutter & React Native Development",
-    description: "Cross-platform apps with native performance and future-ready architecture. Easily connected to CMSs like Strapi and Umbraco via REST or GraphQL APIs.",
-    buttonText: "Discover How",
-    featured: true
-  },
-  {
-    title: "UX + UI That Converts",
-    description: "Crafted journeys that reduce friction and amplify engagement—supported by CMS-driven personalization.",
-    buttonText: "See Our Process"
-  },
-  {
-    title: "MVP to Full Scale",
-    description: "Start lean, scale fast. We design flexible foundations with Flutter or React Native, with CMS support to grow and iterate at speed.",
-    buttonText: "Start Your Build"
-  },
-  {
-    title: "App Redesigns & Rebuilds",
-    description: "Modernize legacy apps with Flutter or React Native, modular design, and content systems that empower your team.",
-    buttonText: "Let's Reimagine It"
-  }
-];
+interface OfferItem {
+  title: string;
+  description: string;
+  buttonText: string;
+  featured?: boolean;
+}
 
-const WhyChooseSection = () => {
+interface WhyChooseSectionProps {
+  whatWeOffer: OfferItem[];
+}
+
+const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({ whatWeOffer }) => {
   // Memoize the cards to prevent unnecessary re-renders
   const offerCards = React.useMemo(() => whatWeOffer.slice(0, 6).map((item, index) => (
     <Card 
@@ -58,7 +40,7 @@ const WhyChooseSection = () => {
         </Button>
       </CardContent>
     </Card>
-  )), []);
+  )), [whatWeOffer]);
 
   return (
     <section className="py-16 bg-gray-50">

@@ -3,26 +3,16 @@ import React from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const moreServices = [
-  {
-    title: "CMS Strategy & Implementation",
-    description: "We help you choose and configure the right CMS (Strapi, Umbraco, or others) for your Flutter or React Native app."
-  },
-  {
-    title: "UX Research & Prototyping",
-    description: "User testing and rapid prototypes that connect design with real content for Flutter and React Native apps."
-  },
-  {
-    title: "API Development & Backend Integration",
-    description: "We build and connect robust APIs to power data flow between your app, CMS, and third-party services."
-  },
-  {
-    title: "Ongoing Retainers",
-    description: "From content updates to feature rollouts in Flutter or React Native—we're your long-term product partner."
-  }
-];
+interface ServiceItem {
+  title: string;
+  description: string;
+}
 
-const MoreFromSection = () => {
+interface MoreFromSectionProps {
+  moreServices: ServiceItem[];
+}
+
+const MoreFromSection: React.FC<MoreFromSectionProps> = ({ moreServices }) => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
