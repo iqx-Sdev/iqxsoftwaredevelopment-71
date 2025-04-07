@@ -89,6 +89,12 @@ const Navbar = () => {
             >
               AI Chat
             </Link>
+            <Link 
+              to="/case-studies" 
+              className={`nav-link text-white hover:text-pink-400 px-1 transition-colors ${location.pathname === '/case-studies' ? 'text-pink-400' : ''}`}
+            >
+              Case Studies
+            </Link>
             <Link to="/contact">
               <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white ml-2">
                 Contact Us
@@ -150,6 +156,12 @@ const Navbar = () => {
               className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800 ${location.pathname === '/ai-chat' ? 'bg-gray-800 text-pink-400' : ''}`}
             >
               AI Chat
+            </Link>
+            <Link
+              to="/case-studies"
+              className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800 ${location.pathname === '/case-studies' ? 'bg-gray-800 text-pink-400' : ''}`}
+            >
+              Case Studies
             </Link>
             <div className="px-3 py-2">
               <Link to="/contact">
