@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { OptimizedImage } from "@/components/ui/optimized-image";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 // Define the case study type
 interface CaseStudy {
@@ -68,12 +69,14 @@ const CaseStudies = () => {
               <div className="grid grid-cols-1 gap-10 md:gap-12">
                 {caseStudies.map((study) => (
                   <Card key={study.id} className="flex flex-col md:flex-row overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div className="md:w-2/5">
-                      <OptimizedImage 
-                        src={study.image} 
-                        alt={study.title} 
-                        className="h-full w-full object-cover aspect-[4/3] md:aspect-auto"
-                      />
+                    <div className="md:w-2/5 relative">
+                      <AspectRatio ratio={4/3} className="h-full">
+                        <OptimizedImage 
+                          src={study.image} 
+                          alt={study.title} 
+                          className="h-full w-full object-cover"
+                        />
+                      </AspectRatio>
                     </div>
                     <div className="flex flex-col md:w-3/5">
                       <CardHeader>
