@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -62,6 +61,19 @@ const caseStudies: CaseStudy[] = [
       { label: "Customer Fit", value: "Intelligent" },
       { label: "User Experience", value: "Leading-edge" },
       { label: "Customer Relations", value: "Strengthened" }
+    ]
+  },
+  {
+    id: "pepkor-more",
+    title: "Pepkor +More",
+    subtitle: "Reinventing Customer Loyalty for the Modern Consumer",
+    summary: "We developed a unified, cloud-based loyalty platform for Pepkor's retail brands, delivering personalized rewards and a mobile-first experience to drive customer engagement.",
+    industry: "Retail",
+    image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?auto=format&fit=crop&w=800&q=80",
+    results: [
+      { label: "Loyalty Experience", value: "Modern" },
+      { label: "Customer Insights", value: "Data-driven" },
+      { label: "Brand Loyalty", value: "Strengthened" }
     ]
   }
 ];

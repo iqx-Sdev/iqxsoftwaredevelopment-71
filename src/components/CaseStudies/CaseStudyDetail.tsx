@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../Navbar";
@@ -106,6 +105,33 @@ const caseStudiesDetails: Record<string, CaseStudyDetail> = {
       "https://images.unsplash.com/photo-1452378174528-3090a4bba7b2?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1469041797191-50ace28483c3?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1501286353178-1ec881214838?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  "pepkor-more": {
+    id: "pepkor-more",
+    title: "Pepkor +More",
+    subtitle: "Reinventing Customer Loyalty for the Modern Consumer",
+    industry: "Retail",
+    heroImage: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?auto=format&fit=crop&w=1200&q=80",
+    situation: "Pepkor, a leading retail group, identified a critical gap in their customer engagement strategy—an outdated loyalty system that no longer resonated with the expectations of today's consumers. With customer behavior evolving rapidly and digital convenience becoming the norm, Pepkor realized that to stay competitive and relevant, it needed to reimagine how loyalty worked across its group of brands.",
+    solution: "To address this, Pepkor launched a group-wide rollout of a modern, cloud-based loyalty platform under the +More brand. The initiative wasn't just about technology—it was about prioritizing customer experience and designing a program that customers would genuinely value and use.",
+    solutionPoints: [
+      "A unified loyalty experience across Pepkor's diverse retail brands",
+      "Seamless integration into existing POS and digital systems",
+      "Personalized offers, rewards, and promotions based on customer behavior",
+      "A mobile-first experience to meet customers where they are"
+    ],
+    impact: "With the rollout of the new +More loyalty platform, Pepkor is poised to see a significant uplift in customer engagement and satisfaction. Early results and projections highlight increased customer participation and repeat visits, stronger brand connection through relevant, personalized rewards, high adoption rates of the mobile-first loyalty experience, and enhanced customer retention across multiple retail brands.",
+    results: [
+      { label: "Loyalty Experience", value: "Modern" },
+      { label: "Customer Insights", value: "Data-driven" },
+      { label: "Brand Loyalty", value: "Strengthened" },
+      { label: "Customer Satisfaction", value: "Elevated" }
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1551038247-3d9af20df552?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80"
     ]
   }
 };
