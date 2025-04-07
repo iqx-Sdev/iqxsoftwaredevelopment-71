@@ -1,4 +1,3 @@
-
 // Define types for case study details
 export interface CaseStudyResult {
   label: string;
@@ -181,6 +180,33 @@ export const caseStudiesDetails: Record<string, CaseStudyDetail> = {
       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  "investec": {
+    id: "investec",
+    title: "Investec",
+    subtitle: "Scalable Resourcing and Delivery Support Across Business Units",
+    industry: "Financial Services",
+    heroImage: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80",
+    situation: "To keep pace with rapid growth and maintain the high standards expected of a leading financial institution, Investec required additional support across a wide range of business units. These included Private Bank, Central Technology, Client Experience, and Data. The challenge was not only in scaling fast but doing so with teams capable of delivering complex projects reliably—on time, within scope, and on budget.",
+    solution: "Thanks to our deep understanding of client needs and our proven ability to deliver, IQX was brought in to support both existing and new initiatives across the bank. We deployed skilled teams in Software Development, Cloud, and Data to augment Investec's capabilities. By integrating seamlessly into their internal structures, we ensured progress without disruption while driving innovation and velocity across multiple strategic areas.",
+    solutionPoints: [
+      "Flexible resourcing tailored to each business unit's unique needs",
+      "A delivery-focused culture with strong collaboration",
+      "Technical expertise aligned with financial services standards and compliance",
+      "Ongoing partnership to adapt to evolving priorities and timelines"
+    ],
+    impact: "Our partnership has enabled Investec to consistently deliver high-impact projects across business-critical areas. Outcomes include: Projects completed on time, in scope, and within budget; Strong collaboration and team integration across departments; A delivery culture rooted in pride, aptitude, and proactive engagement; Continued support and scalability to meet the bank's evolving growth.",
+    results: [
+      { label: "Delivery", value: "Consistent" },
+      { label: "Team Integration", value: "High-performing" },
+      { label: "Execution Velocity", value: "Enhanced" },
+      { label: "Partnership", value: "Long-term" }
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
     ]
   }
 };

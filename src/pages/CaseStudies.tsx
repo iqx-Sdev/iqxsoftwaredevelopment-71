@@ -52,6 +52,19 @@ const caseStudies: CaseStudy[] = [
     ]
   },
   {
+    id: "investec",
+    title: "Investec",
+    subtitle: "Scalable Resourcing and Delivery Support Across Business Units",
+    summary: "We provided skilled teams across Software Development, Cloud, and Data to help Investec deliver complex projects reliably across multiple business units.",
+    industry: "Financial Services",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+    results: [
+      { label: "Delivery", value: "Consistent" },
+      { label: "Team Integration", value: "High-performing" },
+      { label: "Execution Velocity", value: "Enhanced" }
+    ]
+  },
+  {
     id: "motor-happy",
     title: "MotorHappy",
     subtitle: "Redefining Vehicle Financial Services with a Customer-Centric Aggregator Platform",
