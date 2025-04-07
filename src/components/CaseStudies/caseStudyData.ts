@@ -208,5 +208,32 @@ export const caseStudiesDetails: Record<string, CaseStudyDetail> = {
       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
     ]
+  },
+  "jp-markets": {
+    id: "jp-markets",
+    title: "JP Markets",
+    subtitle: "Designing a Forex Broker App Grounded in User-Centric Research",
+    industry: "Finance & Trading",
+    heroImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    situation: "JP Markets identified the need to create a forex trading app that would truly resonate with their target audience. In a highly competitive and fast-moving industry, delivering an intuitive and engaging user experience was critical to standing out and driving adoption. To succeed, they needed a strategy rooted in deep user understanding and industry insights.",
+    solution: "We partnered with JP Markets to lead a comprehensive UI and UX discovery process aimed at shaping the app concept from the ground up.",
+    solutionPoints: [
+      "A detailed SWOT analysis to identify internal strengths and external opportunities",
+      "In-depth competitor analysis to benchmark features and user flows",
+      "Development of user personas to represent core audience segments",
+      "Mapping of the customer journey to highlight key interactions and areas to boost engagement"
+    ],
+    impact: "The foundational research provided JP Markets with a clear and validated design strategy. With this groundwork in place, they are now equipped to move forward with confidence, ensuring that the app they develop will meet both business goals and user demands. Benefits include: A well-defined user experience blueprint; Increased alignment between product vision and user expectations; Clear guidance for UI design, feature prioritization, and customer engagement.",
+    results: [
+      { label: "Discovery Framework", value: "Complete" },
+      { label: "Design Approach", value: "User-centric" },
+      { label: "App Foundation", value: "Strong" },
+      { label: "Market Insights", value: "Actionable" }
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1579225663317-b74df0606c7c?auto=format&fit=crop&w=800&q=80"
+    ]
   }
 };

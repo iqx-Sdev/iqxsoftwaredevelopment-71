@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -62,6 +61,19 @@ const caseStudies: CaseStudy[] = [
       { label: "Delivery", value: "Consistent" },
       { label: "Team Integration", value: "High-performing" },
       { label: "Execution Velocity", value: "Enhanced" }
+    ]
+  },
+  {
+    id: "jp-markets",
+    title: "JP Markets",
+    subtitle: "Designing a Forex Broker App Grounded in User-Centric Research",
+    summary: "We led a comprehensive UI and UX discovery process to create a forex trading app that truly resonates with the target audience in this competitive market.",
+    industry: "Finance & Trading",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    results: [
+      { label: "Discovery Framework", value: "Complete" },
+      { label: "Design Approach", value: "User-centric" },
+      { label: "App Foundation", value: "Strong" }
     ]
   },
   {
