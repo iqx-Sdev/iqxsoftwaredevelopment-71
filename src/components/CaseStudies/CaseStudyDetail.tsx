@@ -133,6 +133,33 @@ const caseStudiesDetails: Record<string, CaseStudyDetail> = {
       "https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80"
     ]
+  },
+  "next-calm": {
+    id: "next-calm",
+    title: "NextCalm",
+    subtitle: "Bringing Clarity and Control to Estate Management",
+    industry: "Estate Management",
+    heroImage: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80",
+    situation: "Managing an estate can become incredibly complex during moments of crisis—particularly when individuals are incapacitated or pass away unexpectedly. Traditional estate planning methods often involve fragmented, offline documentation, which can lead to confusion, delays, and added emotional stress for loved ones during already difficult times. Recognizing this critical gap, NextCalm set out to modernize the way people prepare for and navigate estate transitions.",
+    solution: "NextCalm introduced a centralized, secure document storage platform designed to simplify estate management. The platform allows individuals to store, organize, and share essential legal and financial documents with designated representatives—ensuring that the right information is always accessible when needed most.",
+    solutionPoints: [
+      "Centralized access to all estate-related documents",
+      "Bank-grade security and encryption",
+      "A user-friendly, guided interface for setup and management",
+      "Controlled sharing and permissions for trusted representatives"
+    ],
+    impact: "NextCalm's solution has revolutionized the way individuals and families approach estate planning. Benefits include reduced administrative burden during crisis moments, faster, smoother transitions through immediate access to necessary documents, greater trust and transparency between individuals and their representatives, and a sense of calm and control for users preparing for the unexpected.",
+    results: [
+      { label: "Document Security", value: "Bank-grade" },
+      { label: "User Experience", value: "Simplified" },
+      { label: "Transition Time", value: "Reduced" },
+      { label: "User Control", value: "Enhanced" }
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?auto=format&fit=crop&w=800&q=80"
+    ]
   }
 };
 

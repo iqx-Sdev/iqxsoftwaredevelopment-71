@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -74,6 +75,19 @@ const caseStudies: CaseStudy[] = [
       { label: "Loyalty Experience", value: "Modern" },
       { label: "Customer Insights", value: "Data-driven" },
       { label: "Brand Loyalty", value: "Strengthened" }
+    ]
+  },
+  {
+    id: "next-calm",
+    title: "NextCalm",
+    subtitle: "Bringing Clarity and Control to Estate Management",
+    summary: "We created a centralized, secure document storage platform that simplifies estate management, allowing individuals to store, organize, and share critical documents with designated representatives.",
+    industry: "Estate Management",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+    results: [
+      { label: "Document Security", value: "Bank-grade" },
+      { label: "User Experience", value: "Simplified" },
+      { label: "Transition Time", value: "Reduced" }
     ]
   }
 ];
