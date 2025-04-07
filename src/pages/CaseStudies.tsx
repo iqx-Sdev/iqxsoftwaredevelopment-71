@@ -89,6 +89,19 @@ const caseStudies: CaseStudy[] = [
       { label: "User Experience", value: "Simplified" },
       { label: "Transition Time", value: "Reduced" }
     ]
+  },
+  {
+    id: "swaziland-building-society",
+    title: "Swaziland Building Society",
+    subtitle: "Accelerating Digital Banking Innovation with Expert Technical Support",
+    summary: "We provided specialized technical expertise to enhance SBS's digital banking capabilities across multiple platforms, ensuring seamless integration with existing systems.",
+    industry: "Banking",
+    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
+    results: [
+      { label: "Time-to-Market", value: "Accelerated" },
+      { label: "Development Capacity", value: "Enhanced" },
+      { label: "Digital Channels", value: "Expanded" }
+    ]
   }
 ];
 

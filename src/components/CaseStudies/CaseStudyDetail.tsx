@@ -160,6 +160,33 @@ const caseStudiesDetails: Record<string, CaseStudyDetail> = {
       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?auto=format&fit=crop&w=800&q=80"
     ]
+  },
+  "swaziland-building-society": {
+    id: "swaziland-building-society",
+    title: "Swaziland Building Society",
+    subtitle: "Accelerating Digital Banking Innovation with Expert Technical Support",
+    industry: "Banking",
+    heroImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+    situation: "Swaziland Building Society (SBS) was under growing pressure to deliver innovative, high-quality banking products across multiple platforms to meet the evolving needs of their clients. To remain competitive and enhance their digital offerings, SBS initiated a series of internal efforts aimed at increasing development capacity and speeding up time-to-market for new solutions.",
+    solution: "We were brought in to support SBS with highly specialized technical expertise in the financial services sector. Our team—comprising software developers, scrum masters, business analysts, and UI/UX designers—seamlessly integrated into SBS's internal teams to enhance delivery capabilities.",
+    solutionPoints: [
+      "Web, mobile, and desktop application development",
+      "Integration with existing core banking systems",
+      "Scalable architecture aligned with regulatory and security requirements",
+      "Agile collaboration to ensure alignment with SBS's internal roadmap and priorities"
+    ],
+    impact: "Through this partnership, SBS was able to significantly enhance its digital banking capabilities. The technical support and domain expertise we provided helped the bank deliver seamless, modern banking experiences to its clients. This engagement resulted in delivery of user-friendly front-end interfaces across platforms, accelerated product launches through improved development velocity, reliable integration with legacy systems without disruption, and a solid foundation for future digital innovation within the bank.",
+    results: [
+      { label: "Time-to-Market", value: "Accelerated" },
+      { label: "Development Capacity", value: "Enhanced" },
+      { label: "Digital Channels", value: "Expanded" },
+      { label: "System Integration", value: "Seamless" }
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80"
+    ]
   }
 };
 
