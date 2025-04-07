@@ -59,7 +59,7 @@ const caseStudiesDetails: Record<string, CaseStudyDetail> = {
     title: "Coricraft",
     subtitle: "Powering Omni-Channel Retail with a Seamless Cloud-Based Platform",
     industry: "Retail",
-    heroImage: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "/lovable-uploads/48b40d81-286e-4614-92a5-210d94539817.png",
     situation: "Coricraft, a leading furniture and homeware retailer, was facing operational bottlenecks due to disjointed systems. Their Magento 1 e-commerce platform lacked integration with Syspro and internal stock management systems, resulting in inefficiencies across online and in-store experiences. These disconnects led to inventory inaccuracies, delayed updates, and a fragmented customer journey across channels. To maintain their competitive edge and meet the evolving expectations of modern shoppers, Coricraft made the strategic decision to overhaul their entire digital platform.",
     solution: "We partnered with Coricraft to build a sleek, cloud-based e-commerce solution tailored to their business. The new platform was designed to unify their digital and physical retail operations, offering real-time integration with Syspro and their in-store systems.",
     solutionPoints: [

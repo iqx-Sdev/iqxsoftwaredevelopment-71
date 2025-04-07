@@ -44,7 +44,7 @@ const caseStudies: CaseStudy[] = [
     subtitle: "Powering Omni-Channel Retail with a Seamless Cloud-Based Platform",
     summary: "We partnered with Coricraft to build a unified cloud-based e-commerce solution that integrates their online and in-store systems for a seamless customer experience.",
     industry: "Retail",
-    image: "/lovable-uploads/9f023c09-f850-46c3-8306-d7d34559e6ec.png",
+    image: "/lovable-uploads/48b40d81-286e-4614-92a5-210d94539817.png",
     results: [
       { label: "Revenue Growth", value: "Double-digit" },
       { label: "Inventory Updates", value: "Real-time" },
