@@ -2,13 +2,48 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
+// Define the case study type
+interface CaseStudy {
+  id: string;
+  title: string;
+  subtitle: string;
+  summary: string;
+  industry: string;
+  image: string;
+  results: {
+    label: string;
+    value: string;
+  }[];
+}
+
+// Case studies data
+const caseStudies: CaseStudy[] = [
+  {
+    id: "kia-south-africa",
+    title: "Kia South Africa",
+    subtitle: "Transforming Operations Through Seamless Platform Integration",
+    summary: "We built an end-to-end integrated digital platform for Kia Retail, streamlining their operations and eliminating data silos through custom API integrations and cloud infrastructure.",
+    industry: "Automotive",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    results: [
+      { label: "System Integration", value: "100%" },
+      { label: "Lead Conversion", value: "+30%" },
+      { label: "Time Savings", value: "15+ hrs/week" }
+    ]
+  }
+];
 
 const CaseStudies = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <div className="flex-grow">
-        {/* Page content will be added here later */}
+        {/* Hero section */}
         <section className="py-16 bg-gradient-to-br from-newtheme-purple to-blue-600">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
@@ -25,13 +60,59 @@ const CaseStudies = () => {
           </div>
         </section>
         
-        {/* Placeholder section - content will be added later */}
+        {/* Case studies listing section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto text-center">
-              <p className="text-xl text-gray-600">
-                Case study content coming soon...
-              </p>
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 gap-10 md:gap-12">
+                {caseStudies.map((study) => (
+                  <Card key={study.id} className="flex flex-col md:flex-row overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="md:w-2/5">
+                      <img 
+                        src={study.image} 
+                        alt={study.title} 
+                        className="h-full w-full object-cover aspect-[4/3] md:aspect-auto"
+                      />
+                    </div>
+                    <div className="flex flex-col md:w-3/5">
+                      <CardHeader>
+                        <div className="mb-2">
+                          <span className="inline-block px-3 py-1 text-xs font-medium text-purple-700 bg-purple-100 rounded-full">
+                            {study.industry}
+                          </span>
+                        </div>
+                        <CardTitle className="text-2xl md:text-3xl font-bold text-newtheme-purple">
+                          {study.title}
+                        </CardTitle>
+                        <CardDescription className="text-lg font-medium text-gray-700 mt-1">
+                          {study.subtitle}
+                        </CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-gray-600 mb-6">
+                          {study.summary}
+                        </p>
+                        <div className="grid grid-cols-3 gap-4 mb-6">
+                          {study.results.map((result, index) => (
+                            <div key={index} className="text-center p-3 bg-gray-50 rounded-lg">
+                              <p className="font-bold text-xl text-newtheme-purple">{result.value}</p>
+                              <p className="text-sm text-gray-600">{result.label}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                      <CardFooter>
+                        <Link to={`/case-studies/${study.id}`}>
+                          <Button variant="gradient" className="gap-2">
+                            View Full Case Study
+                            <ArrowRight size={16} />
+                          </Button>
+                        </Link>
+                      </CardFooter>
+                    </div>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </section>

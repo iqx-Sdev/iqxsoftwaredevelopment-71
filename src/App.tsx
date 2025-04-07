@@ -16,7 +16,8 @@ const AgenticAI = lazy(() => import('./pages/AgenticAI'));
 const AgileTeams = lazy(() => import('./pages/AgileTeams'));
 const WebApps = lazy(() => import('./pages/WebApps'));
 const AIChat = lazy(() => import('./pages/AIChat'));
-const CaseStudies = lazy(() => import('./pages/CaseStudies')); // Import the new CaseStudies page
+const CaseStudies = lazy(() => import('./pages/CaseStudies')); 
+const CaseStudyDetail = lazy(() => import('./components/CaseStudies/CaseStudyDetail')); // Import the new case study detail component
 const Contact = lazy(() => import('./pages/Contact'));
 const BookConsultation = lazy(() => import('./pages/BookConsultation'));
 
@@ -81,7 +82,8 @@ const AppRoutes = () => {
             <Route path="/agile-teams" element={<AgileTeams />} />
             <Route path="/web-apps" element={<WebApps />} />
             <Route path="/ai-chat" element={<AIChat />} />
-            <Route path="/case-studies" element={<CaseStudies />} /> {/* Add the new route */}
+            <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/case-studies/:caseStudyId" element={<CaseStudyDetail />} /> {/* Add route for detailed case study view */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/book-consultation" element={<BookConsultation />} />
             <Route path="*" element={<NotFound />} />
