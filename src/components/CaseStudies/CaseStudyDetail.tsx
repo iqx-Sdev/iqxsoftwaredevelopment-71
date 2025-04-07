@@ -53,6 +53,33 @@ const caseStudiesDetails: Record<string, CaseStudyDetail> = {
       "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80"
     ]
+  },
+  "coricraft": {
+    id: "coricraft",
+    title: "Coricraft",
+    subtitle: "Powering Omni-Channel Retail with a Seamless Cloud-Based Platform",
+    industry: "Retail",
+    heroImage: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80",
+    situation: "Coricraft, a leading furniture and homeware retailer, was facing operational bottlenecks due to disjointed systems. Their Magento 1 e-commerce platform lacked integration with Syspro and internal stock management systems, resulting in inefficiencies across online and in-store experiences. These disconnects led to inventory inaccuracies, delayed updates, and a fragmented customer journey across channels. To maintain their competitive edge and meet the evolving expectations of modern shoppers, Coricraft made the strategic decision to overhaul their entire digital platform.",
+    solution: "We partnered with Coricraft to build a sleek, cloud-based e-commerce solution tailored to their business. The new platform was designed to unify their digital and physical retail operations, offering real-time integration with Syspro and their in-store systems.",
+    solutionPoints: [
+      "Real-time inventory sync across all customer touchpoints",
+      "A responsive, high-performance user experience",
+      "Seamless Syspro integration for operational efficiency",
+      "Scalable cloud architecture for future growth"
+    ],
+    impact: "The results were transformative. With the new cloud-based e-commerce platform, Coricraft saw a substantial increase in online sales, gained real-time inventory visibility, reducing overselling and stockouts, delivered a frictionless shopping experience across channels, and achieved better operational efficiency, reducing manual workloads.",
+    results: [
+      { label: "Revenue Growth", value: "Double-digit" },
+      { label: "Inventory Updates", value: "Real-time" },
+      { label: "Customer Satisfaction", value: "Enhanced" },
+      { label: "Stock Accuracy", value: "Improved" }
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=80"
+    ]
   }
 };
 
@@ -197,3 +224,4 @@ const CaseStudyDetail = () => {
 };
 
 export default CaseStudyDetail;
+

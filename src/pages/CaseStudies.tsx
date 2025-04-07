@@ -37,6 +37,19 @@ const caseStudies: CaseStudy[] = [
       { label: "Lead Conversion", value: "+30%" },
       { label: "Time Savings", value: "15+ hrs/week" }
     ]
+  },
+  {
+    id: "coricraft",
+    title: "Coricraft",
+    subtitle: "Powering Omni-Channel Retail with a Seamless Cloud-Based Platform",
+    summary: "We partnered with Coricraft to build a unified cloud-based e-commerce solution that integrates their online and in-store systems for a seamless customer experience.",
+    industry: "Retail",
+    image: "/lovable-uploads/9f023c09-f850-46c3-8306-d7d34559e6ec.png",
+    results: [
+      { label: "Revenue Growth", value: "Double-digit" },
+      { label: "Inventory Updates", value: "Real-time" },
+      { label: "Stock Accuracy", value: "Improved" }
+    ]
   }
 ];
 
@@ -127,3 +140,4 @@ const CaseStudies = () => {
 };
 
 export default CaseStudies;
+
