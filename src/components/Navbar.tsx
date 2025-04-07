@@ -1,8 +1,17 @@
 
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,6 +43,19 @@ const Navbar = () => {
     };
   }, [isMenuOpen]);
 
+  const services = [
+    { name: "Power Apps", path: "/power-apps" },
+    { name: "Agentic AI", path: "/agentic-ai" },
+    { name: "Agile Teams", path: "/agile-teams" },
+    { name: "Shopify Design", path: "/shopify" },
+    { name: "Web & App Development", path: "/web-apps" },
+    { name: "AI Chat", path: "/ai-chat" },
+  ];
+
+  const activeLink = (path: string) => {
+    return location.pathname === path ? "text-pink-400" : "";
+  };
+
   return (
     <nav className="bg-newtheme-darkgray shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,49 +76,45 @@ const Navbar = () => {
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-6">
             <Link 
-              to="/power-apps" 
-              className={`nav-link text-white hover:text-pink-400 px-1 transition-colors ${location.pathname === '/power-apps' ? 'text-pink-400' : ''}`}
+              to="/" 
+              className={`nav-link text-white hover:text-pink-400 px-1 transition-colors ${location.pathname === '/' ? 'text-pink-400' : ''}`}
             >
-              Power Apps
+              Home
             </Link>
-            <Link 
-              to="/agentic-ai" 
-              className={`nav-link text-white hover:text-pink-400 px-1 transition-colors ${location.pathname === '/agentic-ai' ? 'text-pink-400' : ''}`}
-            >
-              Agentic AI
-            </Link>
-            <Link 
-              to="/agile-teams" 
-              className={`nav-link text-white hover:text-pink-400 px-1 transition-colors ${location.pathname === '/agile-teams' ? 'text-pink-400' : ''}`}
-            >
-              Agile Teams
-            </Link>
-            <Link 
-              to="/web-apps" 
-              className={`nav-link text-white hover:text-pink-400 px-1 transition-colors ${location.pathname === '/web-apps' ? 'text-pink-400' : ''}`}
-            >
-              Web Apps
-            </Link>
-            <Link 
-              to="/shopify" 
-              className={`nav-link text-white hover:text-pink-400 px-1 transition-colors ${location.pathname === '/shopify' ? 'text-pink-400' : ''}`}
-            >
-              Shopify
-            </Link>
-            <Link 
-              to="/ai-chat" 
-              className={`nav-link text-white hover:text-pink-400 px-1 transition-colors ${location.pathname === '/ai-chat' ? 'text-pink-400' : ''}`}
-            >
-              AI Chat
-            </Link>
+            
+            {/* Services Mega Menu */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-white hover:text-pink-400">
+                    Our Services
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="grid grid-cols-2 w-[500px] gap-3 p-4 bg-popover text-popover-foreground">
+                      {services.map((service) => (
+                        <Link 
+                          key={service.path}
+                          to={service.path}
+                          className={`p-3 rounded-md hover:bg-accent flex items-center space-x-2 ${activeLink(service.path)}`}
+                        >
+                          <span className="text-sm font-medium">{service.name}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+
             <Link 
               to="/case-studies" 
               className={`nav-link text-white hover:text-pink-400 px-1 transition-colors ${location.pathname === '/case-studies' ? 'text-pink-400' : ''}`}
             >
               Case Studies
             </Link>
+            
             <Link to="/contact">
-              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white ml-2">
+              <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white">
                 Contact Us
               </Button>
             </Link>
@@ -122,47 +140,38 @@ const Navbar = () => {
         <div id="mobile-menu" className="md:hidden bg-newtheme-darkgray border-t border-gray-700 py-2">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
-              to="/power-apps"
-              className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800 ${location.pathname === '/power-apps' ? 'bg-gray-800 text-pink-400' : ''}`}
+              to="/"
+              className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800 ${location.pathname === '/' ? 'bg-gray-800 text-pink-400' : ''}`}
             >
-              Power Apps
+              Home
             </Link>
-            <Link
-              to="/agentic-ai"
-              className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800 ${location.pathname === '/agentic-ai' ? 'bg-gray-800 text-pink-400' : ''}`}
-            >
-              Agentic AI
-            </Link>
-            <Link
-              to="/agile-teams"
-              className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800 ${location.pathname === '/agile-teams' ? 'bg-gray-800 text-pink-400' : ''}`}
-            >
-              Agile Teams
-            </Link>
-            <Link
-              to="/web-apps"
-              className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800 ${location.pathname === '/web-apps' ? 'bg-gray-800 text-pink-400' : ''}`}
-            >
-              Web Apps
-            </Link>
-            <Link
-              to="/shopify"
-              className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800 ${location.pathname === '/shopify' ? 'bg-gray-800 text-pink-400' : ''}`}
-            >
-              Shopify
-            </Link>
-            <Link
-              to="/ai-chat"
-              className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800 ${location.pathname === '/ai-chat' ? 'bg-gray-800 text-pink-400' : ''}`}
-            >
-              AI Chat
-            </Link>
+            
+            {/* Mobile Services Dropdown */}
+            <div className="block px-3 py-2">
+              <div className="flex justify-between items-center text-white font-medium">
+                <span>Our Services</span>
+                <ChevronDown className="h-4 w-4" />
+              </div>
+              <div className="ml-4 mt-2 space-y-1">
+                {services.map((service) => (
+                  <Link
+                    key={service.path}
+                    to={service.path}
+                    className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800 ${location.pathname === service.path ? 'bg-gray-800 text-pink-400' : ''}`}
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            
             <Link
               to="/case-studies"
               className={`block px-3 py-2 rounded-md text-base font-medium text-white hover:text-pink-400 hover:bg-gray-800 ${location.pathname === '/case-studies' ? 'bg-gray-800 text-pink-400' : ''}`}
             >
               Case Studies
             </Link>
+            
             <div className="px-3 py-2">
               <Link to="/contact">
                 <Button className="w-full bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600">
