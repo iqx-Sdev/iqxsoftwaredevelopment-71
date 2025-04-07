@@ -80,6 +80,33 @@ const caseStudiesDetails: Record<string, CaseStudyDetail> = {
       "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=80"
     ]
+  },
+  "motor-happy": {
+    id: "motor-happy",
+    title: "MotorHappy",
+    subtitle: "Redefining Vehicle Financial Services with a Customer-Centric Aggregator Platform",
+    industry: "Automotive Finance",
+    heroImage: "https://images.unsplash.com/photo-1487252665478-49b61b47f302?auto=format&fit=crop&w=1200&q=80",
+    situation: "MotorHappy identified a major gap in the vehicle service plan industry—an industry that had remained largely unchanged for decades. Customers often faced confusing, rigid service options that didn't always align with their needs. Recognizing an opportunity to lead change, MotorHappy set out to disrupt the norm by offering a smarter, more intuitive way for drivers to find the right service and maintenance solutions.",
+    solution: "To bring this vision to life, we partnered with MotorHappy to design and build a first-of-its-kind aggregator platform—a dynamic, cloud-based solution that reimagined how customers engage with vehicle financial services. The platform delivers an end-to-end experience that supports everything from product comparison and purchase to ongoing vehicle maintenance and customer support.",
+    solutionPoints: [
+      "Aggregation of multiple service plan providers into one seamless interface",
+      "Smart matching to recommend the most suitable offerings per customer profile",
+      "Integration with third-party systems for real-time data and pricing",
+      "A fully responsive and user-friendly customer journey"
+    ],
+    impact: "MotorHappy's bold move paid off. The innovative platform not only reshaped how service plans are delivered but also set a new standard for customer satisfaction in the industry. Results included a marked increase in customer satisfaction and positive sentiment, strengthened brand loyalty through personalized and transparent service, improved retention and lifetime value from engaged, happier customers, and positioned as a true innovator in a historically stagnant market.",
+    results: [
+      { label: "Customer Fit", value: "Intelligent" },
+      { label: "User Experience", value: "Leading-edge" },
+      { label: "Customer Feedback", value: "Positive" },
+      { label: "Customer Relations", value: "Strengthened" }
+    ],
+    images: [
+      "https://images.unsplash.com/photo-1452378174528-3090a4bba7b2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1469041797191-50ace28483c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1501286353178-1ec881214838?auto=format&fit=crop&w=800&q=80"
+    ]
   }
 };
 
@@ -224,4 +251,3 @@ const CaseStudyDetail = () => {
 };
 
 export default CaseStudyDetail;
-

@@ -50,6 +50,19 @@ const caseStudies: CaseStudy[] = [
       { label: "Inventory Updates", value: "Real-time" },
       { label: "Stock Accuracy", value: "Improved" }
     ]
+  },
+  {
+    id: "motor-happy",
+    title: "MotorHappy",
+    subtitle: "Redefining Vehicle Financial Services with a Customer-Centric Aggregator Platform",
+    summary: "We designed and built a first-of-its-kind aggregator platform for MotorHappy, revolutionizing how customers discover, compare, and purchase vehicle service plans.",
+    industry: "Automotive Finance",
+    image: "https://images.unsplash.com/photo-1487252665478-49b61b47f302?auto=format&fit=crop&w=800&q=80",
+    results: [
+      { label: "Customer Fit", value: "Intelligent" },
+      { label: "User Experience", value: "Leading-edge" },
+      { label: "Customer Relations", value: "Strengthened" }
+    ]
   }
 ];
 
@@ -140,4 +153,3 @@ const CaseStudies = () => {
 };
 
 export default CaseStudies;
-
