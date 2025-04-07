@@ -1,13 +1,10 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faMapMarkerAlt, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-
 const ContactSection = () => {
-  return (
-    <section className="py-16 bg-gray-50">
+  return <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -57,16 +54,11 @@ const ContactSection = () => {
           
           <div className="mt-12 text-center">
             <Link to="/book-consultation">
-              <Button className="font-medium">
-                Book a Consultation
-                <FontAwesomeIcon icon={faArrowRight} className="ml-2 h-5 w-5" />
-              </Button>
+              
             </Link>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
