@@ -1,21 +1,26 @@
+
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 interface OfferItem {
   title: string;
   description: string;
   buttonText: string;
   featured?: boolean;
 }
+
 interface WhyChooseSectionProps {
   whatWeOffer: OfferItem[];
 }
+
 const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({
   whatWeOffer
 }) => {
   // Memoize the cards to prevent unnecessary re-renders
-  const offerCards = React.useMemo(() => whatWeOffer.slice(0, 6).map((item, index) => <Card key={index} className={`shadow-lg border ${item.featured ? 'border-pink-300 bg-gradient-to-br from-white to-pink-50' : 'border-gray-100'} hover:shadow-xl transition-all`}>
+  const offerCards = React.useMemo(() => whatWeOffer.slice(0, 6).map((item, index) => (
+    <Card key={index} className={`shadow-lg border ${item.featured ? 'border-pink-300 bg-gradient-to-br from-white to-pink-50' : 'border-gray-100'} hover:shadow-xl transition-all`}>
       <CardHeader>
         <CardTitle>
           {item.title}
@@ -26,9 +31,14 @@ const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({
       </CardHeader>
       <CardContent>
         <p className={`${item.featured ? 'text-gray-700' : 'text-gray-600'} mb-6`}>{item.description}</p>
-        
+        <Button variant="outline" className="w-full">
+          {item.buttonText}
+          <ArrowRight className="ml-2 h-4 w-4" />
+        </Button>
       </CardContent>
-    </Card>), [whatWeOffer]);
+    </Card>
+  )), [whatWeOffer]);
+  
   return <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
@@ -49,4 +59,5 @@ const WhyChooseSection: React.FC<WhyChooseSectionProps> = ({
       </div>
     </section>;
 };
+
 export default WhyChooseSection;
