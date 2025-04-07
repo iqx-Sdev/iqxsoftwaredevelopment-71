@@ -1,20 +1,17 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 interface OfferItem {
   title: string;
   description: string;
   buttonText: string;
 }
-
 interface WhyChooseSectionProps {
   offerItems: OfferItem[];
 }
-
-const WhyChooseSection = ({ offerItems }: WhyChooseSectionProps) => {
-  return (
-    <section className="py-16 bg-gray-50">
+const WhyChooseSection = ({
+  offerItems
+}: WhyChooseSectionProps) => {
+  return <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -29,21 +26,14 @@ const WhyChooseSection = ({ offerItems }: WhyChooseSectionProps) => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {offerItems.slice(0, 6).map((item, index) => (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
+            {offerItems.slice(0, 6).map((item, index) => <div key={index} className="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
                 <h3 className="text-xl font-bold text-newtheme-purple mb-4">{item.title}</h3>
                 <p className="text-gray-600 mb-6">{item.description}</p>
-                <Button className="bg-white hover:bg-gray-100 text-newtheme-purple rounded-lg">
-                  {item.buttonText}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
-            ))}
+                
+              </div>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default WhyChooseSection;
