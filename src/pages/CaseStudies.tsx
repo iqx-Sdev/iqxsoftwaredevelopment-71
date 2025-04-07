@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 
 // Define the case study type
 interface CaseStudy {
@@ -29,7 +30,7 @@ const caseStudies: CaseStudy[] = [
     subtitle: "Transforming Operations Through Seamless Platform Integration",
     summary: "We built an end-to-end integrated digital platform for Kia Retail, streamlining their operations and eliminating data silos through custom API integrations and cloud infrastructure.",
     industry: "Automotive",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/1f706812-3234-486e-923c-a848445c01da.png",
     results: [
       { label: "System Integration", value: "100%" },
       { label: "Lead Conversion", value: "+30%" },
@@ -68,7 +69,7 @@ const CaseStudies = () => {
                 {caseStudies.map((study) => (
                   <Card key={study.id} className="flex flex-col md:flex-row overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <div className="md:w-2/5">
-                      <img 
+                      <OptimizedImage 
                         src={study.image} 
                         alt={study.title} 
                         className="h-full w-full object-cover aspect-[4/3] md:aspect-auto"
