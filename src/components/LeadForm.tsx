@@ -1,4 +1,4 @@
-// src\components\LeadForm.tsx
+// src/components/LeadForm.tsx
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { v4 as uuidv4 } from "uuid";
@@ -29,7 +29,6 @@ const LeadForm = ({
 
   const pathName = useLocation();
   const path = pathName?.pathname;
-
   const formTitle = path?.substring(1) + "-" + "form";
 
   const form = useForm<FormValues>({
@@ -46,7 +45,6 @@ const LeadForm = ({
 
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
-
     const uniqueKey = uuidv4();
 
     try {
@@ -54,11 +52,13 @@ const LeadForm = ({
         title: formTitle,
         key: uniqueKey,
         origin: path,
-        data: data,
+        data,
       });
 
-      await axios.post("http://localhost:3000/api/email", {
-        // Uses Vite proxy
+      // Switch between local and production
+      const API_BASE = import.meta.env.DEV ? "http://localhost:3000" : "";
+
+      await axios.post(`${API_BASE}/api/email`, {
         fromEmail: "drana@plusonex.com",
         origin: path,
         data,
@@ -73,6 +73,7 @@ const LeadForm = ({
 
       form.reset();
     } catch (error) {
+      console.error(error);
       toast.error("Something went wrong", {
         description: "Please try again or contact us directly.",
       });
@@ -100,7 +101,6 @@ const LeadForm = ({
               placeholder="John Smith"
               icon="user"
             />
-
             <FormInput
               control={form.control}
               name="email"
@@ -109,7 +109,6 @@ const LeadForm = ({
               type="email"
               icon="email"
             />
-
             <FormInput
               control={form.control}
               name="phone"
@@ -119,7 +118,6 @@ const LeadForm = ({
               icon="phone"
               optional
             />
-
             <FormInput
               control={form.control}
               name="company"
@@ -140,7 +138,6 @@ const LeadForm = ({
           />
 
           <MarketingCheckbox control={form.control} />
-
           <SubmitButton isSubmitting={isSubmitting} />
         </form>
       </Form>
